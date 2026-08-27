@@ -1,0 +1,13 @@
+This thesis workspace keeps attribution to the upstream SCNUThesis project.
+
+The upstream SCNUThesis README states that the template follows The LaTeX
+Project Public License (LPPL):
+
+  http://latex-project.org/lppl/
+
+Upstream project: https://github.com/scnu/scnuthesis
+Upstream reference commit: a85b00f5a411c099eef5985a8f1bbf32ca1e80fe
+
+Project-specific thesis text, figures, tables, experiments, and notes are not
+part of upstream SCNUThesis unless explicitly stated.
+

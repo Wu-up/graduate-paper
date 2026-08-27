@@ -1,0 +1,44 @@
+# Source materials and temporary extraction
+_source_materials/
+_tmp/
+
+# Local planning notes for this initialization run
+task_plan.md
+findings.md
+progress.md
+
+# LaTeX build products
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.ps
+*.thm
+
+# Generated PDFs are ignored by default; release PDFs can be added explicitly.
+main.pdf
+thesis.pdf
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
