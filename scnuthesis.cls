@@ -68,16 +68,17 @@
 \newcommand{\kai}{\CJKfamily{zhkai}}
 \newcommand{\fs}{\CJKfamily{zhfs}}
 \newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\newcommand{\scnu@captionfont}{\hei\zihao{-4}}
 
 \geometry{
+  a4paper,
   top=2.5cm,
   bottom=2.5cm,
   left=2.5cm,
   right=2.5cm,
-  headheight=15pt,
+  headheight=1.0cm,
   headsep=0.5cm,
-  footskip=1.0cm,
-  includeheadfoot
+  footskip=1.5cm
 }
 \onehalfspacing
 \setlength{\parindent}{2em}
@@ -113,15 +114,16 @@
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
-\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
-\renewcommand{\thetable}{\thechapter.\arabic{table}}
-\renewcommand{\theequation}{\thechapter-\arabic{equation}}
 \numberwithin{figure}{chapter}
 \numberwithin{table}{chapter}
 \numberwithin{equation}{chapter}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+\renewcommand{\theequation}{\thechapter-\arabic{equation}}
 
+\DeclareCaptionFont{scnuxiaosihei}{\scnu@captionfont}
 \captionsetup{
-  font={small,bf},
+  font=scnuxiaosihei,
   labelsep=quad,
   justification=centering,
   singlelinecheck=false
@@ -175,17 +177,28 @@
     \song\zihao{4}
     \noindent 分类号：\scnu@classification\hfill 密级：\scnu@secret\par
     \noindent UDC：\scnu@udc\hfill 学号：\scnu@studentid\par
-    \vspace*{2.0cm}
+    \vspace*{1.0cm}
     \centering
+    \IfFileExists{figures/title.pdf}{%
+      \includegraphics[width=0.58\textwidth]{figures/title.pdf}\par
+    }{%
+      {\hei\zihao{1} 华南师范大学\par}
+    }
+    \vspace{0.45cm}
     {\zihao{3} South China Normal University\par}
-    \vspace{1.0cm}
+    \vspace{0.85cm}
+    \IfFileExists{figures/scnu.pdf}{%
+      \includegraphics[width=0.18\textwidth]{figures/scnu.pdf}\par
+      \vspace{0.65cm}
+    }{}
     {\hei\zihao{2} 硕士学位论文\par}
     \vspace{0.4cm}
     {\song\zihao{4} （专业学位）\par}
-    \vspace{1.6cm}
+    \vspace{1.3cm}
     {\hei\zihao{2}\scnu@titlecn\par}
-    \vspace{2.0cm}
-    \begin{tabular}{>{\song\zihao{4}}r>{\song\zihao{4}}l}
+    \vspace{1.6cm}
+    \renewcommand{\arraystretch}{1.45}
+    \begin{tabular}{>{\song\zihao{4}}r>{\song\zihao{4}}p{0.48\textwidth}}
       学位申请人： & \scnu@author \\
       学科专业： & \scnu@major \\
       论文研究方向： & \scnu@direction \\
@@ -201,17 +214,18 @@
     \thispagestyle{empty}
     \centering
     {\zihao{3} South China Normal University\par}
-    \vspace{1.0cm}
+    \vspace{1.1cm}
     {\zihao{2} A Dissertation Submitted for the Degree of Master\par}
-    \vspace{1.8cm}
+    \vspace{1.6cm}
     {\bfseries\zihao{2}\scnu@titleen\par}
-    \vspace{2.0cm}
-    \begin{tabular}{rl}
-      Supervisor: & \scnu@supervisor \\
+    \vspace{1.8cm}
+    \renewcommand{\arraystretch}{1.45}
+    \begin{tabular}{>{\zihao{4}}r>{\zihao{4}}l}
       Candidate: & \scnu@author \\
+      Supervisor: & \scnu@supervisor \\
       Major: & \scnu@major \\
       Research direction: & \scnu@direction \\
-      Department/School: & \scnu@school \\
+      School: & \scnu@school \\
     \end{tabular}
     \vfill
     {\zihao{4}\scnu@dateen\par}
@@ -237,4 +251,3 @@
   \chapter*{#1}
   \addcontentsline{toc}{chapter}{#1}
 }
-

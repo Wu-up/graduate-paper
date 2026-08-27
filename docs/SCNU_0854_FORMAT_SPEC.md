@@ -111,6 +111,5 @@ The specification lists the thesis order as:
 ## Implemented In This LaTeX Project
 
 - `scnuthesis.cls` sets A4 paper, 2.5 cm margins, 1.5 line spacing, two-character paragraph indent, chapter/section/subsection title styles, figure/table captions, chapter-based figure/table numbering, and equation numbering as `chapter-number`.
-- `main.tex` orders front matter, body, references, and back matter according to the official structure, except that the defense certificate and signed official scan pages are represented by placeholders until the formal thesis stage.
+- `main.tex` orders front matter, body, references, and back matter according to the official structure. The defense certificate and signed official pages are represented by placeholders until the formal thesis stage.
 - Font setup uses Windows fonts when present and Noto/Fandol fallbacks on Overleaf.
-
