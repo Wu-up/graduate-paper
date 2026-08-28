@@ -10,18 +10,19 @@ Chapter 1 — 绪论
 
 ## Last Accepted Sections
 
-- `S1-02B-R1`, `S1-02C`, and `S1-02D` are `SECTION_ACCEPTED`.
-- `S1-02D` accepted body commit: `1aeb00c159a1e19e8c5ad5113e6ed572b9826c2b`.
+- `S1-02B-R1`, `S1-02C`, `S1-02D`, and `S1-02E` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S1-02E / 1.2 国内外研究现状统一衔接与质量审查`.
+- `S1-02E` accepted commit: `6d338bf77184fa4b92c04c8aa2c64e10837c4ced`.
 
 ## Next Planned Work
 
-- `S1-03`: 1.3 现有方法存在的问题.
-- `S1-02E` section-wide linkage and unified review is pending supervisor
-  repository review.
+- NEXT_TASK: `S1-03 / 1.3 现有方法存在的问题`.
 
 ## Frozen Decisions
 
 - The thesis uses the frozen five-chapter structure.
+- Sections 1.2.1--1.2.4 are collectively frozen after the S1-02E unified
+  review.
 - Work1 is local--global collaboration in the spatial dimension; Work2 is
   scale-structural coordination.
 - Work1 ACDC LV is 96.56 under its recorded `PAPER_REPORTED` identity.
