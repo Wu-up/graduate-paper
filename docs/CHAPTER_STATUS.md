@@ -43,3 +43,4 @@ Resolved in P-003B-R1:
 | Section ID | Section Title | Academic Review | LaTeX Integration | Final Review | Final Status | Notes |
 |---|---|---|---|---|---|---|
 | S1-01 | 1.1 研究背景与意义 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; commit `14204f845819b2d0601c771a2eec2d2f28777da6`. |
+| S1-02A | 1.2.1 基于CNN的医学图像分割方法 | CONTENT_APPROVED (R1_COMPLETE) | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | Mechanical R1 integration authorized; awaiting GPT A repository final review. |
