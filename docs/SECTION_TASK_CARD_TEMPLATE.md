@@ -1,6 +1,6 @@
-# Section Task Card Template
+# Full Section Task Card Template
 
-Use one completed card for each section before a GPT author drafts formal thesis prose. This card is a writing-control artifact, not a substitute for the section itself.
+Use one completed card for each section before a GPT author drafts formal thesis prose. This is the `FULL_TASK_CARD_TEMPLATE`: use it for each chapter's first section, a first core-method expansion, high-risk result sections, sections with evidence conflicts, a detected quality decline, or whenever the user or GPT A requests FULL mode. This card is a writing-control artifact, not a substitute for the section itself.
 
 ```text
 TASK_ID:
@@ -58,3 +58,7 @@ AUTHOR_OUTPUT_REQUIRED:
 ## Completion Rule
 
 The author supplies all three required outputs. Codex only places user-confirmed or GPT-confirmed formal text into a chapter file when explicitly asked.
+
+For routine sections with stable, clear boundaries, use
+`docs/SECTION_TASK_CARD_LITE_TEMPLATE.md`. Lite mode inherits all global
+constraints and must not be used to bypass them.

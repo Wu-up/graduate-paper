@@ -50,3 +50,17 @@ unresolved or restricted.
 3. User confirms the draft.
 4. Codex places confirmed text into the corresponding `.tex` file without substantive rewriting.
 5. Overleaf compiles and visual checks are performed.
+
+## Cross-window Recovery and Approval Boundary
+
+- New windows begin with `docs/AI_AUTHORING_ENTRYPOINT.md`.
+- `docs/SUPERVISOR_CHECKPOINT.md` is a rapid status entrypoint, not a facts or
+  evidence source.
+- Lite Task Cards remove repeated text only; all global constraints remain in
+  force through the entrypoint and linked governance documents.
+- GPT B research outputs must be preserved as Markdown attachments or repository
+  review packets, rather than left only in chat history.
+- If Codex lacks the original GPT B result attachment, it reports `BLOCKED` and
+  does not infer missing formal content.
+- After `SECTION_ACCEPTED`, update the supervisor checkpoint when its update
+  rule is met. After `CHAPTER_ACCEPTED`, create a chapter handoff.

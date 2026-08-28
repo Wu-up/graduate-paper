@@ -6,7 +6,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 
 | Chapter | File | Structure Status | Writing Status | Notes |
 |---|---|---|---|---|
-| 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | PLANNED | Two research gaps must correspond to Work1 and Work2. |
+| 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | IN_PROGRESS | S1-01 is accepted; remaining sections continue under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | PLANNED | Theory-debt scope only. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | PLANNED | Work1 complete loop: problem, method, experiment, analysis, conclusion. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
@@ -40,6 +40,6 @@ Resolved in P-003B-R1:
 
 ## Section Integration Status
 
-| Section ID | Section Title | Academic Review | LaTeX Integration | Notes |
-|---|---|---|---|---|
-| S1-01 | 1.1 研究背景与意义 | CONTENT_APPROVED | LATEX_INTEGRATED | Awaiting supervisor second final check before `SECTION_ACCEPTED`. |
+| Section ID | Section Title | Academic Review | LaTeX Integration | Final Review | Final Status | Notes |
+|---|---|---|---|---|---|---|
+| S1-01 | 1.1 研究背景与意义 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; commit `14204f845819b2d0601c771a2eec2d2f28777da6`. |
