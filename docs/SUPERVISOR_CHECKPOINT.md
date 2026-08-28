@@ -10,13 +10,13 @@ Chapter 1 — 绪论
 
 ## Last Accepted Sections
 
-- `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, and `S1-03` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S1-03 / 1.3 现有方法存在的问题`.
-- `S1-03` accepted commit: `6182c15e91cc20fee2f9ab080422574d0bd6c57e`.
+- `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, and `S1-04` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S1-04 / 1.4 本文主要研究内容`.
+- `S1-04` accepted commit: `2cc68c8ef33475e33165b7d00f6611b0c5f1eead`.
 
 ## Next Planned Work
 
-- NEXT_TASK: `S1-04 / 1.4 本文主要研究内容`.
+- NEXT_TASK: `S1-05 / 1.5 论文组织结构`.
 
 ## Frozen Decisions
 
