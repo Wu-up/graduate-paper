@@ -7,6 +7,7 @@ TASK_ID:
 SECTION_ID:
 SECTION_TITLE:
 WRITING_MODE: DRAFT | REVISE | REVIEW | HOLD
+AUTHORING_REVIEW_MODE: SUPERVISOR_PREAPPROVAL
 
 PURPOSE:
 
@@ -53,6 +54,7 @@ AUTHOR_OUTPUT_REQUIRED:
 - Source Packet
 - 可入库正文
 - Author Notes
+- CODEX_HANDOFF_PROMPT with WAIT_FOR_SUPERVISOR_APPROVAL
 ```
 
 ## Completion Rule
@@ -62,3 +64,6 @@ The author supplies all three required outputs. Codex only places user-confirmed
 For routine sections with stable, clear boundaries, use
 `docs/SECTION_TASK_CARD_LITE_TEMPLATE.md`. Lite mode inherits all global
 constraints and must not be used to bypass them.
+
+Full mode uses `SUPERVISOR_PREAPPROVAL`: GPT A returns `CONTENT_APPROVED` before
+Codex integration, followed by GPT A repository final review.

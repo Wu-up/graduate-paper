@@ -64,3 +64,18 @@ unresolved or restricted.
   does not infer missing formal content.
 - After `SECTION_ACCEPTED`, update the supervisor checkpoint when its update
   rule is met. After `CHAPTER_ACCEPTED`, create a chapter handoff.
+
+## Authoring Review Modes
+
+- `DIRECT_REPO_REVIEW` is the default for Lite or Enhanced Lite routine sections
+  with stable facts and evidence boundaries. GPT B hands off with
+  `READY_FOR_REPO_INTEGRATION`; Codex may mechanically integrate, check
+  citations/BibTeX/compilation/diff, and record only
+  `PENDING_SUPERVISOR_REPO_REVIEW`. GPT A alone accepts or returns revision
+  after reading GitHub.
+- `SUPERVISOR_PREAPPROVAL` is required for Full cards, core methods, experiments,
+  high-risk claims, source conflicts, and GPT A-directed preapproval. GPT B uses
+  `WAIT_FOR_SUPERVISOR_APPROVAL`; Codex waits for `CONTENT_APPROVED` before
+  integration.
+- Both modes retain final repository review. S1-02 retains S1-02E unified review
+  and every completed chapter retains the Chapter Gate.

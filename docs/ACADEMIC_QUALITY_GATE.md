@@ -1,33 +1,40 @@
 # Academic Quality Gate
 
-This gate protects quality when a Lite Task Card is used. Detailed content,
+This gate protects quality in both authoring-review modes. Detailed content,
 evidence, and prose rules remain in the authoritative documents linked by
 `docs/AI_AUTHORING_ENTRYPOINT.md`.
 
-## Gate A — GPT B Draft Self-check
+## DIRECT_REPO_REVIEW
 
-Before handoff, GPT B checks that the draft answers its Task Card questions,
-has no unsupported strong claims, is not an author-year list, avoids template
-AI phrasing, does not misuse placeholders, does not repeat the preceding
-section, and leaves a logical interface for the next section.
+### Gate A — GPT B Draft Self-check
 
-## Gate B — GPT A Content Review
+Before handoff, GPT B checks Task Card coverage, evidence-to-claim boundaries,
+prose quality, placeholder exclusion, redundancy, and the interface to the next
+section.
 
-GPT A reviews the argument chain, evidence-to-claim mapping, prose naturalness,
-thesis role, redundancy, terminology, Work1/Work2 positioning, citation
-adequacy, and strength of major claims. The only outcomes are
-`CONTENT_APPROVED` and `REVISION_REQUIRED`.
+### Gate B — Codex Mechanical Integration
 
-## Gate C — Repository Final Review
+Codex mechanically integrates the approved handoff package and checks
+citations, BibTeX keys, compilation where available, and the scoped diff. The
+result is `PENDING_SUPERVISOR_REPO_REVIEW`, never `SECTION_ACCEPTED`.
 
-After Codex integration, GPT A checks the final GitHub body against the approved
-content, citation correctness, BibTeX/LaTeX mechanics, continuity with adjacent
-sections, and unexpected changes. Only a passing review grants
+### Gate C — GPT A Repository Final Review
+
+GPT A reviews the GitHub-integrated text for argument, evidence, citations,
+prose, continuity, and unexpected integration changes. Only this passing gate
+grants `SECTION_ACCEPTED`; otherwise it returns `REVISION_REQUIRED`.
+
+## SUPERVISOR_PREAPPROVAL
+
+Gate A is GPT B's self-check. Gate B is GPT A's content review, whose only
+outcomes are `CONTENT_APPROVED` and `REVISION_REQUIRED`. After Codex mechanical
+integration, GPT A performs the repository final review before granting
 `SECTION_ACCEPTED`.
 
 ## Chapter Gate
 
-After all sections are accepted, review chapter-level repetition, transitions,
+After S1-02's component sections are accepted, perform S1-02E unified review.
+After all sections in a chapter are accepted, review chapter-level repetition, transitions,
 terminology consistency, citation distribution, argument closure, coverage of
 the chapter function in `docs/MASTER_THESIS_PLAN.md`, and the interface to the
 next chapter. A passing review grants `CHAPTER_ACCEPTED`, after which Codex may

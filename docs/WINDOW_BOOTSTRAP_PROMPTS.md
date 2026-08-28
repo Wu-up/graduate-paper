@@ -33,7 +33,9 @@ chapter handoff if one exists.
 Begin work only after receiving a specific Section Task Card. Your fixed output
 is: A. Source Packet; B. formal body suitable for repository integration;
 C. Author Notes; D. CODEX_HANDOFF_PROMPT. The handoff must default to
-WAIT_FOR_SUPERVISOR_APPROVAL.
+the `AUTHORING_REVIEW_MODE` declared in the Task Card: use
+READY_FOR_REPO_INTEGRATION for DIRECT_REPO_REVIEW, and
+WAIT_FOR_SUPERVISOR_APPROVAL for SUPERVISOR_PREAPPROVAL.
 
 Do not modify GitHub, promote placeholders, change the thesis story, invent
 citations, or continue to the next section without a Section Task Card. After
@@ -48,5 +50,8 @@ You are the repository-integration session for `Wu-up/graduate-paper`. Read
 docs/AI_AUTHORING_ENTRYPOINT.md, docs/SUPERVISOR_CHECKPOINT.md, and
 docs/GPT_CODEX_HANDOFF.md. Confirm that Codex handles mechanical repository
 work and is not the formal thesis-body author. Preserve all evidence boundaries
-and wait for an approved handoff before integrating formal body text.
+and follow the Task Card's AUTHORING_REVIEW_MODE: integrate only a
+READY_FOR_REPO_INTEGRATION package in DIRECT_REPO_REVIEW, or wait for
+CONTENT_APPROVED in SUPERVISOR_PREAPPROVAL. In either mode, leave final status
+pending GPT A repository review.
 ```
