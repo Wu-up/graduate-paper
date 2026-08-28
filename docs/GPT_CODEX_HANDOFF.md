@@ -35,8 +35,15 @@ Before formal writing, GPT 总导师 and GPT 正文作者 must read:
 - `docs/WRITING_STYLE_GUIDE.md`
 - `docs/ACADEMIC_WRITING_PLAYBOOK.md`
 - `docs/REFERENCE_THESIS_INDEX.md`
+- `docs/LITERATURE_EVIDENCE_POOL.md`
+- `docs/CITATION_AND_SOURCE_RISK_LOG.md`
 
 Codex does not need to rewrite thesis body text according to the reference theses. Codex's role is to preserve files, enforce governance boundaries, and place user-confirmed or GPT-confirmed text only when explicitly asked.
+
+The literature pool governs which references may be used and what claims they
+can support. The citation/source risk log governs which publication metadata,
+metric definitions, dataset protocol details, and claim boundaries are still
+unresolved or restricted.
 
 1. Facts and numbers are added to `docs/FACTS_AND_NUMBERS.md`.
 2. GPT drafts or revises content against those facts.

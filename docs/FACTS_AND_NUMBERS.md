@@ -62,6 +62,9 @@ Method positioning:
 Source boundary:
 
 - User-provided P-001 source packet.
+- P-003B-R1 correction source for ACDC LV:
+  `D:/Graduate/vil-unet-work2-bootstrap/source_materials/work1_paper.pdf`,
+  Table II, PDF page 5.
 - `Wu-up/vil-unet-work2` read-only verification file:
   `docs/WORK1_GROUND_TRUTH.md` at commit
   `0aac1dcd2ed789e1e57f15898d361b6f7f015125`.
@@ -82,7 +85,11 @@ Source boundary:
 | Mean DSC | 92.79 | % | PAPER_REPORTED |
 | RV DSC | 91.16 | % | PAPER_REPORTED |
 | MYO DSC | 90.54 | % | PAPER_REPORTED |
-| LV DSC | 96.65 | % | PAPER_REPORTED |
+| LV DSC | 96.56 | % | PAPER_REPORTED |
+
+Correction note, P-003B-R1, 2026-08-28: the earlier `96.65` LV entry was an
+early manual transcription error. P-003B-R1 rechecked Work1 original paper
+Table II and resolved the formal `PAPER_REPORTED` ACDC LV value to `96.56`.
 
 #### Efficiency
 

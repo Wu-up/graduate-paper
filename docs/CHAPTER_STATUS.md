@@ -17,3 +17,23 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 - All Work2 final values remain `THESIS_PLACEHOLDER` until verified evidence changes their identity.
 - The separate `实验结果与讨论` chapter has been removed because Work1 and Work2 each own their experimental closure.
 - Formal drafting requires a completed Section Task Card.
+
+## P-003 Literature Evidence Governance
+
+| Item | Status | Notes |
+|---|---|---|
+| P-003A literature research | CONDITIONALLY_APPROVED | 31 core references and 10 candidate references; allowed for governance ingestion. |
+| P-003B first attempt | BLOCKED_MISSING_SOURCE_PACKET | No complete P-003A Markdown packet was available in that turn. |
+| P-003B-R1 literature pool ingestion | COMPLETE | `docs/LITERATURE_EVIDENCE_POOL.md` and `docs/CITATION_AND_SOURCE_RISK_LOG.md` created. |
+
+Pending Evidence Resolution:
+
+- Work1 final publication DOI: waiting for formal publication / IEEE Xplore.
+- Final HD95 implementation: waiting for final code or software protocol.
+- Final loss protocol: waiting for final experiment protocol.
+- Efficiency measurement protocol: waiting for final experiment protocol.
+
+Resolved in P-003B-R1:
+
+- Work1 ACDC LV corrected from `96.65` to `96.56` using Work1 original paper
+  Table II.
