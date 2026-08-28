@@ -53,6 +53,7 @@ Resolved in P-003B-R1:
 | S1-05 | 1.5 论文组织结构 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; accepted commit `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`. |
 | S1-06 | 1.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; accepted commit `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`. |
 | S2-01 | 2.1 三维医学图像与分割任务 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; accepted commit `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
+| S2-02 | 2.2 卷积神经网络与U形编码器--解码器 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | Mechanically integrated from `gptBmd/S2-02.md`; final GitHub repository review pending. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
 
 ## Chapter 1 Gate
 
