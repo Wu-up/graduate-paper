@@ -67,6 +67,10 @@ GPT B additionally reads `docs/REFERENCE_THESIS_INDEX.md`. When the current
 chapter has a handoff, read its matching file in `docs/chapter_handoffs/`
 before working.
 
+For GPT B packet delivery and Codex packet intake, read
+`docs/GPTB_PACKET_WORKFLOW.md`. Every Task Card declares `GPTB_PACKET_PATH`;
+both authoring-review modes use this same real Markdown-file handoff mechanism.
+
 ## 5. Fixed Quality Contract
 
 The linked governance documents control the global rules. In particular,

@@ -44,5 +44,5 @@ Resolved in P-003B-R1:
 |---|---|---|---|---|---|---|
 | S1-01 | 1.1 研究背景与意义 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; commit `14204f845819b2d0601c771a2eec2d2f28777da6`. |
 | S1-02A | 1.2.1 基于CNN的医学图像分割方法 | CONTENT_APPROVED (R1_COMPLETE) | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A repository final review passed; commit `7887af8d0b7f1089227af9aab770384232a4b2e2`. |
-| S1-02B | 1.2.2 基于Transformer的医学图像分割方法 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | READY_FOR_REPO_INTEGRATION package mechanically integrated; awaiting GPT A repository final review. |
-| S1-02C | 1.2.3 基于高效长距离建模的医学图像分割方法 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | Gate A package mechanically integrated; awaiting supervisor repository review. |
+| S1-02B | 1.2.2 基于Transformer的医学图像分割方法 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | R1 three-point mechanical revision integrated; awaiting GPT A repository final review. |
+| S1-02C | 1.2.3 基于高效长距离建模的医学图像分割方法 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A repository final review passed; commit `1c30384eb7c3725d1e9ebfc69b189e34d44bbfcd`. |

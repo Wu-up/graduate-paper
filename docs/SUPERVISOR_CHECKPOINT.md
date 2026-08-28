@@ -10,17 +10,17 @@ Chapter 1 — 绪论
 
 ## Last Accepted Section
 
-- Section: `S1-02A` / 1.2.1 基于CNN的医学图像分割方法
+- Section: `S1-02C` / 1.2.3 基于高效长距离建模的医学图像分割方法
 - Status: `SECTION_ACCEPTED`
-- Commit: `7887af8d0b7f1089227af9aab770384232a4b2e2`
-  (`paper(S1-02A-R1): integrate CNN literature review`)
+- Commit: `1c30384eb7c3725d1e9ebfc69b189e34d44bbfcd`
+  (`paper(S1-02C): integrate efficient long-range modeling review`)
 
 ## Next Planned Work
 
-- `S1-02B`: 1.2.2 基于Transformer的医学图像分割方法
-- Then: `S1-02C` efficient long-distance
-  modeling; `S1-02D` multi-scale and structural-information enhancement; and
-  `S1-02E` section-wide linkage and unified review.
+- `S1-02D`: 1.2.4 基于多尺度与结构信息增强的医学图像分割方法
+- `S1-02B-R1` is awaiting final repository review after this mechanical
+  three-point revision.
+- Then: `S1-02E` section-wide linkage and unified review.
 
 ## Frozen Decisions
 

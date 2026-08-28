@@ -10,6 +10,7 @@ SECTION_ID:
 SECTION_TITLE:
 AUTHORING_MODE: DRAFT | REVISE | INTEGRATION_REVIEW
 AUTHORING_REVIEW_MODE: DIRECT_REPO_REVIEW
+GPTB_PACKET_PATH: gptBmd/<TASK_ID>.md
 
 MANDATORY_READ:
 - docs/AI_AUTHORING_ENTRYPOINT.md
@@ -36,6 +37,9 @@ OUTPUT:
 - Formal Body
 - Author Notes
 - CODEX_HANDOFF_PROMPT with READY_FOR_REPO_INTEGRATION
+
+GPT B must create the real Markdown packet at `GPTB_PACKET_PATH`; Codex reads
+that file under `docs/GPTB_PACKET_WORKFLOW.md`.
 
 ACCEPTANCE_TEST:
 All global writing, evidence, placeholder, citation and role rules are inherited

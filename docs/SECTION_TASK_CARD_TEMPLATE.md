@@ -8,6 +8,7 @@ SECTION_ID:
 SECTION_TITLE:
 WRITING_MODE: DRAFT | REVISE | REVIEW | HOLD
 AUTHORING_REVIEW_MODE: SUPERVISOR_PREAPPROVAL
+GPTB_PACKET_PATH: gptBmd/<TASK_ID>.md
 
 PURPOSE:
 
@@ -55,6 +56,9 @@ AUTHOR_OUTPUT_REQUIRED:
 - 可入库正文
 - Author Notes
 - CODEX_HANDOFF_PROMPT with WAIT_FOR_SUPERVISOR_APPROVAL
+
+GPT B must create the real Markdown packet at `GPTB_PACKET_PATH`; Codex reads
+that file under `docs/GPTB_PACKET_WORKFLOW.md`.
 ```
 
 ## Completion Rule

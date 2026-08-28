@@ -60,8 +60,11 @@ unresolved or restricted.
   force through the entrypoint and linked governance documents.
 - GPT B research outputs must be preserved as Markdown attachments or repository
   review packets, rather than left only in chat history.
-- If Codex lacks the original GPT B result attachment, it reports `BLOCKED` and
-  does not infer missing formal content.
+- GPT B packet creation, naming, local delivery, and Codex intake are governed
+  by `docs/GPTB_PACKET_WORKFLOW.md`. Every Task Card declares
+  `GPTB_PACKET_PATH`; both authoring-review modes use the same mechanism.
+- Codex reads the declared `GPTB_PACKET_PATH`. If it is missing, Codex returns
+  `BLOCKED_MISSING_GPTB_PACKET` and does not infer missing formal content.
 - After `SECTION_ACCEPTED`, update the supervisor checkpoint when its update
   rule is met. After `CHAPTER_ACCEPTED`, create a chapter handoff.
 

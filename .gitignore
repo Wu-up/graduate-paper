@@ -1,6 +1,7 @@
 # Source materials and temporary extraction
 _source_materials/
 _tmp/
+/gptBmd/
 
 # Local planning notes for this initialization run
 task_plan.md
@@ -41,4 +42,3 @@ thesis.pdf
 Thumbs.db
 .vscode/
 .idea/
-
