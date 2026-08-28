@@ -49,3 +49,4 @@ Resolved in P-003B-R1:
 | S1-02D | 1.2.4 基于多尺度与结构信息增强的医学图像分割方法 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review accepted; commit `1aeb00c159a1e19e8c5ad5113e6ed572b9826c2b`. |
 | S1-02E | 1.2 国内外研究现状统一衔接与质量审查 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `6d338bf77184fa4b92c04c8aa2c64e10837c4ced`. |
 | S1-03 | 1.3 现有方法存在的问题 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `6182c15e91cc20fee2f9ab080422574d0bd6c57e`. |
+| S1-04 | 1.4 本文主要研究内容 | CONTENT_APPROVED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | GPT A content preapproval received; awaiting supervisor repository final review. |
