@@ -1,30 +1,49 @@
-\chapter{相关理论与技术背景}
+\chapter{三维医学图像分割相关理论与关键技术}
 
-【模板测试内容，不属于正式论文正文】本章用于承载正式写作时的技术背景。当前只测试章、节、图、表和参考文献的基础编译行为。
+% TODO(P-002): Cover only theory that later chapters actually use.
 
-\section{医学图像分割网络}
+\section{三维医学图像与分割任务}
 
-【模板测试内容，不属于正式论文正文】注意力机制相关公开文献可作为占位引用测试\upcite{vaswani2017attention}，但不得把占位引用当作正式综述结论。
+% TODO: CT/MRI, slices, voxels, 3D volumes, and segmentation input/output.
 
-【模板测试内容，不属于正式论文正文】如式~\eqref{eq:template-energy}所示，本公式仅用于验证公式编号应显示为章号-序号形式，例如本章第一个公式应为（2-1）。
+\section{卷积神经网络与U形编码器--解码器}
 
-\begin{equation}
-  E_{\mathrm{test}} = \sum_{i=1}^{n} x_i^2
-  \label{eq:template-energy}
-\end{equation}
+\subsection{三维卷积与局部特征提取}
 
-\begin{table}[htbp]
-  \centering
-  \caption{【模板测试内容，不属于正式论文正文】三线表样式测试}
-  \label{tab:template-three-line}
-  \begin{tabular}{lll}
-    \toprule
-    类别 & 用途 & 状态 \\
-    \midrule
-    空间建模 & 测试表格编号 & PLACEHOLDER \\
-    尺度建模 & 测试三线表 & PLACEHOLDER \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+% TODO: Explain only concepts used in Work1 and Work2.
 
-【模板测试内容，不属于正式论文正文】如表~\ref{tab:template-three-line}所示，该表只用于检查表题位于表上方、小四号黑体居中和表编号格式。
+\subsection{U-Net编码器--解码器与跳跃连接}
+
+% TODO: Connect multi-scale feature hierarchy to the Work2 problem setting.
+
+\section{长距离上下文建模}
+
+\subsection{Transformer与自注意力机制}
+
+% TODO: Approved literature only.
+
+\subsection{xLSTM与Vision-xLSTM}
+
+% TODO: Use original sources; do not write formulas from memory.
+
+\section{多尺度特征与尺度结构信息}
+
+% TODO: Explain the problem background only; do not introduce SSE, IM, or SDE here.
+
+\section{损失函数与评价指标}
+
+\subsection{分割损失函数}
+
+% TODO: Include only losses actually used by the final methods.
+
+\subsection{分割精度指标}
+
+% TODO: Dice and HD95; add others only when formally used.
+
+\subsection{模型效率指标}
+
+% TODO: Params, FLOPs, Peak VRAM, and inference time; distinguish their meanings.
+
+\section{本章小结}
+
+% TODO: Summarize the theory debt repaid for Chapters 3 and 4.

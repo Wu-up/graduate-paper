@@ -21,7 +21,7 @@ Local compile was not available during initialization because `xelatex` and `lat
 - `main.tex`: root entry point for Overleaf.
 - `scnuthesis.cls`: SCNU 0854 thesis class adapted from `scnu/scnuthesis` behavior and official 0854 format requirements.
 - `frontmatter/thesis_info.tex`: thesis metadata placeholder.
-- `chapters/`: six chapter placeholders.
+- `chapters/`: five-chapter frozen V1.0 skeleton; formal prose remains TODO-only.
 - `docs/SCNU_0854_FORMAT_SPEC.md`: extracted official format requirements.
 - `docs/TEMPLATE_CHANGELOG.md`: upstream/template comparison and deviations.
 - `docs/FACTS_AND_NUMBERS.md`: evidence boundary for formal claims.
@@ -39,4 +39,3 @@ This project keeps attribution to upstream SCNUThesis:
 - Upstream: https://github.com/scnu/scnuthesis
 - Reference commit: `a85b00f5a411c099eef5985a8f1bbf32ca1e80fe`
 - License stated by upstream README: The LaTeX Project Public License (LPPL)
-
