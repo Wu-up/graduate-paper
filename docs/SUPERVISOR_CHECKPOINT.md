@@ -8,19 +8,16 @@
 
 Chapter 1 — 绪论
 
-## Last Accepted Section
+## Last Accepted Sections
 
-- Section: `S1-02C` / 1.2.3 基于高效长距离建模的医学图像分割方法
-- Status: `SECTION_ACCEPTED`
-- Commit: `1c30384eb7c3725d1e9ebfc69b189e34d44bbfcd`
-  (`paper(S1-02C): integrate efficient long-range modeling review`)
+- `S1-02B-R1`, `S1-02C`, and `S1-02D` are `SECTION_ACCEPTED`.
+- `S1-02D` accepted body commit: `1aeb00c159a1e19e8c5ad5113e6ed572b9826c2b`.
 
 ## Next Planned Work
 
-- `S1-02D`: 1.2.4 基于多尺度与结构信息增强的医学图像分割方法
-- `S1-02B-R1` is awaiting final repository review after this mechanical
-  three-point revision.
-- Then: `S1-02E` section-wide linkage and unified review.
+- `S1-03`: 1.3 现有方法存在的问题.
+- `S1-02E` section-wide linkage and unified review is pending supervisor
+  repository review.
 
 ## Frozen Decisions
 
