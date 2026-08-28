@@ -18,16 +18,17 @@ Chapter 1 — 绪论
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01`, and `S2-02` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S2-02 / 2.2 卷积神经网络与U形编码器--解码器`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01`, `S2-02`, and `S2-03` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S2-03 / 2.3 长距离上下文建模`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
 - `S2-02` accepted commit: `9d7af062d7cbd541b5615ef536e3b3b8cecac931`; final spacing cleanup: `c21233e885a9f9b51c5fb0e434187642fc6213fe`.
+- `S2-03` accepted commit: `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup: `d070c0e1ef81051b1b92ab56f49756971fe407c0`.
 
 ## Next Planned Work
 
-- NEXT_TASK: `S2-03 / 2.3 长距离上下文建模`, authorized by GPT A for the chapter-internal pipeline.
+- NEXT_TASK: `S2-04 / 2.4 多尺度特征与尺度结构信息`, authorized by GPT A for the chapter-internal pipeline.
 - New A2 window must read `docs/chapter_handoffs/CH01_HANDOFF.md` before beginning Chapter 2 work.
 
 ## Frozen Decisions
