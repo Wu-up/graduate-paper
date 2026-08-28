@@ -146,3 +146,41 @@ The lifecycle remains `PLANNED` → `TASK_CARD_ISSUED` → `DRAFT_COMPLETE` →
 
 In either mode, `REVISION_REQUIRED` returns work to GPT B rather than bypassing
 the authoring workflow.
+
+## 8. Pipelined Section Review and Next-Task Issuance
+
+Within the current chapter, use a pipelined section workflow by default to
+reduce duplicate review without weakening any academic gate.
+
+1. For a `DIRECT_REPO_REVIEW` section, GPT B completes the authorized packet and
+   Gate A, after which the user may send that packet directly to Codex for
+   mechanical integration. A separate GPT A prose pre-review is not required
+   unless the user requests it or the task is escalated to
+   `SUPERVISOR_PREAPPROVAL`.
+2. After Codex integrates and pushes the section as
+   `PENDING_SUPERVISOR_REPO_REVIEW`, GPT A reviews the actual GitHub version.
+   In the same response, when section dependencies allow, GPT A should provide:
+   - the current-section final decision (`SECTION_ACCEPTED` or
+     `REVISION_REQUIRED`);
+   - a scoped Codex correction prompt for any mechanical, LaTeX, citation-placement,
+     status, or integration fixes that Codex is authorized to perform; and
+   - the authorized GPT B Task Card / prompt for the next section so research and
+     drafting can continue without waiting for a separate supervisor turn.
+3. A Codex correction prompt must never be used to bypass GPT B authorship. If
+   the defect is substantive academic writing, evidence interpretation, claim
+   scope, argument logic, or another formal-body issue, GPT A sends the section
+   back to GPT B for a revision packet. Codex may correct only mechanical or
+   explicitly authorized minor integration issues.
+4. Issuing the next GPT B task in the same turn is an efficiency measure, not an
+   acceptance signal for the current section. It is allowed only when unresolved
+   problems in the current section do not change the next section's facts,
+   evidence boundaries, terminology, or argument interface. Otherwise GPT A
+   withholds the next task until the dependency is resolved.
+5. `SUPERVISOR_PREAPPROVAL` keeps its full approval boundary: Codex still waits
+   for `CONTENT_APPROVED` before integration. After final repository review, the
+   same combined-output pattern may be used to issue the next section when safe.
+6. This pipeline is chapter-internal only. It must not pre-issue a formal Task
+   Card for the next chapter before the current Chapter Gate, chapter handoff,
+   and new-window recovery are complete.
+7. The user may request a slower sequential review at any time; otherwise this
+   pipelined mode is the default operating cadence for eligible sections.
