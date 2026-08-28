@@ -10,13 +10,13 @@ Chapter 1 — 绪论
 
 ## Last Accepted Sections
 
-- `S1-02B-R1`, `S1-02C`, `S1-02D`, and `S1-02E` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S1-02E / 1.2 国内外研究现状统一衔接与质量审查`.
-- `S1-02E` accepted commit: `6d338bf77184fa4b92c04c8aa2c64e10837c4ced`.
+- `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, and `S1-03` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S1-03 / 1.3 现有方法存在的问题`.
+- `S1-03` accepted commit: `6182c15e91cc20fee2f9ab080422574d0bd6c57e`.
 
 ## Next Planned Work
 
-- NEXT_TASK: `S1-03 / 1.3 现有方法存在的问题`.
+- NEXT_TASK: `S1-04 / 1.4 本文主要研究内容`.
 
 ## Frozen Decisions
 
