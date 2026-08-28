@@ -41,3 +41,17 @@ State how the next chapter must carry the argument forward.
 ## New Window Read Set
 
 List the exact governance, chapter, and handoff files the next GPT A must read.
+
+## Window Closure
+
+Record:
+
+- CURRENT_GPT_A_WINDOW: `A<X>`
+- CURRENT_GPT_B_WINDOW: `B<X>`
+- WINDOW_STATUS: `COMPLETE`
+- NEXT_GPT_A_WINDOW: `A<X+1>`
+- NEXT_GPT_B_WINDOW: `B<X+1>`
+- NEXT_CHAPTER: `Chapter X+1`
+
+The previous windows are not authorized to continue formal authoring of the
+next chapter.

@@ -49,7 +49,42 @@ invent citations.
 Codex handles files, LaTeX, BibTeX, Git, Overleaf, status documents, and
 mechanical integration. It is not the formal-body author.
 
-## 4. Mandatory Read Order
+## 4. Chapter-Scoped Window Lifecycle
+
+GPT A and GPT B windows are chapter-scoped by default. The recommended
+assignment is A1/B1 for Chapter 1, A2/B2 for Chapter 2, A3/B3 for Chapter 3,
+A4/B4 for Chapter 4, and A5/B5 for Chapter 5 and necessary whole-thesis
+closeout work.
+
+1. A window may work only on the Current Chapter declared in
+   `docs/SUPERVISOR_CHECKPOINT.md`. For example, when the Current Chapter is
+   Chapter 2, A2 and B2 must not independently begin formal Chapter 3 work.
+2. GPT A supervises the complete current-chapter cycle, from the first Section
+   Task Card through the Chapter Gate. GPT B executes only current-chapter
+   Section Task Cards explicitly issued by that GPT A.
+3. After every section in the current chapter is `SECTION_ACCEPTED`, GPT A must
+   perform the Chapter Gate. At minimum, it checks chapter-level repetition,
+   transitions, terminology consistency, citation distribution, argument
+   closure, coverage of the chapter function in `docs/MASTER_THESIS_PLAN.md`,
+   the interface to the next chapter, and any leakage of governance language,
+   placeholders, or unauthorized evidence.
+4. After GPT A passes the Chapter Gate, Codex creates
+   `docs/chapter_handoffs/CHXX_HANDOFF.md` from
+   `docs/CHAPTER_HANDOFF_TEMPLATE.md`, and updates
+   `docs/CHAPTER_STATUS.md` and `docs/SUPERVISOR_CHECKPOINT.md`.
+5. Once the handoff is complete and pushed, the current GPT A window enters
+   `CHAPTER_HANDOFF_COMPLETE / WINDOW_COMPLETE` and the current GPT B window
+   enters `WINDOW_COMPLETE`. Neither may continue formal writing in the next
+   chapter.
+6. The next chapter begins in new GPT A and GPT B windows, which recover state
+   from the GitHub governance files and the preceding chapter handoff. Do not
+   rely on an old chat summary instead of the handoff.
+7. The new GPT A re-evaluates the chapter function, section-task sequencing,
+   Task Card risk mode, and any need for `SUPERVISOR_PREAPPROVAL`. The previous
+   GPT A may identify only the next planned work in the handoff; it may not
+   pre-issue formal Task Cards for the next chapter.
+
+## 5. Mandatory Read Order
 
 Every new window reads, in order:
 
@@ -71,7 +106,7 @@ For GPT B packet delivery and Codex packet intake, read
 `docs/GPTB_PACKET_WORKFLOW.md`. Every Task Card declares `GPTB_PACKET_PATH`;
 both authoring-review modes use this same real Markdown-file handoff mechanism.
 
-## 5. Fixed Quality Contract
+## 6. Fixed Quality Contract
 
 The linked governance documents control the global rules. In particular,
 arguments remain paragraph-focused, methods explain the problem before the
@@ -85,7 +120,7 @@ different identities; Work2 R2 is pre-study evidence only. External literature
 must not pre-prove SSE, IM, SDE, or final Work2 effectiveness. For the complete
 requirements, use the authoritative documents in the read order above.
 
-## 6. Formal Section Lifecycle
+## 7. Formal Section Lifecycle
 
 Every Task Card declares `AUTHORING_REVIEW_MODE`. The choice reduces duplicated
 review only; it never removes Gate A, final repository review, S1-02E unified
