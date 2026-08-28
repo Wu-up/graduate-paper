@@ -28,9 +28,18 @@
 
 ## Formal Writing Flow
 
+Before formal writing, GPT 总导师 and GPT 正文作者 must read:
+
+- `docs/FACTS_AND_NUMBERS.md`
+- `docs/PLACEHOLDER_LEDGER.md`
+- `docs/WRITING_STYLE_GUIDE.md`
+- `docs/ACADEMIC_WRITING_PLAYBOOK.md`
+- `docs/REFERENCE_THESIS_INDEX.md`
+
+Codex does not need to rewrite thesis body text according to the reference theses. Codex's role is to preserve files, enforce governance boundaries, and place user-confirmed or GPT-confirmed text only when explicitly asked.
+
 1. Facts and numbers are added to `docs/FACTS_AND_NUMBERS.md`.
 2. GPT drafts or revises content against those facts.
 3. User confirms the draft.
 4. Codex places confirmed text into the corresponding `.tex` file without substantive rewriting.
 5. Overleaf compiles and visual checks are performed.
-
