@@ -50,3 +50,4 @@ Resolved in P-003B-R1:
 | S1-02E | 1.2 国内外研究现状统一衔接与质量审查 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `6d338bf77184fa4b92c04c8aa2c64e10837c4ced`. |
 | S1-03 | 1.3 现有方法存在的问题 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `6182c15e91cc20fee2f9ab080422574d0bd6c57e`. |
 | S1-04 | 1.4 本文主要研究内容 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `2cc68c8ef33475e33165b7d00f6611b0c5f1eead`. |
+| S1-05 | 1.5 论文组织结构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | GPT B packet mechanically integrated; awaiting supervisor repository final review. |
