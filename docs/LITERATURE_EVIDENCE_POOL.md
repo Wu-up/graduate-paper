@@ -402,7 +402,7 @@ This file is the governed literature index for formal thesis planning and drafti
 - Citation Key: `gao2019focusnet`
 - Priority: CORE
 - Title: FocusNet: Imbalanced Large and Small Organ Segmentation with an End-to-End Deep Neural Network for Head and Neck CT Images
-- Authors: Yunhe Gao; Rui Huang; Ming Chen; Zhe Wang; Jincheng Deng; Yuanyuan Chen; Yiwei Yang; Jie Zhang; Changjuan Tao; Hongsheng Li
+- Authors: Yunhe Gao; Rui Huang; Ming Chen; Zhe Wang; Jincheng Deng; Yuanyuan Chen; Yiwei Yang; Jie Zhang; Chanjuan Tao; Hongsheng Li
 - Year: 2019
 - Venue: MICCAI 2019
 - Publication Type: Conference

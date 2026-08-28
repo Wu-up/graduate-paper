@@ -55,3 +55,11 @@ This log records citation, source, publication, dataset, metric, and claim risks
 - Thesis theory definition: `HD95(A,B) = max{P95(d(A,B)), P95(d(B,A))}`, where P95 is the 95th percentile of the shortest surface-distance sets.
 - Implementation status: PENDING_FINAL_IMPLEMENTATION
 - Resolution trigger: after final Work1/Work2 evaluation code or software protocol is confirmed, record the actual source such as MONAI, MedPy, or the frozen local implementation.
+
+## RISK-008 FocusNet author transcription
+
+- Status: RESOLVED
+- Erroneous: Changjuan Tao
+- Resolved: Chanjuan Tao
+- Correction task: S1-01-I
+- Governance decision: `docs/LITERATURE_EVIDENCE_POOL.md` and any `references.bib` entry for `gao2019focusnet` must use `Chanjuan Tao`. No formal body text change is required because the section prose does not mention the author name.
