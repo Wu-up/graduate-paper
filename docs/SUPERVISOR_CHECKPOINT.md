@@ -6,17 +6,27 @@
 
 ## Current Chapter
 
+Chapter 2 — 三维医学图像分割相关理论与关键技术
+
+## Last Completed Chapter
+
 Chapter 1 — 绪论
+
+## Chapter 1 Gate
+
+`PASSED`
 
 ## Last Accepted Sections
 
-- `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, and `S1-04` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S1-04 / 1.4 本文主要研究内容`.
-- `S1-04` accepted commit: `2cc68c8ef33475e33165b7d00f6611b0c5f1eead`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, and `S1-06` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S1-06 / 1.6 本章小结`.
+- `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
+- `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 
 ## Next Planned Work
 
-- NEXT_TASK: `S1-05 / 1.5 论文组织结构`.
+- NEXT_TASK: `S2-01 / 2.1 三维医学图像与分割任务`.
+- New A2 window must read `docs/chapter_handoffs/CH01_HANDOFF.md` before beginning Chapter 2 work.
 
 ## Frozen Decisions
 

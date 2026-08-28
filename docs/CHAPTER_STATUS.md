@@ -6,7 +6,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 
 | Chapter | File | Structure Status | Writing Status | Notes |
 |---|---|---|---|---|
-| 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | IN_PROGRESS | S1-01 is accepted; remaining sections continue under the frozen Work1/Work2 progression. |
+| 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | PLANNED | Theory-debt scope only. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | PLANNED | Work1 complete loop: problem, method, experiment, analysis, conclusion. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
@@ -50,5 +50,11 @@ Resolved in P-003B-R1:
 | S1-02E | 1.2 国内外研究现状统一衔接与质量审查 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `6d338bf77184fa4b92c04c8aa2c64e10837c4ced`. |
 | S1-03 | 1.3 现有方法存在的问题 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `6182c15e91cc20fee2f9ab080422574d0bd6c57e`. |
 | S1-04 | 1.4 本文主要研究内容 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `2cc68c8ef33475e33165b7d00f6611b0c5f1eead`. |
-| S1-05 | 1.5 论文组织结构 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | R1 wording revision mechanically integrated; awaiting supervisor repository final review. |
-| S1-06 | 1.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | GPT B packet mechanically integrated; awaiting supervisor repository final review. |
+| S1-05 | 1.5 论文组织结构 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; accepted commit `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`. |
+| S1-06 | 1.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; accepted commit `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`. |
+
+## Chapter 1 Gate
+
+- Writing Status: `COMPLETE`
+- Chapter Gate: `PASSED`
+- Coverage: Sections 1.1--1.6 are complete and have passed final supervisory review.
