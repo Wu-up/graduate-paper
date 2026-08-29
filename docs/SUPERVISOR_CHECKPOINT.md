@@ -27,6 +27,7 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `S2-03` accepted commit: `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup: `d070c0e1ef81051b1b92ab56f49756971fe407c0`.
 - `S2-04` integration commit: `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing cleanup: `69400271b782399ee53cbf125469c6ac81e5f4f4`.
 - `S2-05-R1` integration commit: `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup: `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`.
+- `S2-05-R2` late quality correction: `CONTENT_APPROVED / LATEX_INTEGRATED / PENDING GPT A2 FINAL REPOSITORY REVIEW`; no `SECTION_ACCEPTED` decision is granted by Codex.
 
 ## Chapter 2 Closure State
 
@@ -36,14 +37,14 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `CHAPTER_2_FORMAT_QA = PASSED`
 - `A3_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `B3_RECOVERY_KNOWLEDGE_CHECK = PASSED`
-- `A3_OPERATIONAL_QUALIFICATION = PENDING`
-- `B3_OPERATIONAL_QUALIFICATION = PENDING`
-- `SUCCESSOR_QUALITY_GATE = OPERATIONAL_QUALIFICATION_PENDING`
+- `A3_OPERATIONAL_QUALIFICATION = PASSED`
+- `B3_OPERATIONAL_QUALIFICATION = PASSED`
+- `SUCCESSOR_QUALITY_GATE = CLOSURE_REPOSITORY_CHECK_PENDING`
 - `A2 = SUCCESSOR_QUALIFICATION_PENDING`
 - `B2 = SUCCESSOR_QUALIFICATION_PENDING`
 
-Chapter 3 remains `PLANNED`. Next Action: A3 and B3 complete their respective
-qualification-only operational checks. No S3 Task Card or Chapter 3 body is
+Chapter 3 remains `PLANNED`. Next Action: GPT A2 performs the final
+closure-candidate repository check. No S3 Task Card or Chapter 3 body is
 authorized, and Codex must not create or select a Task Card.
 
 ## Frozen Decisions

@@ -130,12 +130,11 @@ scope and evidence boundaries before issuing any formal task.
 - NEXT_CHAPTER: `Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法`
 - A3_RECOVERY_KNOWLEDGE_CHECK: `PASSED`
 - B3_RECOVERY_KNOWLEDGE_CHECK: `PASSED`
-- A3_OPERATIONAL_QUALIFICATION: `PENDING`
-- B3_OPERATIONAL_QUALIFICATION: `PENDING`
-- SUCCESSOR_QUALITY_GATE: `OPERATIONAL_QUALIFICATION_PENDING`
+- A3_OPERATIONAL_QUALIFICATION: `PASSED`
+- B3_OPERATIONAL_QUALIFICATION: `PASSED`
+- SUCCESSOR_QUALITY_GATE: `CLOSURE_REPOSITORY_CHECK_PENDING`
 
-A3 and B3 recovery reports passed A2 knowledge qualification review; this is
-not `SUCCESSOR_READY`. Both windows must pass their qualification-only
-operational checks, then the closure-candidate repository check, before A2/B2
-can be marked `WINDOW_COMPLETE`. No S3 Task Card or Chapter 3 formal work is
-authorized at this stage.
+A3 and B3 operational qualifications have passed; this is not
+`SUCCESSOR_READY`. The closure-candidate repository check remains pending
+before A2/B2 can be marked `WINDOW_COMPLETE`. No S3 Task Card or Chapter 3
+formal work is authorized at this stage.
