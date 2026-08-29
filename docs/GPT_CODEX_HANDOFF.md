@@ -88,9 +88,12 @@ These are mechanical format operations. They do not authorize Codex to alter mat
   rule is met. After `CHAPTER_ACCEPTED`, create a chapter handoff.
 - Creating that handoff starts the three-phase
   `SUCCESSOR_WINDOW_QUALITY_GATE`; it does not close the prior A/B windows.
-  Knowledge recovery, operational qualification, and a prior-GPT-A review of a
-  closure-candidate GitHub commit must all pass before Codex records prior
-  `WINDOW_COMPLETE` and successors `SUCCESSOR_READY`.
+  Codex records states only; it does not judge successor quality or mark an
+  operational pass without a prior-GPT-A decision. It creates the
+  closure-candidate only after both operational passes, never records
+  `WINDOW_COMPLETE` before `FINAL_WINDOW_CLOSURE_APPROVED`, and makes the final
+  closure commit status/governance only. The detailed authority is
+  `docs/SUCCESSOR_WINDOW_QUALITY_GATE.md`.
 - Formal GPT B work is delivered as a real `gptBmd/<TASK_ID>.md` file, or
   `gptBmd/<TASK_ID>-R1.md` for a revision. It contains Source Packet, 可入库正式
   正文, Author Notes, and `CODEX_HANDOFF_PROMPT`; chat is not the primary

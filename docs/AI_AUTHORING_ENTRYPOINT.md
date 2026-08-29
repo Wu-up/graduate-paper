@@ -100,6 +100,9 @@ closeout work.
    chapter, issue its Task Card, or rewrite its prose. This rule applies to
    every chapter transition, including A1/B1 through A5/B5.
 
+For exact successor prompts, operational tests, pass/retry criteria, and the
+closure protocol, read `docs/SUCCESSOR_WINDOW_QUALITY_GATE.md`.
+
 ## 5. Mandatory Read Order
 
 Every new window reads, in order:
@@ -113,6 +116,8 @@ Every new window reads, in order:
 7. `docs/ACADEMIC_WRITING_PLAYBOOK.md`
 8. `docs/LITERATURE_EVIDENCE_POOL.md`
 9. `docs/CITATION_AND_SOURCE_RISK_LOG.md`
+10. `docs/SUCCESSOR_WINDOW_QUALITY_GATE.md` when beginning a successor-window
+    transition or its qualification.
 
 GPT B additionally reads `docs/REFERENCE_THESIS_INDEX.md`. When the current
 chapter has a handoff, read its matching file in `docs/chapter_handoffs/`

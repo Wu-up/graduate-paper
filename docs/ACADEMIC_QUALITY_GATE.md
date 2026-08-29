@@ -70,57 +70,8 @@ windows. The gate has three ordered phases: `RECOVERY_KNOWLEDGE_CHECK`,
 `OPERATIONAL_QUALIFICATION_CHECK`, and `FINAL_CLOSURE_REPOSITORY_CHECK`.
 Neither Phase 1 nor Phase 2 authorizes formal next-chapter work.
 
-`A<N>_SUCCESSOR_RECOVERY_REPORT` must demonstrate understanding of: the
-whole-thesis central problem; Work1/Work2 progression; the new chapter's
-function and scope; inherited terminology; authoritative facts and evidence
-identities; open citation/source risks; forbidden claims and placeholders;
-expected section structure and dependencies; likely
-`DIRECT_REPO_REVIEW` versus `SUPERVISOR_PREAPPROVAL` sections; whole-thesis
-equation numbering; sequential bibliography/citation order; GPT A/GPT B/Codex
-role boundaries; and a proposed first-task direction without issuing a Task
-Card.
-
-`B<N>_SUCCESSOR_RECOVERY_REPORT` must demonstrate understanding of: its role
-boundary and governance read set; the current chapter argument; Work1/Work2
-evidence identity; source risks and forbidden unsupported claims; the GPT B
-packet workflow and its Source Packet, Formal Body, Author Notes, and
-`CODEX_HANDOFF` structure; the `SUPERVISOR_PREAPPROVAL` versus
-`DIRECT_REPO_REVIEW` boundary; equation and citation output constraints; the
-prohibition on modifying GitHub; and the requirement to await an authorized GPT
-A Task Card.
-
-Passing the reports records only `A<N>_RECOVERY_KNOWLEDGE_CHECK = PASSED` and
-`B<N>_RECOVERY_KNOWLEDGE_CHECK = PASSED`. It does not record
-`SUCCESSOR_READY`.
-
-For Phase 2, the successor GPT A completes a qualification-only shadow review
-of an actual GitHub integration commit. It must inspect repository content,
-equations, citations, status records, and scoped diff against governance and
-evidence boundaries; distinguish academic defects from mechanical defects;
-route academic defects to GPT B and strictly mechanical defects to Codex;
-avoid asking Codex to rewrite substantive prose; decide
-`SECTION_ACCEPTED`/`REVISION_REQUIRED` correctly; and state what must be
-rechecked after a mechanical cleanup.
-
-The successor GPT B supplies a real Markdown attachment/file, not chat-only
-prose and not a formal next-chapter packet. It must demonstrate delivery and
-packet organization, formal academic Chinese quality, anti-template/anti-AI
-style controls, and evidence-boundary discipline. Formal body must preserve
-the accepted Chapter 1/2 style: no bold mini-headings, mechanical enumeration,
-repetitive summaries, slogans, generic importance claims, unsupported efficacy
-or statistical claims, author-by-author listing, result paraphrase without
-analysis, software-manual method prose, repeated textbook theory, excessive
-microsections, repeated templates, or governance language. Each paragraph has
-a clear argument role; method prose follows problem → design reason →
-information flow → definition → architectural relation → evidence-bounded
-role, while experimental prose connects phenomenon → quantitative difference
-→ method relation → supported hypothesis → limitation or cost.
-
-When both Phase 2 qualifications pass, Codex creates a closure-candidate
-governance commit with `A<N> = QUALIFICATION_PASSED`,
-`B<N> = QUALIFICATION_PASSED`, and `SUCCESSOR_QUALITY_GATE =
-CLOSURE_REPOSITORY_CHECK_PENDING`. The prior GPT A reviews that actual GitHub
-commit for checkpoint, handoff, states, current chapter, no premature Task
-Card/body change, and no governance contradiction. Only its explicit
-`FINAL_WINDOW_CLOSURE_APPROVED` permits Codex to mark prior A/B
-`WINDOW_COMPLETE`, successors `SUCCESSOR_READY`, and the gate `PASSED`.
+Phase 1 recovery reports, Phase 2 operational tests and pass/retry criteria,
+the closure-candidate protocol, and Phase 3 approval requirements are governed
+only by `docs/SUCCESSOR_WINDOW_QUALITY_GATE.md`. A Phase 1 or Phase 2 pass is
+not `SUCCESSOR_READY`; only `FINAL_WINDOW_CLOSURE_APPROVED` permits final
+window closure.

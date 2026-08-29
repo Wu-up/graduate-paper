@@ -49,3 +49,7 @@ GitHub. Codex must not use `git add -A` in this workflow. The repository ignores
 `/gptBmd/`; this does not prevent Codex from reading local packets. Only an
 explicit request to preserve an original review packet permits copying that
 specified file to `docs/review_packets/`.
+
+For successor GPT B operational qualification, see
+`docs/SUCCESSOR_WINDOW_QUALITY_GATE.md`. Its qualification-only Markdown file
+is not a formal packet, must not be integrated, and must not be committed.

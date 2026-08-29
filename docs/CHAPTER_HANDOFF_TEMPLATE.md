@@ -57,10 +57,9 @@ Record:
 - A<X+1>_OPERATIONAL_QUALIFICATION: `PENDING`
 - B<X+1>_OPERATIONAL_QUALIFICATION: `PENDING`
 - SUCCESSOR_QUALITY_GATE: `OPERATIONAL_QUALIFICATION_PENDING`
+- FINAL_CLOSURE_REPOSITORY_CHECK: `PENDING`
+- FINAL_WINDOW_CLOSURE_APPROVAL: `PENDING`
 
 The handoff alone does not set either prior window to `WINDOW_COMPLETE`.
-Successor A/B windows must first return their mandated recovery reports, then
-pass operational qualification. A closure-candidate governance commit is then
-reviewed by the prior GPT A. Only after `FINAL_WINDOW_CLOSURE_APPROVED` may
-Codex set the prior windows to `WINDOW_COMPLETE`, successors to
-`SUCCESSOR_READY`, and authorize the first next-chapter Task Card.
+For the authoritative three-phase procedure, prompts, pass/retry criteria, and
+closure protocol, read `docs/SUCCESSOR_WINDOW_QUALITY_GATE.md`.
