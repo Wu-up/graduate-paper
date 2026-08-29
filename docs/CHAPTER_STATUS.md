@@ -56,6 +56,7 @@ Resolved in P-003B-R1:
 | S2-02 | 2.2 卷积神经网络与U形编码器--解码器 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; reviewed commit `9d7af062d7cbd541b5615ef536e3b3b8cecac931`; final spacing cleanup commit `c21233e885a9f9b51c5fb0e434187642fc6213fe`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
 | S2-03 | 2.3 长距离上下文建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup commit `d070c0e1ef81051b1b92ab56f49756971fe407c0`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
 | S2-04 | 2.4 多尺度特征与尺度结构信息 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing/status cleanup commit `69400271b782399ee53cbf125469c6ac81e5f4f4`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
+| S2-05 | 2.5 损失函数与评价指标 | THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A | NOT_INTEGRATED | NOT_REVIEWED | BLOCKED_EVIDENCE_GAP | `FORMAL_WORK1_PAPER_RETRIEVED / LOSS_NOT_REPORTED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A`; formal body remains unintegrated. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
 
 ## Chapter 1 Gate
 

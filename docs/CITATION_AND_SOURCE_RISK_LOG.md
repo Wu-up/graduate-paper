@@ -63,3 +63,11 @@ This log records citation, source, publication, dataset, metric, and claim risks
 - Resolved: Chanjuan Tao
 - Correction task: S1-01-I
 - Governance decision: `docs/LITERATURE_EVIDENCE_POOL.md` and any `references.bib` entry for `gao2019focusnet` must use `Chanjuan Tao`. No formal body text change is required because the section prose does not mention the author name.
+
+## RISK-009 Work1 training-loss protocol
+
+- Status: OPEN / FORMAL_PAPER_OMITS_LOSS
+- Rule: the formal Work1 paper does not report the actual training loss; the recovered Work1 code does not contain the training pipeline or loss definition.
+- Not allowed: substituting Dutta/U-VixLSTM, xLSTM-UNet, common practice, or recovered code for a specific Work1 loss.
+- Safe boundary: until an author-confirmed training source is recovered, no thesis chapter may claim a specific Work1 loss as `PAPER_REPORTED`. Chapter 2 Section 2.5.1 may proceed in theory-only form without attributing a concrete loss to Work1.
+- Controlled backfill: if a verified Work1 training source or final Work2 protocol is later frozen, recheck Section 2.5.1 for controlled backfill.
