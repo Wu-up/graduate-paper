@@ -42,13 +42,58 @@
 
 \section{Vision-xLSTM全局上下文建模}
 
+三维局部特征编码完成后，网络已经获得具有层级语义的深层三维表示，但这一步仍主要沿卷积层级逐步汇聚空间信息。ViL-UNet在瓶颈处进一步改变信息组织方式：先把深层特征转换为视觉序列，再利用Vision-xLSTM在序列状态中组织相距较远位置之间的上下文关系。\cite{wu2026vilunet} 因此，本节关注的并不是继续扩大卷积编码深度，而是建立从三维空间表示到序列长距离交互的接口。
+
+这一接口包含两个相互衔接的过程。深层特征需要被划分、展平并映射为保留位置标识的token序列，使ViL能够接收规则的序列输入；进入ViL路径后，同一组空间特征又按照不同遍历方式参与连续block的状态更新，使长距离信息交互不长期固定在单一序列顺序上。Work1由此把三维空间中的局部层级表示转换为可进行多方向序列建模的高层表示，并将更新后的上下文特征继续交给后续网络。\cite{wu2026vilunet}
+
 \subsection{三维特征序列化与多方向建模}
 
-% TODO: Recheck against the Work1 paper before formal writing.
+设编码器输出的深层三维特征为\(\mathbf F\)。Work1没有直接把该特征体作为一条逐体素序列输入ViL，而是将其划分为互不重叠的\(P\times P\times P\)三维patch，每个patch再展平为向量\(\mathbf t_i\)，其中\(i=1,\ldots,N\)，\(N\)表示当前特征体得到的patch数量。\cite{wu2026vilunet} 这种处理把规则三维网格中的局部特征块转化为序列元素，同时保留patch与原三维特征区域之间的对应关系。这里的\(P\)只表示Work1方法中用于序列化的三维patch边长，本节不从其他实现或经验设置补充其未报告的具体取值。
+
+展平后的patch向量还需要映射到统一的嵌入空间。Work1将各\(\mathbf t_i\)通过可学习投影矩阵\(\mathbf K\)映射到\(Z\)维，并加入可学习的位置嵌入\(\mathbf K_{\mathrm{pos}}\)。论文给出的核心映射关系可写为
+\begin{equation}
+\label{eq:ch3-vil-token-embedding}
+\mathbf p=
+[\mathbf t_1\mathbf K;\mathbf t_2\mathbf K;\ldots;\mathbf t_N\mathbf K]
++\mathbf K_{\mathrm{pos}},
+\end{equation}
+其中，\(\mathbf p\in\mathbb R^{N\times Z}\)为送入ViL blocks的嵌入序列，\(\mathbf K_{\mathrm{pos}}\in\mathbb R^{N\times Z}\)用于为不同token提供可学习的位置标识。\cite{wu2026vilunet} 式\eqref{eq:ch3-vil-token-embedding}描述的是三维patch向量到ViL序列输入的接口，并不改变各patch原先对应的三维空间区域。位置嵌入的作用在于展平之后仍为序列元素保留可区分的位置表示，使后续状态更新不仅接收patch内容，也能够利用其位置身份。
+
+序列化解决了ViL的输入形式问题，但固定的一维顺序会把三维位置关系投影到某一种特定遍历次序。为此，Work1定义四类遍历方式：按默认展平顺序进行前向遍历、在空间轴置换后进行前向遍历、对默认序列进行反向遍历，以及在空间轴置换后进行反向遍历。\cite{wu2026vilunet} 这四类规则由空间轴排列与序列正反方向共同改变token进入状态更新的次序，使同一组三维特征能够在不同的序列邻接关系下参与ViL处理。原方法没有给出一张逐block的完整轴置换表，因此这里的“四方向”限定为上述四种序列组织方式，不将其改写为沿三个空间主轴分别构造成对的双向序列。
+
+在网络堆叠中，Work1的方法描述将四种遍历方式在连续ViL blocks中循环使用，而不是把方向数量与block数量视为同一概念。\cite{wu2026vilunet} 当遍历采用反向或轴置换次序时，ViL得到的输出仍需恢复到共同的位置对应关系，才能继续作为统一的空间特征向后传递。这样，多方向建模改变的是序列状态更新时的访问次序，而不是重新定义三维特征本身的几何位置。其方法作用可以理解为：在相同深层特征基础上提供多种长距离信息传播顺序，使某一固定展平方向不成为唯一的上下文组织路径。
+
+经过patch构造、嵌入映射和方向化序列组织后，三维CNN特征便被转换为ViL能够处理的序列表示。该序列仍与原三维特征中的空间区域保持对应关系，但其信息交互已经由卷积邻域逐层传播转入基于序列状态的长距离建模。多方向处理完成后，更新后的序列表示再恢复为后续网络可以继续使用的特征状态。这里完成的是“空间特征—序列—空间接口”的闭合，具体解码恢复和跨层融合仍由后续特征重建路径承担。
 
 \subsection{ViL模块及长距离信息交互}
 
-% TODO: Recheck against the Work1 paper before formal writing.
+ViL-UNet在瓶颈处使用由多个ViL blocks组成的长距离建模路径，Work1最终报告的架构配置为六个ViL blocks。\cite{wu2026vilunet} 六个block共同处理上一小节得到的嵌入序列，而四种遍历规则在连续block之间循环组织输入顺序。因此，block堆叠深度描述的是序列变换的层数，方向机制描述的是各层处理序列时采用的遍历组织，二者在网络中承担不同的结构含义。
+
+从单个ViL block看，Work1论文的文字描述与模块图共同给出了其主要信息流：输入token经过归一化与高维投影后进入两条支路，其中主支路由mLSTM处理序列信息，另一支路通过非线性变换形成调制信号；两路结果完成调制与融合后，再投影回原嵌入维度，并通过残差路径保留block输入的信息通道。\cite{wu2026vilunet} 模块图中给出的LayerNorm与SiLU属于这一变换路径的一部分。这里关注的是两条支路如何共同形成“序列建模—信息调制—输出更新”的结构关系，不把图示进一步扩写为原文未明确给出的逐算子参数表。
+
+主支路中的mLSTM为长距离信息交互提供记忆机制。Work1明确将mLSTM作为ViL block的核心序列层，而其矩阵记忆的基本更新规则来自xLSTM原始定义。\cite{beck2024xlstm,wu2026vilunet} 为说明这一核心层如何在序列位置之间传递信息，将当前遍历顺序中的位置记为\(t\)，mLSTM的矩阵记忆、归一化状态与输出关系可归纳为
+\begin{equation}
+\label{eq:ch3-mlstm-memory}
+\begin{aligned}
+\mathbf C_t &= f_t\mathbf C_{t-1}
++i_t\mathbf v_t\mathbf k_t^{\mathrm T},\\
+\mathbf n_t &= f_t\mathbf n_{t-1}+i_t\mathbf k_t,\\
+\widetilde{\mathbf h}_t
+&=\frac{\mathbf C_t\mathbf q_t}
+{\max\left\{\left|\mathbf n_t^{\mathrm T}\mathbf q_t\right|,1\right\}},
+\qquad
+\mathbf h_t=o_t\odot\widetilde{\mathbf h}_t .
+\end{aligned}
+\end{equation}
+其中，\(\mathbf C_t\)表示矩阵记忆状态，\(\mathbf n_t\)为归一化状态，\(\mathbf q_t\)、\(\mathbf k_t\)和\(\mathbf v_t\)分别表示由当前序列输入映射得到的query、key和value，\(i_t\)、\(f_t\)与\(o_t\)分别调节记忆写入、历史保留和输出，\(\odot\)表示逐元素乘法。\cite{beck2024xlstm} 式\eqref{eq:ch3-mlstm-memory}用于解释Work1所调用mLSTM核心层的通用记忆机制，而不是把xLSTM原论文中的全部网络配置直接等同于ViL-UNet的具体实现。
+
+由式\eqref{eq:ch3-mlstm-memory}可以看到，当前位置的表示并非只由当前token独立生成。矩阵状态\(\mathbf C_{t-1}\)承载此前序列位置经过门控累积的记忆，新的key--value外积在输入门调节下写入该状态，query再从更新后的矩阵记忆中读取与当前位置相关的内容；归一化状态\(\mathbf n_t\)用于约束读取尺度。这样，较早位置形成的信息能够通过记忆状态参与后续位置的表示更新。对ViL-UNet而言，上一小节改变遍历顺序后，序列位置\(t\)所对应的三维patch次序也随之改变，多方向组织因此与mLSTM的状态传播发生衔接：前者决定信息按何种顺序进入记忆过程，后者负责在该顺序上持续更新上下文表示。
+
+mLSTM内部的输入、遗忘与输出门属于其记忆更新机制，Work1 ViL block中的另一条调制支路则位于更外层的block结构中，二者不应混为同一个门控操作。根据Work1模块图，调制支路对投影后的特征施加SiLU非线性变换，并与mLSTM主支路的输出共同形成block内部的特征调制；随后结果被投影回原嵌入维度并通过残差路径传递。\cite{wu2026vilunet} 这一结构使ViL block既保留mLSTM对序列历史的记忆交互，又对当前block传播的特征进行受输入控制的变换，但本节不把这种设计意图提前解释为具体分割精度或边界质量的提升。
+
+Vision-LSTM原始工作把xLSTM building blocks适配到视觉patch序列，并通过改变相邻block的处理方向减弱长期固定单一序列方向带来的组织限制。\cite{alkin2025visionlstm} Work1继承的是“视觉token序列由xLSTM类block处理”这一接口，但针对三维特征重新定义了前向、轴置换前向、反向和轴置换反向四种遍历方式。\cite{wu2026vilunet} 因而，原始Vision-LSTM的二维方向交替只能作为ViL视觉序列机制的来源，不能直接替代ViL-UNet中四方向三维遍历的实际定义。
+
+经过连续ViL blocks处理后，序列表示已经包含由不同遍历顺序组织的状态交互信息，并被恢复到与三维特征位置相对应的表示形式，随后进入网络的特征重建阶段。至此，ViL-UNet在瓶颈处形成了清晰的职责链：CNN编码器提供局部与层级语义基础，序列化过程建立三维空间特征与视觉token之间的对应，多方向遍历改变长距离信息进入状态更新的顺序，ViL block则利用mLSTM记忆与外层调制路径更新序列表示。该链条说明了Work1如何在深层特征基础上建立长距离上下文交互，而不把长距离建模与后续解码融合混为同一过程。
 
 \section{解码与特征融合}
 

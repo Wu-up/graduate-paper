@@ -63,6 +63,7 @@ Resolved in P-003B-R1:
 | S3-01 | 3.1 引言 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 600142d353b632bb8cb8c01f12e91a5f83e89756. |
 | S3-02 | 3.2 ViL-UNet总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit d642ad3802653e3cf5545548c0bdf879edd4e912. |
 | S3-03 | 3.3 三维局部特征编码 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 35e4e80d4265bc14cb21567e5c0731f3b1de256e. |
+| S3-04 | 3.4 Vision-xLSTM全局上下文建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | PENDING_SUPERVISOR_REPO_REVIEW | Mechanically integrated from the Gate-A-passed local packet; authentic Work1 Fig. 1/Fig. 2 thesis-local asset materialization remains pending. |
 
 ## Chapter 1 Gate
 
