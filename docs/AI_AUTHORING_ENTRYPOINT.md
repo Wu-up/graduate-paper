@@ -26,10 +26,12 @@ identity; do not reproduce numerical claims from memory in this document.
 ### GPT A — Thesis Supervisor
 
 - Plans the thesis argument and issues Section Task Cards.
-- Reviews GPT B prose and evidence boundaries, returning only
-  `CONTENT_APPROVED` or `REVISION_REQUIRED`.
-- After Codex integration, checks the final GitHub version and grants
-  `SECTION_ACCEPTED`.
+- Under the default `DIRECT_REPO_REVIEW` workflow, reviews the actual
+  GitHub-integrated section after Codex mechanical integration and returns
+  `SECTION_ACCEPTED` or `REVISION_REQUIRED`.
+- Performs a separate pre-integration prose review returning
+  `CONTENT_APPROVED` or `REVISION_REQUIRED` only when the user explicitly
+  requests `SUPERVISOR_PREAPPROVAL` for that section.
 - Maintains chapter-to-chapter logic.
 
 GPT A does not normally bypass GPT B to produce a full formal section, except
@@ -149,35 +151,39 @@ review, or the Chapter Gate.
 
 ### DIRECT_REPO_REVIEW
 
-This is the default for Lite or Enhanced Lite cards, routine related-work or
-theory sections, ordinary summaries, and sections with stable facts and
-evidence boundaries. The lifecycle is `PLANNED` → `TASK_CARD_ISSUED` →
+This is the default for all formal Section Task Cards, including Lite, Enhanced
+Lite, Full, core-method, experiment, ablation, high-risk-evidence, and
+source-conflict sections. The Task Card must freeze the applicable evidence
+boundary before GPT B writes. GPT B performs Gate A and hands the real packet
+directly to Codex with `READY_FOR_REPO_INTEGRATION`; GPT A does not need to
+pre-review the packet. The lifecycle is `PLANNED` → `TASK_CARD_ISSUED` →
 `DRAFT_COMPLETE` → `GATE_A_PASSED` → `READY_FOR_REPO_INTEGRATION` →
 `LATEX_INTEGRATED` → `PENDING_SUPERVISOR_REPO_REVIEW` →
 `SECTION_ACCEPTED` or `REVISION_REQUIRED`. Codex never grants acceptance.
 
 ### SUPERVISOR_PREAPPROVAL
 
-Use this for Full Task Cards, first core-method expansions, Work1 key methods,
-Work2 SSE/IM/SDE core sections, experimental or ablation sections, high-risk
-numbers or conclusions, source conflicts, or when GPT A requires preapproval.
-The lifecycle remains `PLANNED` → `TASK_CARD_ISSUED` → `DRAFT_COMPLETE` →
-`SUPERVISOR_REVIEW` → `CONTENT_APPROVED` → `LATEX_INTEGRATED` →
-`FINAL_REPO_REVIEW` → `SECTION_ACCEPTED`.
+This is an exception mode used only when the user explicitly requests a
+pre-integration GPT A review for a specific section. It is not automatically
+triggered by Full cards, core methods, experiments, ablations, high-risk
+numbers, source conflicts, or GPT A's own risk assessment. When the user
+explicitly selects it, the lifecycle is `PLANNED` → `TASK_CARD_ISSUED` →
+`DRAFT_COMPLETE` → `SUPERVISOR_REVIEW` → `CONTENT_APPROVED` →
+`LATEX_INTEGRATED` → `FINAL_REPO_REVIEW` → `SECTION_ACCEPTED`.
 
 In either mode, `REVISION_REQUIRED` returns work to GPT B rather than bypassing
 the authoring workflow.
 
 ## 8. Pipelined Section Review and Next-Task Issuance
 
-Within the current chapter, use a pipelined section workflow by default to
-reduce duplicate review without weakening any academic gate.
+Within the current chapter, use the following pipelined section workflow by
+default to reduce duplicate review without weakening any academic gate.
 
-1. For a `DIRECT_REPO_REVIEW` section, GPT B completes the authorized packet and
-   Gate A, after which the user may send that packet directly to Codex for
-   mechanical integration. A separate GPT A prose pre-review is not required
-   unless the user requests it or the task is escalated to
-   `SUPERVISOR_PREAPPROVAL`.
+1. GPT B completes the authorized packet and Gate A, after which the user may
+   send that packet directly to Codex for mechanical integration. A separate
+   GPT A prose pre-review is not required in the default workflow, regardless
+   of whether the Task Card is Lite, Full, core-method, experiment, ablation, or
+   otherwise high risk.
 2. After Codex integrates and pushes the section as
    `PENDING_SUPERVISOR_REPO_REVIEW`, GPT A reviews the actual GitHub version.
    In the same response, when section dependencies allow, GPT A should provide:
@@ -197,11 +203,15 @@ reduce duplicate review without weakening any academic gate.
    problems in the current section do not change the next section's facts,
    evidence boundaries, terminology, or argument interface. Otherwise GPT A
    withholds the next task until the dependency is resolved.
-5. `SUPERVISOR_PREAPPROVAL` keeps its full approval boundary: Codex still waits
-   for `CONTENT_APPROVED` before integration. After final repository review, the
-   same combined-output pattern may be used to issue the next section when safe.
-6. This pipeline is chapter-internal only. It must not pre-issue a formal Task
+5. If the user explicitly selects `SUPERVISOR_PREAPPROVAL` for a section, Codex
+   waits for `CONTENT_APPROVED` before integration. This is the only normal
+   reason for the B3 → A3 → Codex pre-integration route.
+6. A later user instruction or GPT A Task-Card amendment changing a section to
+   `DIRECT_REPO_REVIEW` supersedes a stale local packet marker such as
+   `SUPERVISOR_PREAPPROVAL` or `WAIT_FOR_SUPERVISOR_APPROVAL`; Codex follows the
+   latest authoritative workflow instruction.
+7. This pipeline is chapter-internal only. It must not pre-issue a formal Task
    Card for the next chapter before the current Chapter Gate, chapter handoff,
    and new-window recovery are complete.
-7. The user may request a slower sequential review at any time; otherwise this
-   pipelined mode is the default operating cadence for eligible sections.
+8. The user may request a slower preapproval review for a specific section at
+   any time; otherwise direct repository review is the default operating cadence.
