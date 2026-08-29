@@ -190,15 +190,43 @@ Result-provenance note: comparator values are transcribed from the Work1 paper's
 
 #### ViL Block Ablation
 
-| ViL blocks | Mean DSC | Unit | Evidence |
-|---:|---:|---|---|
-| 3 | 82.18 | % | PAPER_REPORTED |
-| 6 | 85.12 | % | PAPER_REPORTED |
-| 12 | 84.89 | % | PAPER_REPORTED |
-| 18 | 84.01 | % | PAPER_REPORTED |
-| 24 | 84.99 | % | PAPER_REPORTED |
+Evidence identity: `PAPER_REPORTED`
 
-The 6-block setting is the best result in this ablation.
+Source: authoritative Work1 paper, Table III, PDF page 5.
+
+Scope: ViL-block-depth rows only. The convolution-layer ablation rows in the same Work1 table are outside S3-06C Section 3.6.5 scope.
+
+| ViL blocks | mDSC | mHD95 | Unit | Evidence |
+|---:|---:|---:|---|---|
+| 3 | 82.18 | 20.21 | % / mm | PAPER_REPORTED |
+| 6 | 85.12 | 12.49 | % / mm | PAPER_REPORTED |
+| 12 | 84.89 | 12.57 | % / mm | PAPER_REPORTED |
+| 18 | 84.01 | 13.34 | % / mm | PAPER_REPORTED |
+| 24 | 84.99 | 16.89 | % / mm | PAPER_REPORTED |
+
+The 6-block setting has the highest mDSC and the lowest mHD95 among the five paper-reported ViL-depth configurations. This is a bounded ranking observation for the reported ablation, not a universal optimum claim.
+
+#### Work1 Complexity Comparison Results
+
+Evidence identity: `PAPER_REPORTED`
+
+Source: authoritative Work1 paper, Table IV, PDF page 6.
+
+| Method | Params (M) | FLOPs (G) | Evidence |
+|---|---:|---:|---|
+| Swin-Unet | 27.17 | 16.16 | PAPER_REPORTED |
+| VM-UNet | 44.27 | 17.46 | PAPER_REPORTED |
+| Swin-UMamba | 60.00 | 163.60 | PAPER_REPORTED |
+| MSVM-UNet | 35.93 | 29.53 | PAPER_REPORTED |
+| MixFormer | 123.35 | 108.32 | PAPER_REPORTED |
+| ViL-UNet | 16.48 | 17.93 | PAPER_REPORTED |
+
+Ranking notes:
+- lowest Params in Work1 Table IV: ViL-UNet, 16.48M;
+- lowest FLOPs: Swin-Unet, 16.16G;
+- ViL-UNet FLOPs: 17.93G, third-lowest among the six listed methods.
+
+Evidence boundary: these are paper-reported static complexity indicators. They do not establish runtime speed, memory use, throughput, latency, deployment suitability, or strict implementation-level asymptotic complexity.
 
 ## EXPERIMENTALLY_VERIFIED
 

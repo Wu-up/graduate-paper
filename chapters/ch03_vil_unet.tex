@@ -215,11 +215,64 @@ ACDC数据集上的比较结果如表\ref{tab:ch3-acdc}所示，数值来源于W
 
 \subsection{ViL模块数量消融实验}
 
-% TODO: Analyze the reported 3/6/12/18/24-block ablation with cautious causal language.
+为考察ViL堆叠深度与分割结果之间的关系，Work1在Synapse数据集上改变ViL block数量，并报告对应的mDSC与mHD95，结果如表\ref{tab:ch3-vil-depth-ablation}所示。\cite{wu2026vilunet} 本节仅分析Table III中与ViL block数量直接相关的3、6、12、18和24层配置，不将同表中的卷积层数量消融并入当前论证。这样可以把问题限定为：在其余实验条件按Work1设置保持一致的情况下，增加ViL堆叠深度是否持续带来更有利的分割指标。
+
+\begin{table}[htbp]
+  \centering
+  \caption{不同ViL block数量的消融结果}
+  \label{tab:ch3-vil-depth-ablation}
+  \begin{tabular}{ccc}
+    \hline
+    ViL blocks & mDSC（\%）$\uparrow$ & mHD95（mm）$\downarrow$ \\
+    \hline
+    3  & 82.18 & 20.21 \\
+    6  & \textbf{85.12} & \textbf{12.49} \\
+    12 & 84.89 & 12.57 \\
+    18 & 84.01 & 13.34 \\
+    24 & 84.99 & 16.89 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+当ViL block由3个增加到6个时，mDSC由82.18\%提高到85.12\%，同时mHD95由20.21~mm下降到12.49~mm，两项指标均沿有利方向变化。\cite{wu2026vilunet} 在这组消融配置中，6-block设置同时对应最高mDSC和最低mHD95，因此它不是仅由单一指标确定的选择。由于mDSC关注区域重叠而mHD95补充反映边界距离，这种同向变化至少表明6-block配置在Work1采用的两类评价维度上没有出现明显的指标权衡。
+
+继续增加ViL blocks后，指标变化没有保持单调改善。12-block配置的mDSC为84.89\%、mHD95为12.57~mm，与6-block结果接近但未超过；18-block配置进一步变为84.01\%和13.34~mm；24-block配置的mDSC回升至84.99\%，但mHD95增至16.89~mm。\cite{wu2026vilunet} 由这些离散配置可以确认，堆叠深度增加并不会自动带来持续的指标收益，且mDSC与mHD95在不同深度下的变化幅度也并不完全同步。
+
+这一非单调现象更适合作为模型配置选择的经验依据，而不是对性能变化原因的直接解释。Table III没有给出不同深度下的训练曲线、重复运行方差或其他能够区分优化难度、容量变化与训练稳定性的证据，因此无法仅根据最终评价指标判断为何12、18和24-block配置没有超过6-block设置。保持这一解释边界，可以避免把“指标下降”直接转化为未经验证的训练机制结论。
+
+Work1最终采用6个ViL blocks，与该消融中两项指标共同取得最佳数值的配置一致。\cite{wu2026vilunet} 因此，当前证据能够支持6 blocks作为Work1最终模型的具体配置选择，但这一结论只覆盖所报告的Synapse消融范围以及表中五个离散深度。对于其他数据集、网络规模或训练条件，是否仍存在相同的最佳深度，需要新的对照实验才能判断。
 
 \subsection{模型复杂度与效率分析}
 
-% TODO: PAPER_REPORTED Params and FLOPs only; do not add unverified VRAM or inference time.
+在评价分割结果之外，还需要区分模型规模与计算量两个不同维度。Work1使用参数量（Params）和浮点运算量（FLOPs）对ViL-UNet及其比较方法进行复杂度对照，结果如表\ref{tab:ch3-complexity}所示。\cite{wu2026vilunet} 参数量反映模型需要学习和存储的参数规模，FLOPs则描述给定计算口径下的运算量；二者可以共同刻画模型复杂度，但其物理含义不同，也不能直接替代真实运行环境中的速度或资源占用测量。
+
+\begin{table}[htbp]
+  \centering
+  \caption{不同模型的参数量与FLOPs对比}
+  \label{tab:ch3-complexity}
+  \begin{tabular}{lcc}
+    \hline
+    方法 & Params（M）$\downarrow$ & FLOPs（G）$\downarrow$ \\
+    \hline
+    Swin-Unet   & 27.17  & \textbf{16.16} \\
+    VM-UNet     & 44.27  & 17.46 \\
+    Swin-UMamba & 60.00  & 163.60 \\
+    MSVM-UNet   & 35.93  & 29.53 \\
+    MixFormer   & 123.35 & 108.32 \\
+    ViL-UNet    & \textbf{16.48} & 17.93 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+从参数规模看，ViL-UNet为16.48M，在Work1 Table IV所列六种方法中数值最低。\cite{wu2026vilunet} 其余方法的参数量从27.17M到123.35M不等，因此本表能够直接支持ViL-UNet在该比较范围内具有较小参数规模这一结论。对三维分割模型而言，这一指标首先反映的是可训练参数规模，而不是运行时全部资源开销；参数量较少本身也不能说明某个具体模块必然带来更高分割精度。
+
+FLOPs呈现出不同于参数量的排序。Swin-Unet为16.16G，VM-UNet为17.46G，ViL-UNet为17.93G，因此ViL-UNet的FLOPs在六种方法中处于第三低位置。\cite{wu2026vilunet} 另一方面，其17.93G低于MSVM-UNet的29.53G、MixFormer的108.32G以及Swin-UMamba的163.60G。也就是说，ViL-UNet在Table IV中的主要复杂度优势首先体现在参数量，而计算量虽然处于较低位置，却没有取得表中最小值。分别保留这两个排序，比将Params和FLOPs合并成单一效率判断更符合表格本身提供的证据。
+
+这种差异也说明模型参数规模与运算量并不存在简单的一一对应关系。例如，Swin-Unet的参数量高于ViL-UNet，但其FLOPs数值更低；VM-UNet同样具有高于ViL-UNet的参数量，却报告了略低的FLOPs。\cite{wu2026vilunet} 因此，本节不能仅由“参数更少”继续推出“计算量必然更低”，而需要将两个指标作为相互补充的复杂度维度分别讨论。对于Swin-UMamba和MixFormer，表中FLOPs明显更大，但这一静态差异仍不等价于统一硬件下的实测时间差异。
+
+结合3.6.3和3.6.4的主结果，Work1证据表明ViL-UNet在所列比较范围内保持较高分割指标的同时，参数规模为表中最小值，FLOPs也处于六种方法中的前三位低值范围。\cite{wu2026vilunet} 因此，可以在现有证据下讨论精度表现与模型复杂度之间的有限折中：该模型没有以更大的参数规模换取前述分割结果，但其FLOPs并非同表中的最低值。这里不进一步构造未经正式计算的Pareto前沿，也不使用派生百分比来放大不同模型之间的差异。
+
+本节的效率结论只限于Work1正式报告的Params和FLOPs。现有证据不足以由这两项静态指标推断实际运行速度、内存占用或具体部署表现，也不能把理论模型的计算性质直接等同于ViL-UNet完整实现的渐近复杂度证明。当前可以确认的是其参数规模及所报告计算量的相对位置，而更具体的运行效率仍需要在统一硬件、输入尺寸和测量流程下通过独立实测协议评价。
 
 \subsection{可视化分析}
 
