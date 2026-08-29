@@ -18,9 +18,10 @@ as ascending numerical clusters under the project citation style.
 
 ### Gate B — Codex Mechanical Integration
 
-Codex mechanically integrates the approved handoff package and checks
-citations, BibTeX keys, equation numbering, compilation where available, and the
-scoped diff. Codex records `EQUATION_NUMBERING_CHECK` and
+Codex mechanically integrates the Gate-A-passed GPT B handoff package and
+checks citations, BibTeX keys, equation numbering, compilation where available,
+and the scoped diff. A separate GPT A prose pre-review is not required in this
+mode. Codex records `EQUATION_NUMBERING_CHECK` and
 `MULTI_CITATION_ORDER_CHECK`: formal displayed equations must use automatic
 chapter-based numbering, textual equation references must use `\eqref`, and
 multi-reference citation clusters must be checked in rendered output for
@@ -39,11 +40,14 @@ strictly mechanical correction when the academic body is already acceptable.
 
 ## SUPERVISOR_PREAPPROVAL
 
-Gate A is GPT B's self-check. Gate B is GPT A's content review, whose only
-outcomes are `CONTENT_APPROVED` and `REVISION_REQUIRED`. After Codex mechanical
-integration, GPT A performs the repository final review before granting
-`SECTION_ACCEPTED`. The same equation-numbering and citation-order constraints
-apply in this mode.
+`SUPERVISOR_PREAPPROVAL` is an explicit exception mode, not an automatic
+requirement for Full cards, core-method sections, experiments, ablations,
+high-risk claims, or source conflicts. Use it only when the user explicitly
+requests preapproval for that section. When selected, Gate A is GPT B's
+self-check, Gate B is GPT A's content review, whose only outcomes are
+`CONTENT_APPROVED` and `REVISION_REQUIRED`. After Codex mechanical integration,
+GPT A performs the repository final review before granting `SECTION_ACCEPTED`.
+The same equation-numbering and citation-order constraints apply in this mode.
 
 ## Chapter Gate
 
