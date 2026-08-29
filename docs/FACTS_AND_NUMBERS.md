@@ -91,6 +91,53 @@ Correction note, P-003B-R1, 2026-08-28: the earlier `96.65` LV entry was an
 early manual transcription error. P-003B-R1 rechecked Work1 original paper
 Table II and resolved the formal `PAPER_REPORTED` ACDC LV value to `96.56`.
 
+#### Experimental Protocol
+
+Evidence identity: `PAPER_REPORTED`
+
+Source: authoritative Work1 paper, *ViL-UNet: Beyond Transformers for 3D Medical Image Segmentation with Vision-xLSTM*, Section IV `EXPERIMENTAL DETAILS`, PDF page 4.
+
+##### Synapse / BTCV
+
+| Field | Value | Evidence |
+|---|---|---|
+| Modality | CT | PAPER_REPORTED |
+| Total patient cases | 30 | PAPER_REPORTED |
+| Total axial contrast-enhanced images | 3779 | PAPER_REPORTED |
+| Original in-plane resolution | 512 × 512 | PAPER_REPORTED |
+| Training cases | 18 | PAPER_REPORTED |
+| Testing cases | 12 | PAPER_REPORTED |
+| Split description | random split, following TransUNet | PAPER_REPORTED |
+| Evaluated organ count | 8 | PAPER_REPORTED |
+| Evaluated organs | Aorta; Gallbladder; Kidney(L); Kidney(R); Liver; Pancreas; Spleen; Stomach | PAPER_REPORTED |
+
+##### ACDC
+
+| Field | Value | Evidence |
+|---|---|---|
+| Modality | cardiac MRI | PAPER_REPORTED |
+| Training cases | 70 | PAPER_REPORTED |
+| Validation cases | 10 | PAPER_REPORTED |
+| Testing cases | 20 | PAPER_REPORTED |
+| Annotated structures | LV; RV; Myocardium | PAPER_REPORTED |
+| Cardiac phases | ED; ES | PAPER_REPORTED |
+
+Scope note: the Work1 paper later contains a separate statement referring to `150 cardiac MRI scans`. This packet does not equate or reconcile that scan-count statement with the case-level `70 / 10 / 20` split. The scan count is intentionally excluded from this backfill.
+
+##### Implementation
+
+| Field | Value | Evidence |
+|---|---|---|
+| Framework | PyTorch | PAPER_REPORTED |
+| Medical-imaging framework | MONAI | PAPER_REPORTED |
+| Hardware | single NVIDIA RTX A100 GPU | PAPER_REPORTED |
+| Optimizer | AdamW | PAPER_REPORTED |
+| Initial learning rate | 1 × 10^-4 | PAPER_REPORTED |
+| Weight decay | 1 × 10^-5 | PAPER_REPORTED |
+| Evaluation metrics | DSC; HD95 | PAPER_REPORTED |
+
+Not included because the authoritative Work1 source does not report them: concrete training loss, batch size, epochs, LR scheduler, augmentation pipeline, detailed preprocessing, resampling spacing, training crop/patch input size, sliding-window inference, or HD95 implementation library/function.
+
 #### Efficiency
 
 | Metric | Value | Unit | Evidence |
