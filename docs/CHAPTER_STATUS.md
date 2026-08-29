@@ -61,7 +61,7 @@ Resolved in P-003B-R1:
 | S2-06 | 2.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final repository review passed; integration commit `4ae6acb3a30feebaf86cc3913b0eb83fb4775ed8`. |
 
 | S3-01 | 3.1 引言 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 600142d353b632bb8cb8c01f12e91a5f83e89756. |
-| S3-02 | 3.2 ViL-UNet总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | Integrated from the Gate-A-passed B3 Formal Body under the Chapter 3 direct-review override; authentic Work1 Fig. 1 asset was not materialized locally, so no figure was inserted. |
+| S3-02 | 3.2 ViL-UNet总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit d642ad3802653e3cf5545548c0bdf879edd4e912. |
 
 ## Chapter 1 Gate
 

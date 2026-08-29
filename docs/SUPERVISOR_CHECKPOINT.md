@@ -18,8 +18,8 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, and `S3-01` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S3-01 / 3.1 引言`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, and `S3-02` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S3-02 / 3.2 ViL-UNet总体架构`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
@@ -29,6 +29,7 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `S2-05-R1` integration commit: `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup: `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`.
 - `S2-05-R2` late quality correction: `CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / SECTION_ACCEPTED`; integration commit `195be005afbf4604db4db6937c45c2efd11709cd` removed the obsolete Params/FLOPs/Peak VRAM/inference-time inequality equation without reopening Chapter 2.
 - `S3-01` accepted commit: `600142d353b632bb8cb8c01f12e91a5f83e89756`.
+- `S3-02` accepted commit: `d642ad3802653e3cf5545548c0bdf879edd4e912`.
 
 ## Chapter 2 Closure State
 
@@ -74,6 +75,12 @@ default direct-repository-review workflow.
   perform citation/BibTeX/LaTeX/figure/diff checks, push GitHub/Overleaf as
   applicable, and record only `PENDING_SUPERVISOR_REPO_REVIEW`. Codex may not
   grant `SECTION_ACCEPTED`.
+
+## Controlled Figure Backfill
+
+- `S3-02` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 has not been
+  materialized as a local reusable asset; any later provenance-preserving figure
+  backfill must not reopen the accepted formal body or alter its evidence scope.
 
 ## Frozen Decisions
 
