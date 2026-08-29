@@ -65,7 +65,7 @@ Resolved in P-003B-R1:
 | S3-03 | 3.3 三维局部特征编码 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 35e4e80d4265bc14cb21567e5c0731f3b1de256e. |
 | S3-04 | 3.4 Vision-xLSTM全局上下文建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit fc91a4ac1b92767cd3a53fded7f8d3848bad6d20. |
 | S3-05 | 3.5 解码与特征融合 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 11733093cd3785ab27301c3b16dfbaa7bf0dc301. |
-| S3-06A / S3-06A-R1 | 3.6 实验与结果分析（实验设置与评价体系） | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | R1 protocol-detail backfill and mechanical integration complete; awaiting GPT A3 final GitHub repository review. |
+| S3-06A / S3-06A-R1 | 3.6 实验与结果分析（实验设置与评价体系） | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted R1 commit 9ec5fb87db0b122bcb917752d556c52111b360f5. |
 
 ## Chapter 1 Gate
 

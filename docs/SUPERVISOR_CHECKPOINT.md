@@ -18,9 +18,9 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, and `S3-05` are `SECTION_ACCEPTED`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, and `S3-06A / S3-06A-R1` are `SECTION_ACCEPTED`.
 - Chapter 3 current method sections: `S3-01 through S3-05 = SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S3-05 / 3.5 解码与特征融合`.
+- LAST_ACCEPTED_SECTION: `S3-06A / 3.6.1–3.6.2 实验设置与评价体系`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
@@ -34,6 +34,7 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `S3-03` accepted commit: `35e4e80d4265bc14cb21567e5c0731f3b1de256e`.
 - `S3-04` accepted commit: `fc91a4ac1b92767cd3a53fded7f8d3848bad6d20`.
 - `S3-05` accepted commit: `11733093cd3785ab27301c3b16dfbaa7bf0dc301`.
+- `S3-06A / S3-06A-R1` accepted commit: `9ec5fb87db0b122bcb917752d556c52111b360f5`.
 
 ## Chapter 2 Closure State
 
