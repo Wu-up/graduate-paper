@@ -16,6 +16,9 @@ Codex manages files, LaTeX format, Git operations, compilation support, and auto
 
 ## Whole-Thesis Hard Constraints
 
+- These requirements apply to every formal chapter and all future GPT A/B packets without renewed authorization.
+- Every formal standalone display equation uses an automatic numbered environment; equations restart by chapter and render as `(chapter-sequence)`. Do not use `\[...\]`, `equation*`, `align*`, manual `\tag`, or hand-written equation numbers. Use `\eqref{...}` for a textual equation reference.
+- Bibliography numbering is whole-thesis sequential numerical numbering by first citation; it never restarts by chapter. At one semantic citation point, deliver one BibLaTeX citation cluster whose rendered numeric labels are ascending; do not hand-write citation numbers.
 - Maintain high information density: every paragraph must perform one clear argumentative task.
 - Avoid bold-subheading style AI body prose inside formal thesis text.
 - Avoid mechanical three-point structures when the argument requires a causal or evidential chain.

@@ -15,8 +15,13 @@ section.
 ### Gate B — Codex Mechanical Integration
 
 Codex mechanically integrates the approved handoff package and checks
-citations, BibTeX keys, compilation where available, and the scoped diff. The
-result is `PENDING_SUPERVISOR_REPO_REVIEW`, never `SECTION_ACCEPTED`.
+citations, BibTeX keys, compilation where available, and the scoped diff. For
+every formal-body integration, Codex also records `EQUATION_NUMBERING_CHECK`
+and `MULTI_CITATION_ORDER_CHECK`: standalone equations must be automatically
+numbered in the current chapter, equation references must use `\eqref`, and
+each semantic multi-reference citation cluster must render in ascending
+whole-thesis numeric order. The result is `PENDING_SUPERVISOR_REPO_REVIEW`,
+never `SECTION_ACCEPTED`.
 
 ### Gate C — GPT A Repository Final Review
 
@@ -39,6 +44,12 @@ terminology consistency, citation distribution, argument closure, coverage of
 the chapter function in `docs/MASTER_THESIS_PLAN.md`, and the interface to the
 next chapter. A passing review grants `CHAPTER_ACCEPTED`, after which Codex may
 create the chapter handoff from `docs/CHAPTER_HANDOFF_TEMPLATE.md`.
+
+The Chapter Gate additionally records `CHAPTER_EQUATION_SEQUENCE_CHECK`; the
+final whole-thesis gate records `WHOLE_THESIS_CITATION_SEQUENCE_CHECK`. These
+checks apply to Chapters 1--5 and every later formal supplement, with formula
+numbers restarting by chapter and bibliography numbers remaining continuous
+through the thesis.
 
 ### Window Closure
 

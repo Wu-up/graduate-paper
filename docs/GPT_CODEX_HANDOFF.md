@@ -13,6 +13,7 @@
 - Reads official format sources and records implementation choices.
 - Must not rewrite GPT-confirmed formal body text unless the user explicitly asks.
 - Must not invent facts, numbers, datasets, or paper status.
+- Enforces whole-thesis equation and citation formatting during every formal-body integration: GPT B supplies standalone math and optional stable labels, never final equation numbers; Codex uses automatic chapter-local equation numbering and `\eqref` references. GPT B supplies same-claim sources as BibLaTeX citation clusters, never hand-written citation numbers; rendered cluster order follows whole-thesis ascending numeric labels.
 
 ## GitHub
 
@@ -82,3 +83,6 @@ unresolved or restricted.
   integration.
 - Both modes retain final repository review. S1-02 retains S1-02E unified review
   and every completed chapter retains the Chapter Gate.
+- GPT A final repository review and every Chapter Gate verify these whole-thesis
+  equation and citation rules for their applicable scope. New A/B windows inherit
+  them automatically for Chapters 1--5 and later formal supplements.

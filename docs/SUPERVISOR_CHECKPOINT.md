@@ -18,8 +18,8 @@ Chapter 1 — 绪论
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01`, `S2-02`, `S2-03`, `S2-04`, and `S2-05` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S2-05 / 2.5 损失函数与评价指标`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, and `S2-01` through `S2-06` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S2-06 / 2.6 本章小结`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
@@ -28,10 +28,11 @@ Chapter 1 — 绪论
 - `S2-04` integration commit: `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing cleanup: `69400271b782399ee53cbf125469c6ac81e5f4f4`.
 - `S2-05-R1` integration commit: `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup: `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`.
 
-## Next Planned Work
+## Chapter 2 Closure Hold
 
-- NEXT_TASK: `S2-06 / 2.6 本章小结`, `AUTHORIZED_BY_GPT_A / PIPELINED_SECTION_WORKFLOW`.
-- New A2 window must read `docs/chapter_handoffs/CH01_HANDOFF.md` before beginning Chapter 2 work.
+`CHAPTER_2_FINAL_CLOSURE = FORMAT_QA_PENDING`. Do not create
+`CH02_HANDOFF.md`, mark A2/B2 `WINDOW_COMPLETE`, begin A3/B3, or begin formal
+Chapter 3 body until GPT A completes this whole-thesis format QA review.
 
 ## Frozen Decisions
 
