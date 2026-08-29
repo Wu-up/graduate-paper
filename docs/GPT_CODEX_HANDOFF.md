@@ -6,6 +6,7 @@
 - Drafts or revises formal thesis body only when the user asks.
 - Performs literature and claim review.
 - Keeps factual claims tied to source evidence.
+- Treats equation numbering and numerical citation order as formal output constraints, not optional cosmetic cleanup.
 
 ## Codex
 
@@ -13,6 +14,8 @@
 - Reads official format sources and records implementation choices.
 - Must not rewrite GPT-confirmed formal body text unless the user explicitly asks.
 - Must not invent facts, numbers, datasets, or paper status.
+- Converts formal displayed equations into the project's automatic numbered equation environments without changing mathematical content.
+- Verifies that multi-reference numerical citation clusters render in ascending order and that the bibliography remains consistent with sequential citation numbering.
 
 ## GitHub
 
@@ -25,6 +28,7 @@
 - Compile and visual verification environment.
 - Receives the same source files through Git push.
 - Used to validate XeLaTeX output when local TeX is unavailable.
+- Is the required fallback for checking rendered equation numbers and citation-number order when local compilation is unavailable.
 
 ## Formal Writing Flow
 
@@ -46,10 +50,25 @@ metric definitions, dataset protocol details, and claim boundaries are still
 unresolved or restricted.
 
 1. Facts and numbers are added to `docs/FACTS_AND_NUMBERS.md`.
-2. GPT drafts or revises content against those facts.
+2. GPT drafts or revises content against those facts and the global equation/citation output constraints in `docs/WRITING_STYLE_GUIDE.md`.
 3. User confirms the draft.
 4. Codex places confirmed text into the corresponding `.tex` file without substantive rewriting.
-5. Overleaf compiles and visual checks are performed.
+5. Codex normalizes formal displayed equations to automatic chapter-based numbering and normalizes same-point multi-reference citations without changing claim scope.
+6. Overleaf or local XeLaTeX/Biber compilation verifies equation-number sequence, citation-number order, bibliography consistency, and visual output.
+
+## Mechanical Equation And Citation Checks
+
+Before any integrated section can be reported as `PENDING_SUPERVISOR_REPO_REVIEW`, Codex must perform the following checks on the modified formal body:
+
+- scan for raw `\[...\]`, `equation*`, `align*`, or other unnumbered standalone display mathematics; formal thesis equations must instead use automatic numbered environments;
+- confirm the visible numbering follows the class-defined chapter sequence such as `(2-1)`, `(2-2)`, `(3-1)`;
+- use `\label{eq:...}` / `\eqref{...}` for equations referred to in prose and never hard-code visible equation numbers;
+- scan same-point adjacent or grouped citations and prefer one `\cite{...}` cluster when the references support the same statement;
+- compile and confirm every multi-reference numerical citation cluster renders in ascending order; do not assume citation-key order alone is sufficient under `sorting=none`;
+- do not manually type citation numbers or reorder `references.bib` entries merely to force numbering;
+- if the active GB/T 7714 style does not automatically sort a valid multi-reference cluster, report the rendering behavior and apply the smallest template-level citation-sorting fix only after confirming it preserves GB/T 7714-2015 and first-citation bibliography order.
+
+These are mechanical format operations. They do not authorize Codex to alter mathematical definitions, evidence scope, prose claims, or the semantic grouping of genuinely separate citation points.
 
 ## Cross-window Recovery and Approval Boundary
 
@@ -73,7 +92,7 @@ unresolved or restricted.
 - `DIRECT_REPO_REVIEW` is the default for Lite or Enhanced Lite routine sections
   with stable facts and evidence boundaries. GPT B hands off with
   `READY_FOR_REPO_INTEGRATION`; Codex may mechanically integrate, check
-  citations/BibTeX/compilation/diff, and record only
+  equations/citations/BibTeX/compilation/diff, and record only
   `PENDING_SUPERVISOR_REPO_REVIEW`. GPT A alone accepts or returns revision
   after reading GitHub.
 - `SUPERVISOR_PREAPPROVAL` is required for Full cards, core methods, experiments,
