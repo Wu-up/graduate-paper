@@ -18,7 +18,7 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, and `S3-01` are `SECTION_ACCEPTED`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, and `S3-01` are `SECTION_ACCEPTED`.
 - LAST_ACCEPTED_SECTION: `S3-01 / 3.1 引言`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
