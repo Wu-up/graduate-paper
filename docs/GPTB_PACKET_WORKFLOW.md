@@ -26,6 +26,12 @@ Packet; B. 可入库正式正文; C. Author Notes; and D. `CODEX_HANDOFF_PROMPT`
 Its chat reply contains only `TASK_ID`, `STATUS`, and a Markdown attachment or
 download link.
 
+Under the default `DIRECT_REPO_REVIEW` workflow, GPT B completes Gate A and
+hands off with `READY_FOR_REPO_INTEGRATION`; no separate GPT A prose pre-review
+is required. `WAIT_FOR_SUPERVISOR_APPROVAL` is used only when the user has
+explicitly selected the exceptional `SUPERVISOR_PREAPPROVAL` mode for that
+specific section.
+
 When GPT B can access the local thesis workspace, it writes the declared
 `gptBmd/<TASK_ID>.md` path. Otherwise, it must generate a real `.md` attachment
 for the user to save directly under `Graduate Paper\gptBmd\`; it must not
@@ -41,6 +47,17 @@ the declared file is absent, Codex returns `BLOCKED_MISSING_GPTB_PACKET`; it
 does not guess prose, use an old version, recover from a chat summary, or
 automatically select another task file. Both `DIRECT_REPO_REVIEW` and
 `SUPERVISOR_PREAPPROVAL` use this same file-transfer mechanism.
+
+The effective `AUTHORING_REVIEW_MODE` is the latest authoritative workflow
+instruction, not necessarily the oldest marker preserved inside a local packet.
+A later user instruction or GPT A Task-Card amendment recorded in current
+repository governance supersedes a stale local packet marker. Therefore, when
+a section is later changed from `SUPERVISOR_PREAPPROVAL` to
+`DIRECT_REPO_REVIEW`, an older `WAIT_FOR_SUPERVISOR_APPROVAL` line in that
+packet is no longer a blocking condition. Codex mechanically integrates the
+existing Gate-A-passed Formal Body and records `PENDING_SUPERVISOR_REPO_REVIEW`;
+it must not require a redundant `CONTENT_APPROVED` solely because the local
+packet still contains the superseded marker.
 
 ## Repository Rule
 
