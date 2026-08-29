@@ -18,8 +18,8 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, and `S2-01` through `S2-06` are `SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S2-06 / 2.6 本章小结`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, and `S3-01` are `SECTION_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S3-01 / 3.1 引言`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
@@ -28,6 +28,7 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `S2-04` integration commit: `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing cleanup: `69400271b782399ee53cbf125469c6ac81e5f4f4`.
 - `S2-05-R1` integration commit: `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup: `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`.
 - `S2-05-R2` late quality correction: `CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / SECTION_ACCEPTED`; integration commit `195be005afbf4604db4db6937c45c2efd11709cd` removed the obsolete Params/FLOPs/Peak VRAM/inference-time inequality equation without reopening Chapter 2.
+- `S3-01` accepted commit: `600142d353b632bb8cb8c01f12e91a5f83e89756`.
 
 ## Chapter 2 Closure State
 
@@ -47,9 +48,9 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `A3 = SUCCESSOR_READY / ACTIVE_SUPERVISOR`
 - `B3 = SUCCESSOR_READY / ACTIVE_WRITER`
 
-Chapter 3 remains `PLANNED`. Next Action: A3 must reread this final checkpoint
-and `CH02_HANDOFF`, then independently issue the first authorized Chapter 3
-Section Task Card. Codex must not create or select that Task Card.
+Chapter 3 remains `IN_PROGRESS`. Next Action: A3 may independently issue the
+next authorized Chapter 3 Section Task Card. Codex must not create or select
+that Task Card.
 
 ## Frozen Decisions
 
