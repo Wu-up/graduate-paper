@@ -276,7 +276,31 @@ FLOPs呈现出不同于参数量的排序。Swin-Unet为16.16G，VM-UNet为17.46
 
 \subsection{可视化分析}
 
-% TODO: Retain only if an authentic Work1 figure or later lawful experiment output is available.
+前述定量实验从整体指标和器官级结果给出了ViL-UNet的性能比较，本节进一步使用Work1原论文提供的代表性分割样例观察预测区域的空间形态。\cite{wu2026vilunet} 可视化结果只反映论文所展示的有限病例，其作用是补充说明不同方法在局部轮廓和相邻结构上的视觉差异，不能替代完整测试集上的定量评价。
+
+图\ref{fig:ch3-synapse-visual}整理自Work1原论文Fig.3，保留颜色图例、两个Synapse CT样例以及Ground Truth、ViL-UNet、MSVM-UNet、MixFormer、Swin-UMamba和Swin-Unet六列分割面板。\cite{wu2026vilunet}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/ch03/work1_synapse_visual}
+  \caption{Synapse数据集不同方法的分割结果可视化对比}
+  \label{fig:ch3-synapse-visual}
+\end{figure}
+
+从图\ref{fig:ch3-synapse-visual}可以看到，在两个展示样例中，各方法均能够定位主要腹部器官区域，大范围分割结果总体具有相近的空间位置；差异更多集中在局部小范围、相邻结构交界以及源图红框标出的局部区域。ViL-UNet的预测在这些展示位置上与Ground Truth的整体轮廓和覆盖范围较为接近，而部分对比方法可见不同程度的局部偏移或形状差异。由于该图只给出少量切片，本节不进一步把某个局部差异归因于四方向遍历、ViL模块或增强跳跃连接，也不从单幅图推导某一器官的普遍分割难度。
+
+这种视觉现象与前述Synapse定量结果形成互补：定量表负责给出整个测试范围内的总体与器官级数值关系，而图\ref{fig:ch3-synapse-visual}提供的是所选病例上预测形态与参考标注之间的直观对应。二者的证据层级不同，因此可视化中“更接近Ground Truth”的描述只限于当前展示样例，不扩展为对全部病例或所有局部边界的统计结论。
+
+图\ref{fig:ch3-acdc-visual}来源于Work1原论文Fig.4。为集中呈现分割结果，本论文保留Ground Truth、ViL-UNet、MSVM-UNet、VM-UNet和Swin-Unet五列比较面板以及RV、Myo和LV的颜色图例，不展示原图最右侧的原始影像列。\cite{wu2026vilunet}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/ch03/work1_acdc_visual}
+  \caption{ACDC数据集不同方法的分割结果可视化对比}
+  \label{fig:ch3-acdc-visual}
+\end{figure}
+
+在图\ref{fig:ch3-acdc-visual}的两个心脏MRI样例中，红色RV、绿色Myo与蓝色LV具有清晰的相对位置关系。不同方法均能够恢复三类结构的基本形态，但在心肌环的局部厚度、心室轮廓以及相邻颜色区域的交界处仍可观察到细微差别。ViL-UNet在所展示样例中的三类预测区域与Ground Truth整体形态较为接近，尤其是环状心肌与内部心室之间的空间关系保持较完整。这里采用的是描述性视觉比较，不将这些局部现象表述为对边界能力的独立证明。
+
+因此，Synapse与ACDC可视化结果为前述定量比较提供了样例层面的形态补充，但其证据强度受展示病例数量限制。综合3.6节已经给出的总体结果、器官或结构级结果、ViL深度消融、模型复杂度以及本节可视化，可以从不同角度观察Work1的实验表现；其中总体性能判断仍以定量指标为主，可视化主要用于说明预测区域在具体病例中的空间形态与局部差异。
 
 \section{本章小结}
 
