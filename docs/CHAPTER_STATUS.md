@@ -62,6 +62,7 @@ Resolved in P-003B-R1:
 
 | S3-01 | 3.1 引言 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 600142d353b632bb8cb8c01f12e91a5f83e89756. |
 | S3-02 | 3.2 ViL-UNet总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit d642ad3802653e3cf5545548c0bdf879edd4e912. |
+| S3-03 | 3.3 三维局部特征编码 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | Integrated from the Gate-A-passed B3 Formal Body; authentic Work1 Fig. 1 remains pending materialization, so no figure or cross-reference was inserted. |
 
 ## Chapter 1 Gate
 
