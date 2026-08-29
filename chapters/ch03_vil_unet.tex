@@ -135,11 +135,83 @@ Work1论文将上述模型表述为来自既有研究的对比方法，并在结
 
 \subsection{Synapse实验结果与分析}
 
-% TODO: PAPER_REPORTED results only; obtain organ-level data before adding it.
+Synapse数据集上的定量结果如表\ref{tab:ch3-synapse-overall}和表\ref{tab:ch3-synapse-organ}所示，表中数值均依据Work1原论文Table I整理。\cite{wu2026vilunet} 为避免将结果来源与方法身份混为同一证据，本节以Work1论文作为所有比较数值的直接来源，而Swin-Unet、VM-UNet、HC-Mamba、Swin-UMamba、MSVM-UNet和MixFormer的方法身份分别对应其原始文献。\cite{cao2022swinunet,ruan2024vmunet,xu2024hcmamba,liu2024swinumamba,chen2024msvmunet,liu2025mixformer} 由于原始结果表的年份字段与部分正式出版元数据存在口径差异，本章结果表不保留Year列，仅比较论文实际报告的分割指标。
+
+\begin{table}[htbp]
+  \centering
+  \caption{Synapse数据集总体分割性能对比}
+  \label{tab:ch3-synapse-overall}
+  \begin{tabular}{lcc}
+    \hline
+    方法 & 平均DSC（\%）$\uparrow$ & HD95（mm）$\downarrow$ \\
+    \hline
+    Swin-Unet   & 79.13 & 21.55 \\
+    VM-UNet     & 82.38 & 16.22 \\
+    HC-Mamba    & 79.58 & 26.34 \\
+    Swin-UMamba & 82.26 & 19.51 \\
+    MSVM-UNet   & 85.00 & 14.75 \\
+    MixFormer   & 82.64 & 12.67 \\
+    ViL-UNet    & \textbf{85.12} & \textbf{12.49} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+从总体指标看，ViL-UNet的平均DSC为85.12\%，HD95为12.49~mm，在Work1所列比较方法中分别对应最高的平均DSC和最低的HD95。\cite{wu2026vilunet} 与其数值最接近的比较对象并不完全相同：MSVM-UNet的平均DSC为85.00\%，而MixFormer的HD95为12.67~mm。这个结果说明，在该组公开结果中，ViL-UNet并非只在区域重叠或边界距离中的单一维度处于较优数值位置，而是在两类评价指标上同时保持了靠前表现。原论文没有提供这些方法之间的统计检验，因此本章仅依据表中数值讨论排序关系，不将数值差异延伸为统计推断。
+
+\begin{table}[htbp]
+  \centering
+  \caption{Synapse数据集器官级DSC对比（\%）}
+  \label{tab:ch3-synapse-organ}
+  \small
+  \setlength{\tabcolsep}{3.2pt}
+  \begin{tabular}{lcccccccc}
+    \hline
+    方法 & 主动脉 & 胆囊 & 左肾 & 右肾 & 肝脏 & 胰腺 & 脾脏 & 胃 \\
+    \hline
+    Swin-Unet   & 85.47 & 66.53 & 83.28 & 79.61 & 94.29 & 56.58 & 90.66 & 76.60 \\
+    VM-UNet     & 87.00 & 69.37 & 85.52 & 82.25 & 94.10 & 65.77 & 91.54 & 83.51 \\
+    HC-Mamba    & 89.93 & 67.65 & 84.57 & 78.27 & 95.38 & 52.08 & 89.49 & 79.84 \\
+    Swin-UMamba & 86.32 & 70.77 & 83.66 & 81.60 & 95.23 & 69.36 & 89.95 & 81.14 \\
+    MSVM-UNet   & 88.73 & 74.90 & 85.62 & 84.47 & 95.74 & 71.53 & 92.52 & 86.51 \\
+    MixFormer   & 87.36 & 71.53 & 86.22 & 83.19 & 95.23 & 66.82 & 89.98 & 80.77 \\
+    ViL-UNet    & \textbf{90.04} & \textbf{74.93} & \textbf{89.17} & \textbf{84.72} & \textbf{95.83} & \textbf{71.91} & \textbf{92.70} & \textbf{86.70} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+器官级结果进一步显示，ViL-UNet在该表所列八个器官的DSC上均取得最高数值。\cite{wu2026vilunet} 不同器官之间的绝对数值仍存在差别：例如肝脏和脾脏的DSC处于较高水平，而在该Synapse评价中，胆囊和胰腺的数值相对较低。即便在这些数值较低的类别上，ViL-UNet仍分别取得74.93\%和71.91\%的表内最高结果。另一方面，左肾与右肾的结果也存在差异，说明总体平均值不能替代对具体解剖结构的观察。因而，表\ref{tab:ch3-synapse-organ}提供的主要证据是：ViL-UNet的总体结果并非由单一器官的高分数支撑，而是在Work1所列多种腹部结构上保持了较一致的相对排序。
+
+需要注意的是，表内“最高数值”并不意味着各类别都存在较大的领先幅度。胆囊上ViL-UNet为74.93\%，与MSVM-UNet的74.90\%非常接近；胰腺上两者分别为71.91\%和71.53\%；主动脉上ViL-UNet的90.04\%也与HC-Mamba的89.93\%处于接近区间。\cite{wu2026vilunet} 这些细粒度关系说明，器官级结果更适合用于判断不同结构上的相对排序和表现分布，而不宜将每个小幅数值差异解释为稳定的机制优势。与此同时，八个器官均处于表内最高位置这一整体模式，又使平均DSC的领先不只是单个类别偶然高值的结果，从而为总体指标提供了器官层面的补充证据。
+
+从方法设计角度看，这种跨器官的结果分布与ViL-UNet希望在局部空间表示基础上补充长距离上下文交互的设计目标相一致，但主结果表本身不能建立具体模块与某一器官提升之间的因果关系。特别是，不能仅依据主动脉、胰腺或胆囊的数值，就将改进直接归因于四方向遍历、ViL模块或增强跳跃连接。主结果在本节承担的是总体竞争性与器官级现象证据，具体结构设计的作用需要由独立的消融或其他机制证据在相应范围内讨论。
 
 \subsection{ACDC实验结果与分析}
 
-% TODO: PAPER_REPORTED results only.
+ACDC数据集上的比较结果如表\ref{tab:ch3-acdc}所示，数值来源于Work1原论文Table II。\cite{wu2026vilunet} 与Synapse不同，ACDC结果从平均DSC以及右心室、心肌和左心室三个结构的DSC展开，因此本节重点考察ViL-UNet在心脏MRI场景中的总体表现与结构间一致性。
+
+\begin{table}[htbp]
+  \centering
+  \caption{ACDC数据集分割性能对比（\%）}
+  \label{tab:ch3-acdc}
+  \begin{tabular}{lcccc}
+    \hline
+    方法 & 平均DSC & RV & Myo & LV \\
+    \hline
+    Swin-Unet   & 90.00 & 88.55 & 85.62 & 95.83 \\
+    VM-UNet     & 92.24 & 90.74 & 89.93 & 96.03 \\
+    Swin-UMamba & 92.14 & 90.90 & 89.80 & 95.72 \\
+    MSVM-UNet   & 92.58 & 91.00 & 90.35 & 96.39 \\
+    MixFormer   & 91.01 & 89.02 & 88.46 & 95.55 \\
+    ViL-UNet    & \textbf{92.79} & \textbf{91.16} & \textbf{90.54} & \textbf{96.56} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+在Work1 Table II所列方法中，ViL-UNet的平均DSC为92.79\%，RV、Myo和LV的DSC分别为91.16\%、90.54\%和96.56\%，四项数值均为该表最高。\cite{wu2026vilunet} MSVM-UNet在这四项指标上均是与ViL-UNet最接近的比较对象，其平均DSC、RV、Myo和LV分别为92.58\%、91.00\%、90.35\%和96.39\%。这种排序表明，ViL-UNet在ACDC上的总体均值并非由单个心脏结构的异常高值形成，而是在三个评价结构上均维持了表内最高数值。这里仍只进行数值层面的比较，不将排序差异扩展为没有统计检验支撑的结论。
+
+从三个心脏结构自身的数值分布看，LV的DSC为96.56\%，高于RV的91.16\%和Myo的90.54\%；但三项指标在Work1所列方法中的相对排序是一致的，ViL-UNet均处于最高位置。\cite{wu2026vilunet} 这说明ACDC上的总体结果具有结构级的一致性支撑，同时也提示不同目标结构的绝对分割水平并不相同。由于Table II只报告DSC而没有给出ACDC对应的HD95，本节不从这张定量表进一步推断心脏结构的边界质量；相关视觉现象若要讨论，应由后续真实可视化证据单独承担。
+
+结合Synapse与ACDC两组结果，可以观察到ViL-UNet在腹部CT与心脏MRI两个不同数据场景中均保持了较高的相对排名：Synapse上同时获得表内最高平均DSC和最低HD95，ACDC上则在平均DSC及三个心脏结构的DSC上均取得表内最高数值。\cite{wu2026vilunet} 这一跨数据集现象说明其数值优势并未只出现在单一腹部CT结果表中，并为Work1局部--全局协同建模的整体设计提供了跨场景的结果支持。需要同时指出，Synapse还报告HD95，而ACDC主结果表仅给出DSC，因此两个数据集的证据维度并不完全对称；跨数据集的共同观察主要建立在DSC相对排序上，而不能扩展为边界指标的一致性结论。不过，两项公开benchmark并不足以建立普遍的域外泛化结论，因此本章将结论限定在当前Work1报告的数据与比较范围内。
 
 \subsection{ViL模块数量消融实验}
 

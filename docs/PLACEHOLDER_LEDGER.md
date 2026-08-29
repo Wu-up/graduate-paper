@@ -49,21 +49,12 @@ These values are not PAPER_REPORTED. They may appear only as placeholders.
 
 ## Synapse Organ-Level Placeholder Table
 
-All entries in this section are `THESIS_PLACEHOLDER`, including the ViL-UNet
-row. The ViL-UNet row must not be upgraded to PAPER_REPORTED just because the
-Mean column equals `85.12`.
+Active entries in this section are `THESIS_PLACEHOLDER`. The historical
+ViL-UNet placeholder entries have moved to `Legacy Placeholders`; they must not
+be upgraded merely because their Mean column equals `85.12`.
 
 | ID | Description | Value | Unit | Table/Usage | Status | Replacement Rule | Evidence Status |
 |---|---|---:|---|---|---|---|---|
-| PH-W2-ORG-VIL-AORTA | ViL-UNet Aorta DSC | 89.74 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-GALLBLADDER | ViL-UNet Gallbladder DSC | 72.31 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-KIDNEY-L | ViL-UNet Kidney(L) DSC | 86.92 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-KIDNEY-R | ViL-UNet Kidney(R) DSC | 85.87 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-LIVER | ViL-UNet Liver DSC | 95.26 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-PANCREAS | ViL-UNet Pancreas DSC | 69.84 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-SPLEEN | ViL-UNet Spleen DSC | 92.41 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-STOMACH | ViL-UNet Stomach DSC | 88.61 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
-| PH-W2-ORG-VIL-MEAN | ViL-UNet organ-table Mean DSC | 85.12 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
 | PH-W2-ORG-FULL-AORTA | Full SSSM Aorta DSC | 90.02 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
 | PH-W2-ORG-FULL-GALLBLADDER | Full SSSM Gallbladder DSC | 71.94 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
 | PH-W2-ORG-FULL-KIDNEY-L | Full SSSM Kidney(L) DSC | 87.10 | % | Synapse organ placeholder table | ACTIVE_PLACEHOLDER | Replace only after approved organ-level evidence is recorded | THESIS_PLACEHOLDER |
@@ -126,3 +117,12 @@ official metric and not official `Small-organ DSC`.
 | ID | Description | Value | Unit | Table/Usage | Status | Replacement Rule | Evidence Status |
 |---|---|---:|---|---|---|---|---|
 | LEGACY-PH-W2-FULL-HD95-001 | Deprecated Full SSSM HD95 placeholder | 12.17 | mm | Old Work2 internal comparison placeholder | DEPRECATED | Replacement: PH-W2-FULL-002 = 12.78 mm | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-AORTA | ViL-UNet Aorta DSC | 89.74 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-GALLBLADDER | ViL-UNet Gallbladder DSC | 72.31 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-KIDNEY-L | ViL-UNet Kidney(L) DSC | 86.92 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-KIDNEY-R | ViL-UNet Kidney(R) DSC | 85.87 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-LIVER | ViL-UNet Liver DSC | 95.26 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-PANCREAS | ViL-UNet Pancreas DSC | 69.84 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-SPLEEN | ViL-UNet Spleen DSC | 92.41 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-STOMACH | ViL-UNet Stomach DSC | 88.61 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |
+| PH-W2-ORG-VIL-MEAN | ViL-UNet organ-table Mean DSC | 85.12 | % | Historical Synapse organ placeholder table | DEPRECATED | Replacement for Work1 formal-result use: PAPER_REPORTED Work1 Synapse Comparison Results in FACTS_AND_NUMBERS.md | LEGACY_PLACEHOLDER |

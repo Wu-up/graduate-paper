@@ -138,6 +138,49 @@ Scope note: the Work1 paper later contains a separate statement referring to `15
 
 Not included because the authoritative Work1 source does not report them: concrete training loss, batch size, epochs, LR scheduler, augmentation pipeline, detailed preprocessing, resampling spacing, training crop/patch input size, sliding-window inference, or HD95 implementation library/function.
 
+#### Work1 Synapse Comparison Results
+
+Evidence identity: `PAPER_REPORTED`
+
+Source: authoritative Work1 paper, Table I, PDF page 5.
+
+Units:
+- Mean DSC and organ-level DSC: `%`
+- HD95: `mm`
+
+| Method | Mean DSC | HD95 | Aorta | Gallbladder | Kidney(L) | Kidney(R) | Liver | Pancreas | Spleen | Stomach | Evidence |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Swin-Unet | 79.13 | 21.55 | 85.47 | 66.53 | 83.28 | 79.61 | 94.29 | 56.58 | 90.66 | 76.60 | PAPER_REPORTED |
+| VM-UNet | 82.38 | 16.22 | 87.00 | 69.37 | 85.52 | 82.25 | 94.10 | 65.77 | 91.54 | 83.51 | PAPER_REPORTED |
+| HC-Mamba | 79.58 | 26.34 | 89.93 | 67.65 | 84.57 | 78.27 | 95.38 | 52.08 | 89.49 | 79.84 | PAPER_REPORTED |
+| Swin-UMamba | 82.26 | 19.51 | 86.32 | 70.77 | 83.66 | 81.60 | 95.23 | 69.36 | 89.95 | 81.14 | PAPER_REPORTED |
+| MSVM-UNet | 85.00 | 14.75 | 88.73 | 74.90 | 85.62 | 84.47 | 95.74 | 71.53 | 92.52 | 86.51 | PAPER_REPORTED |
+| MixFormer | 82.64 | 12.67 | 87.36 | 71.53 | 86.22 | 83.19 | 95.23 | 66.82 | 89.98 | 80.77 | PAPER_REPORTED |
+| ViL-UNet | 85.12 | 12.49 | 90.04 | 74.93 | 89.17 | 84.72 | 95.83 | 71.91 | 92.70 | 86.70 | PAPER_REPORTED |
+
+Result-provenance note: comparator values are transcribed from the Work1 paper's Table I. They remain `PAPER_REPORTED` Work1 result evidence and are not local reproductions.
+
+#### Work1 ACDC Comparison Results
+
+Evidence identity: `PAPER_REPORTED`
+
+Source: authoritative Work1 paper, Table II, PDF page 5.
+
+Unit: all values are DSC `%`.
+
+| Method | Mean DSC | RV | Myo | LV | Evidence |
+|---|---:|---:|---:|---:|---|
+| Swin-Unet | 90.00 | 88.55 | 85.62 | 95.83 | PAPER_REPORTED |
+| VM-UNet | 92.24 | 90.74 | 89.93 | 96.03 | PAPER_REPORTED |
+| Swin-UMamba | 92.14 | 90.90 | 89.80 | 95.72 | PAPER_REPORTED |
+| MSVM-UNet | 92.58 | 91.00 | 90.35 | 96.39 | PAPER_REPORTED |
+| MixFormer | 91.01 | 89.02 | 88.46 | 95.55 | PAPER_REPORTED |
+| ViL-UNet | 92.79 | 91.16 | 90.54 | 96.56 | PAPER_REPORTED |
+
+Correction guard: Work1 ACDC LV is `96.56`, not `96.65`.
+
+Result-provenance note: comparator values are transcribed from the Work1 paper's Table II. They remain `PAPER_REPORTED` Work1 result evidence and are not local reproductions.
+
 #### Efficiency
 
 | Metric | Value | Unit | Evidence |
@@ -266,16 +309,26 @@ reused.
 
 ### Synapse Organ-Level Placeholder Results
 
-Except for the separate PAPER_REPORTED Work1 Mean DSC value `85.12`, this
-entire organ-level decomposition table is THESIS_PLACEHOLDER. Do not upgrade
-the ViL-UNet row to PAPER_REPORTED merely because its Mean equals `85.12`.
+This active table contains Work2 planning placeholders only. The former
+ViL-UNet placeholder row is preserved below as
+`DEPRECATED_FOR_WORK1_RESULT_USE / LEGACY_PLACEHOLDER`; formal Work1 use is
+the `PAPER_REPORTED` `Work1 Synapse Comparison Results` table above.
+
+| Model | Aorta | Gallbladder | Kidney(L) | Kidney(R) | Liver | Pancreas | Spleen | Stomach | Mean | Ledger prefix |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Full SSSM | 90.02 | 71.94 | 87.10 | 86.04 | 95.42 | 69.55 | 92.67 | 90.01 | 85.34 | PH-W2-ORG-FULL-* |
+| No-History | 90.46 | 74.18 | 87.71 | 86.82 | 95.51 | 72.13 | 92.88 | 87.75 | 85.93 | PH-W2-ORG-NH-* |
+| Work2 | 90.83 | 75.76 | 88.46 | 87.59 | 95.68 | 73.91 | 93.21 | 86.88 | 86.54 | PH-W2-ORG-W2-* |
+
+#### Deprecated Historical ViL-UNet Placeholder Row
+
+`DEPRECATED_FOR_WORK1_RESULT_USE / LEGACY_PLACEHOLDER`
 
 | Model | Aorta | Gallbladder | Kidney(L) | Kidney(R) | Liver | Pancreas | Spleen | Stomach | Mean | Ledger prefix |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | ViL-UNet | 89.74 | 72.31 | 86.92 | 85.87 | 95.26 | 69.84 | 92.41 | 88.61 | 85.12 | PH-W2-ORG-VIL-* |
-| Full SSSM | 90.02 | 71.94 | 87.10 | 86.04 | 95.42 | 69.55 | 92.67 | 90.01 | 85.34 | PH-W2-ORG-FULL-* |
-| No-History | 90.46 | 74.18 | 87.71 | 86.82 | 95.51 | 72.13 | 92.88 | 87.75 | 85.93 | PH-W2-ORG-NH-* |
-| Work2 | 90.83 | 75.76 | 88.46 | 87.59 | 95.68 | 73.91 | 93.21 | 86.88 | 86.54 | PH-W2-ORG-W2-* |
+
+Replacement for Work1 formal-result use: `PAPER_REPORTED Work1 Synapse Comparison Results` in this file.
 
 Arithmetic mean check over the eight organ columns:
 
