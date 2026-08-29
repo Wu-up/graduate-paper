@@ -50,11 +50,12 @@ metric definitions, dataset protocol details, and claim boundaries are still
 unresolved or restricted.
 
 1. Facts and numbers are added to `docs/FACTS_AND_NUMBERS.md`.
-2. GPT drafts or revises content against those facts and the global equation/citation output constraints in `docs/WRITING_STYLE_GUIDE.md`.
-3. User confirms the draft.
-4. Codex places confirmed text into the corresponding `.tex` file without substantive rewriting.
+2. GPT B drafts or revises content against those facts and the global equation/citation output constraints in `docs/WRITING_STYLE_GUIDE.md`, then performs Gate A self-check.
+3. Under the default `DIRECT_REPO_REVIEW` mode, the Gate-A-passed GPT B packet itself authorizes Codex mechanical integration; no separate GPT A prose pre-review or `CONTENT_APPROVED` is required.
+4. Codex places the Gate-A-passed text into the corresponding `.tex` file without substantive rewriting and records only `PENDING_SUPERVISOR_REPO_REVIEW`.
 5. Codex normalizes formal displayed equations to automatic chapter-based numbering and normalizes same-point multi-reference citations without changing claim scope.
 6. Overleaf or local XeLaTeX/Biber compilation verifies equation-number sequence, citation-number order, bibliography consistency, and visual output.
+7. GPT A then reviews the actual GitHub-integrated version and alone grants `SECTION_ACCEPTED` or returns `REVISION_REQUIRED`.
 
 ## Mechanical Equation And Citation Checks
 
@@ -102,16 +103,23 @@ These are mechanical format operations. They do not authorize Codex to alter mat
 
 ## Authoring Review Modes
 
-- `DIRECT_REPO_REVIEW` is the default for Lite or Enhanced Lite routine sections
-  with stable facts and evidence boundaries. GPT B hands off with
-  `READY_FOR_REPO_INTEGRATION`; Codex may mechanically integrate, check
-  equations/citations/BibTeX/compilation/diff, and record only
-  `PENDING_SUPERVISOR_REPO_REVIEW`. GPT A alone accepts or returns revision
-  after reading GitHub.
-- `SUPERVISOR_PREAPPROVAL` is required for Full cards, core methods, experiments,
-  high-risk claims, source conflicts, and GPT A-directed preapproval. GPT B uses
-  `WAIT_FOR_SUPERVISOR_APPROVAL`; Codex waits for `CONTENT_APPROVED` before
-  integration.
+- `DIRECT_REPO_REVIEW` is the default for all formal sections, including Full
+  cards, core methods, experiments, ablations, and sections with high-risk
+  evidence, provided the A3/A<N> Task Card has already frozen the evidence
+  boundary. GPT B hands off with `READY_FOR_REPO_INTEGRATION`; Codex may
+  mechanically integrate, check equations/citations/BibTeX/compilation/diff,
+  and record only `PENDING_SUPERVISOR_REPO_REVIEW`. GPT A reviews the actual
+  GitHub version and alone accepts or returns revision.
+- `SUPERVISOR_PREAPPROVAL` remains available only when the user explicitly
+  requests that exception for a section. It is not triggered automatically by
+  a Full card, a core-method label, an experiment, an ablation, a source
+  conflict, or a high-risk claim. When explicitly selected, GPT B uses
+  `WAIT_FOR_SUPERVISOR_APPROVAL` and Codex waits for `CONTENT_APPROVED`.
+- A later user instruction or GPT A Task-Card amendment that changes a section
+  from `SUPERVISOR_PREAPPROVAL` to `DIRECT_REPO_REVIEW` supersedes a stale mode
+  or `WAIT_FOR_SUPERVISOR_APPROVAL` marker inside an already-created local GPT B
+  packet. Codex must follow the latest authoritative workflow instruction and
+  must not keep blocking on the superseded packet marker.
 - Both modes retain final repository review. S1-02 retains S1-02E unified review
   and every completed chapter retains the Chapter Gate.
 - GPT A final repository review and every Chapter Gate verify these whole-thesis
