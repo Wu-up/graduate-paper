@@ -86,14 +86,16 @@ These are mechanical format operations. They do not authorize Codex to alter mat
   `BLOCKED_MISSING_GPTB_PACKET` and does not infer missing formal content.
 - After `SECTION_ACCEPTED`, update the supervisor checkpoint when its update
   rule is met. After `CHAPTER_ACCEPTED`, create a chapter handoff.
-- Creating that handoff starts `SUCCESSOR_WINDOW_QUALITY_GATE`; it does not
-  close the prior A/B windows. The next A/B windows must return their mandated
-  recovery reports before accepting or issuing a formal next-chapter task. The
-  prior GPT A may review only those reports, returning `PASSED` or
-  `RETRY_REQUIRED` targeted recovery corrections; it must not author, rewrite,
-  or issue a Task Card for the next chapter. Codex records prior
-  `WINDOW_COMPLETE` only after both successors are `SUCCESSOR_READY` and the
-  gate is `PASSED`.
+- Creating that handoff starts the three-phase
+  `SUCCESSOR_WINDOW_QUALITY_GATE`; it does not close the prior A/B windows.
+  Knowledge recovery, operational qualification, and a prior-GPT-A review of a
+  closure-candidate GitHub commit must all pass before Codex records prior
+  `WINDOW_COMPLETE` and successors `SUCCESSOR_READY`.
+- Formal GPT B work is delivered as a real `gptBmd/<TASK_ID>.md` file, or
+  `gptBmd/<TASK_ID>-R1.md` for a revision. It contains Source Packet, 可入库正式
+  正文, Author Notes, and `CODEX_HANDOFF_PROMPT`; chat is not the primary
+  payload. If GPT B cannot write the repository path, it supplies a real `.md`
+  attachment rather than requiring manual reconstruction from chat prose.
 
 ## Authoring Review Modes
 

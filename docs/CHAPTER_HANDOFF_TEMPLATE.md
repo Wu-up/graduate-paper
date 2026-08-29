@@ -52,10 +52,15 @@ Record:
 - NEXT_GPT_A_WINDOW: `A<X+1>`
 - NEXT_GPT_B_WINDOW: `B<X+1>`
 - NEXT_CHAPTER: `Chapter X+1`
-- SUCCESSOR_QUALITY_GATE: `PENDING`
+- A<X+1>_RECOVERY_KNOWLEDGE_CHECK: `PENDING`
+- B<X+1>_RECOVERY_KNOWLEDGE_CHECK: `PENDING`
+- A<X+1>_OPERATIONAL_QUALIFICATION: `PENDING`
+- B<X+1>_OPERATIONAL_QUALIFICATION: `PENDING`
+- SUCCESSOR_QUALITY_GATE: `OPERATIONAL_QUALIFICATION_PENDING`
 
 The handoff alone does not set either prior window to `WINDOW_COMPLETE`.
-Successor A/B windows must first return their mandated recovery reports. The
-prior GPT A reviews them under `SUCCESSOR_WINDOW_QUALITY_GATE`; only after both
-successor windows are `SUCCESSOR_READY` may Codex set the prior windows to
-`WINDOW_COMPLETE` and authorize the first next-chapter Task Card.
+Successor A/B windows must first return their mandated recovery reports, then
+pass operational qualification. A closure-candidate governance commit is then
+reviewed by the prior GPT A. Only after `FINAL_WINDOW_CLOSURE_APPROVED` may
+Codex set the prior windows to `WINDOW_COMPLETE`, successors to
+`SUCCESSOR_READY`, and authorize the first next-chapter Task Card.

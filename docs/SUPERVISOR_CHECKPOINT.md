@@ -30,19 +30,21 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Chapter 2 Closure State
 
-`CHAPTER_2_FINAL_CLOSURE = COMPLETE`
+`CHAPTER_2_FINAL_CLOSURE = SUCCESSOR_QUALIFICATION_PENDING`
 
 - `CHAPTER_2_ACADEMIC_GATE = PASSED`
 - `CHAPTER_2_FORMAT_QA = PASSED`
-- `SUCCESSOR_QUALITY_GATE = PASSED`
-- `A2 = WINDOW_COMPLETE`
-- `B2 = WINDOW_COMPLETE`
-- `A3 = SUCCESSOR_READY / ACTIVE_SUPERVISOR`
-- `B3 = SUCCESSOR_READY / ACTIVE_WRITER`
+- `A3_RECOVERY_KNOWLEDGE_CHECK = PASSED`
+- `B3_RECOVERY_KNOWLEDGE_CHECK = PASSED`
+- `A3_OPERATIONAL_QUALIFICATION = PENDING`
+- `B3_OPERATIONAL_QUALIFICATION = PENDING`
+- `SUCCESSOR_QUALITY_GATE = OPERATIONAL_QUALIFICATION_PENDING`
+- `A2 = SUCCESSOR_QUALIFICATION_PENDING`
+- `B2 = SUCCESSOR_QUALIFICATION_PENDING`
 
-Next Action: A3 re-reads this updated checkpoint and may issue the first
-authorized Chapter 3 Section Task Card. Codex must not create or select that
-Task Card, and no Chapter 3 body is authorized by this checkpoint update.
+Chapter 3 remains `PLANNED`. Next Action: A3 and B3 complete their respective
+qualification-only operational checks. No S3 Task Card or Chapter 3 body is
+authorized, and Codex must not create or select a Task Card.
 
 ## Frozen Decisions
 

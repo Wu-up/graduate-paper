@@ -74,25 +74,31 @@ closeout work.
    `docs/CHAPTER_STATUS.md` and `docs/SUPERVISOR_CHECKPOINT.md`.
 5. The handoff starts `SUCCESSOR_WINDOW_QUALITY_GATE`; it does not close the
    previous windows. The lifecycle is `CHAPTER_ACCEPTED` →
-   `CHAPTER_HANDOFF_CREATED` → `SUCCESSOR_QUALIFICATION_PENDING` → new A/B
-   windows recover state and return recovery reports → previous GPT A quality
-   review → `SUCCESSOR_READY` → previous A/B windows `WINDOW_COMPLETE` → next
-   chapter formal work authorized.
+   `CHAPTER_HANDOFF_CREATED` → `SUCCESSOR_QUALIFICATION_PENDING` → Phase 1
+   `RECOVERY_KNOWLEDGE_CHECK` → Phase 2 `OPERATIONAL_QUALIFICATION_CHECK` →
+   Phase 3 `FINAL_CLOSURE_REPOSITORY_CHECK` → `SUCCESSOR_READY` → previous
+   A/B windows `WINDOW_COMPLETE` → next-chapter formal authoring authorized.
 6. New GPT A and GPT B windows must recover state from the GitHub governance
    files and the preceding handoff, not an old chat summary. Before any Task
    Card or writing task, they return `A<N>_SUCCESSOR_RECOVERY_REPORT` and
    `B<N>_SUCCESSOR_RECOVERY_REPORT` respectively, under the requirements in
    `docs/ACADEMIC_QUALITY_GATE.md`.
-7. The previous GPT A's remaining role is limited to reviewing those reports:
-   it returns `SUCCESSOR_QUALITY_GATE = PASSED` or
-   `SUCCESSOR_QUALITY_GATE = RETRY_REQUIRED` with targeted recovery
-   corrections only. It may not author the next chapter, issue its Task Card,
-   or rewrite its prose. No next-chapter drafting begins on a retry.
-8. Only when both successor windows are `SUCCESSOR_READY` may Codex mark the
-   prior A/B windows `WINDOW_COMPLETE` and record
-   `SUCCESSOR_QUALITY_GATE = PASSED`. Only then may the new GPT A issue the
-   first formal Section Task Card. This rule applies to every chapter
-   transition, including A1/B1 through A5/B5.
+7. Passing Phase 1 records only `A<N>_RECOVERY_KNOWLEDGE_CHECK = PASSED` and
+   `B<N>_RECOVERY_KNOWLEDGE_CHECK = PASSED`; it does not mean
+   `SUCCESSOR_READY`. Phase 2 requires a qualification-only shadow repository
+   review by GPT A and a real Markdown-file packet demonstration by GPT B.
+   Neither authorizes next-chapter formal work.
+8. When both operational qualifications pass, Codex creates a
+   closure-candidate governance commit with `SUCCESSOR_QUALITY_GATE =
+   CLOSURE_REPOSITORY_CHECK_PENDING`. The previous GPT A then reads the actual
+   GitHub commit and returns `FINAL_WINDOW_CLOSURE_APPROVED` only after
+   verifying the checkpoint, handoff, window states, no premature Task Card,
+   no next-chapter body change, and no governance contradiction.
+9. Only after that approval may Codex mark the prior A/B windows
+   `WINDOW_COMPLETE`, record both successors `SUCCESSOR_READY`, and set
+   `SUCCESSOR_QUALITY_GATE = PASSED`. The prior GPT A may not author the next
+   chapter, issue its Task Card, or rewrite its prose. This rule applies to
+   every chapter transition, including A1/B1 through A5/B5.
 
 ## 5. Mandatory Read Order
 
