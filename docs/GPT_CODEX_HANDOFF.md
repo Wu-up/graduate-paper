@@ -86,6 +86,14 @@ These are mechanical format operations. They do not authorize Codex to alter mat
   `BLOCKED_MISSING_GPTB_PACKET` and does not infer missing formal content.
 - After `SECTION_ACCEPTED`, update the supervisor checkpoint when its update
   rule is met. After `CHAPTER_ACCEPTED`, create a chapter handoff.
+- Creating that handoff starts `SUCCESSOR_WINDOW_QUALITY_GATE`; it does not
+  close the prior A/B windows. The next A/B windows must return their mandated
+  recovery reports before accepting or issuing a formal next-chapter task. The
+  prior GPT A may review only those reports, returning `PASSED` or
+  `RETRY_REQUIRED` targeted recovery corrections; it must not author, rewrite,
+  or issue a Task Card for the next chapter. Codex records prior
+  `WINDOW_COMPLETE` only after both successors are `SUCCESSOR_READY` and the
+  gate is `PASSED`.
 
 ## Authoring Review Modes
 

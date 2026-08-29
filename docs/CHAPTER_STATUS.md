@@ -7,7 +7,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 | Chapter | File | Structure Status | Writing Status | Notes |
 |---|---|---|---|---|
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
-| 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | PLANNED | Theory-debt scope only. |
+| 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | PLANNED | Work1 complete loop: problem, method, experiment, analysis, conclusion. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
@@ -52,15 +52,23 @@ Resolved in P-003B-R1:
 | S1-04 | 1.4 本文主要研究内容 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Supervisor repository review passed; accepted commit `2cc68c8ef33475e33165b7d00f6611b0c5f1eead`. |
 | S1-05 | 1.5 论文组织结构 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; accepted commit `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`. |
 | S1-06 | 1.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | Final repository review passed; accepted commit `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`. |
-| S2-01 | 2.1 三维医学图像与分割任务 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; accepted commit `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
-| S2-02 | 2.2 卷积神经网络与U形编码器--解码器 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; reviewed commit `9d7af062d7cbd541b5615ef536e3b3b8cecac931`; final spacing cleanup commit `c21233e885a9f9b51c5fb0e434187642fc6213fe`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
-| S2-03 | 2.3 长距离上下文建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup commit `d070c0e1ef81051b1b92ab56f49756971fe407c0`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
-| S2-04 | 2.4 多尺度特征与尺度结构信息 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing/status cleanup commit `69400271b782399ee53cbf125469c6ac81e5f4f4`. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
-| S2-05 / S2-05-R1 | 2.5 损失函数与评价指标 | DIRECT_REPO_REVIEW / GATE_A_PASSED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | `FORMAL_WORK1_PAPER_RETRIEVED / LOSS_NOT_REPORTED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A`; GPT A final GitHub repository review passed; integration commit `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup commit `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`; concrete Work1/Work2 loss protocol remains subject to controlled backfill if authoritative evidence later becomes available. Chapter 2 remains incomplete; no Chapter Gate is authorized. |
-| S2-06 | 2.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final repository review passed; integration commit `4ae6acb3a30feebaf86cc3913b0eb83fb4775ed8`. Chapter 2 final closure is held for whole-thesis format QA. |
+| S2-01 | 2.1 三维医学图像与分割任务 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; accepted commit `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`. |
+| S2-02 | 2.2 卷积神经网络与U形编码器--解码器 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; reviewed commit `9d7af062d7cbd541b5615ef536e3b3b8cecac931`; final spacing cleanup commit `c21233e885a9f9b51c5fb0e434187642fc6213fe`. |
+| S2-03 | 2.3 长距离上下文建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup commit `d070c0e1ef81051b1b92ab56f49756971fe407c0`. |
+| S2-04 | 2.4 多尺度特征与尺度结构信息 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing/status cleanup commit `69400271b782399ee53cbf125469c6ac81e5f4f4`. |
+| S2-05 / S2-05-R1 | 2.5 损失函数与评价指标 | DIRECT_REPO_REVIEW / GATE_A_PASSED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | `FORMAL_WORK1_PAPER_RETRIEVED / LOSS_NOT_REPORTED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A`; GPT A final GitHub repository review passed; integration commit `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup commit `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`; concrete Work1/Work2 loss protocol remains subject to controlled backfill if authoritative evidence later becomes available. |
+| S2-06 | 2.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final repository review passed; integration commit `4ae6acb3a30feebaf86cc3913b0eb83fb4775ed8`. |
 
 ## Chapter 1 Gate
 
 - Writing Status: `COMPLETE`
 - Chapter Gate: `PASSED`
 - Coverage: Sections 1.1--1.6 are complete and have passed final supervisory review.
+
+## Chapter 2 Gate
+
+- Writing Status: `COMPLETE`
+- CHAPTER_2_GATE: `PASSED / CHAPTER_ACCEPTED`
+- Chapter Academic Gate: `PASSED`
+- Whole-thesis format QA: `PASSED`
+- Coverage: Sections 2.1--2.6 are `SECTION_ACCEPTED`.

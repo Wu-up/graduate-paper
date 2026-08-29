@@ -28,11 +28,18 @@ Chapter 1 — 绪论
 - `S2-04` integration commit: `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing cleanup: `69400271b782399ee53cbf125469c6ac81e5f4f4`.
 - `S2-05-R1` integration commit: `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup: `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`.
 
-## Chapter 2 Closure Hold
+## Chapter 2 Closure State
 
-`CHAPTER_2_FINAL_CLOSURE = FORMAT_QA_PENDING`. Do not create
-`CH02_HANDOFF.md`, mark A2/B2 `WINDOW_COMPLETE`, begin A3/B3, or begin formal
-Chapter 3 body until GPT A completes this whole-thesis format QA review.
+`CHAPTER_2_FINAL_CLOSURE = SUCCESSOR_QUALIFICATION_PENDING`
+
+- `CHAPTER_2_ACADEMIC_GATE = PASSED`
+- `CHAPTER_2_FORMAT_QA = PASSED`
+- `SUCCESSOR_QUALITY_GATE = PENDING`
+
+`CH02_HANDOFF.md` may be created, but A2/B2 must not be marked
+`WINDOW_COMPLETE`; no formal Chapter 3 body, S3 Task Card, or A3/B3 formal
+authoring is authorized until the successor recovery reports pass the
+`SUCCESSOR_WINDOW_QUALITY_GATE`.
 
 ## Frozen Decisions
 

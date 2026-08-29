@@ -42,16 +42,20 @@ State how the next chapter must carry the argument forward.
 
 List the exact governance, chapter, and handoff files the next GPT A must read.
 
-## Window Closure
+## Successor Window Qualification
 
 Record:
 
 - CURRENT_GPT_A_WINDOW: `A<X>`
 - CURRENT_GPT_B_WINDOW: `B<X>`
-- WINDOW_STATUS: `COMPLETE`
+- WINDOW_STATUS: `SUCCESSOR_QUALIFICATION_PENDING`
 - NEXT_GPT_A_WINDOW: `A<X+1>`
 - NEXT_GPT_B_WINDOW: `B<X+1>`
 - NEXT_CHAPTER: `Chapter X+1`
+- SUCCESSOR_QUALITY_GATE: `PENDING`
 
-The previous windows are not authorized to continue formal authoring of the
-next chapter.
+The handoff alone does not set either prior window to `WINDOW_COMPLETE`.
+Successor A/B windows must first return their mandated recovery reports. The
+prior GPT A reviews them under `SUCCESSOR_WINDOW_QUALITY_GATE`; only after both
+successor windows are `SUCCESSOR_READY` may Codex set the prior windows to
+`WINDOW_COMPLETE` and authorize the first next-chapter Task Card.

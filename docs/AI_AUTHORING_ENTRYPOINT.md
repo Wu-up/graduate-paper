@@ -72,17 +72,27 @@ closeout work.
    `docs/chapter_handoffs/CHXX_HANDOFF.md` from
    `docs/CHAPTER_HANDOFF_TEMPLATE.md`, and updates
    `docs/CHAPTER_STATUS.md` and `docs/SUPERVISOR_CHECKPOINT.md`.
-5. Once the handoff is complete and pushed, the current GPT A window enters
-   `CHAPTER_HANDOFF_COMPLETE / WINDOW_COMPLETE` and the current GPT B window
-   enters `WINDOW_COMPLETE`. Neither may continue formal writing in the next
-   chapter.
-6. The next chapter begins in new GPT A and GPT B windows, which recover state
-   from the GitHub governance files and the preceding chapter handoff. Do not
-   rely on an old chat summary instead of the handoff.
-7. The new GPT A re-evaluates the chapter function, section-task sequencing,
-   Task Card risk mode, and any need for `SUPERVISOR_PREAPPROVAL`. The previous
-   GPT A may identify only the next planned work in the handoff; it may not
-   pre-issue formal Task Cards for the next chapter.
+5. The handoff starts `SUCCESSOR_WINDOW_QUALITY_GATE`; it does not close the
+   previous windows. The lifecycle is `CHAPTER_ACCEPTED` →
+   `CHAPTER_HANDOFF_CREATED` → `SUCCESSOR_QUALIFICATION_PENDING` → new A/B
+   windows recover state and return recovery reports → previous GPT A quality
+   review → `SUCCESSOR_READY` → previous A/B windows `WINDOW_COMPLETE` → next
+   chapter formal work authorized.
+6. New GPT A and GPT B windows must recover state from the GitHub governance
+   files and the preceding handoff, not an old chat summary. Before any Task
+   Card or writing task, they return `A<N>_SUCCESSOR_RECOVERY_REPORT` and
+   `B<N>_SUCCESSOR_RECOVERY_REPORT` respectively, under the requirements in
+   `docs/ACADEMIC_QUALITY_GATE.md`.
+7. The previous GPT A's remaining role is limited to reviewing those reports:
+   it returns `SUCCESSOR_QUALITY_GATE = PASSED` or
+   `SUCCESSOR_QUALITY_GATE = RETRY_REQUIRED` with targeted recovery
+   corrections only. It may not author the next chapter, issue its Task Card,
+   or rewrite its prose. No next-chapter drafting begins on a retry.
+8. Only when both successor windows are `SUCCESSOR_READY` may Codex mark the
+   prior A/B windows `WINDOW_COMPLETE` and record
+   `SUCCESSOR_QUALITY_GATE = PASSED`. Only then may the new GPT A issue the
+   first formal Section Task Card. This rule applies to every chapter
+   transition, including A1/B1 through A5/B5.
 
 ## 5. Mandatory Read Order
 

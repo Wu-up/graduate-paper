@@ -62,15 +62,37 @@ checks apply to Chapters 1--5 and every later formal supplement, with formula
 numbers restarting by chapter and bibliography numbers remaining continuous
 through the thesis.
 
-### Window Closure
+### SUCCESSOR_WINDOW_QUALITY_GATE
 
-A passing Chapter Gate must be followed by creation of the chapter handoff.
-After the handoff and checkpoint update are complete:
+A passing Chapter Gate must be followed by creation of the chapter handoff and
+`SUCCESSOR_QUALIFICATION_PENDING`; neither action closes the current A/B
+windows. The next windows must first demonstrate recovered state, then the
+previous GPT A reviews that demonstration. It must not author the next chapter,
+issue a next-chapter Task Card, or rewrite next-chapter prose.
 
-- current GPT A window = `WINDOW_COMPLETE`;
-- current GPT B window = `WINDOW_COMPLETE`;
-- the next chapter begins in new A/B windows.
+`A<N>_SUCCESSOR_RECOVERY_REPORT` must demonstrate understanding of: the
+whole-thesis central problem; Work1/Work2 progression; the new chapter's
+function and scope; inherited terminology; authoritative facts and evidence
+identities; open citation/source risks; forbidden claims and placeholders;
+expected section structure and dependencies; likely
+`DIRECT_REPO_REVIEW` versus `SUPERVISOR_PREAPPROVAL` sections; whole-thesis
+equation numbering; sequential bibliography/citation order; GPT A/GPT B/Codex
+role boundaries; and a proposed first-task direction without issuing a Task
+Card.
 
-The previous windows may perform one migration-verification turn only when the
-user explicitly requests it; they do not become the supervisor or writer of the
-next chapter.
+`B<N>_SUCCESSOR_RECOVERY_REPORT` must demonstrate understanding of: its role
+boundary and governance read set; the current chapter argument; Work1/Work2
+evidence identity; source risks and forbidden unsupported claims; the GPT B
+packet workflow and its Source Packet, Formal Body, Author Notes, and
+`CODEX_HANDOFF` structure; the `SUPERVISOR_PREAPPROVAL` versus
+`DIRECT_REPO_REVIEW` boundary; equation and citation output constraints; the
+prohibition on modifying GitHub; and the requirement to await an authorized GPT
+A Task Card.
+
+The prior GPT A records `SUCCESSOR_QUALITY_GATE = PASSED` or
+`SUCCESSOR_QUALITY_GATE = RETRY_REQUIRED`. On retry, it gives only targeted
+recovery corrections and the successor window rereads and reports; no formal
+drafting begins. Only when both next windows are `SUCCESSOR_READY` may Codex
+record `SUCCESSOR_QUALITY_GATE = PASSED`, mark both prior windows
+`WINDOW_COMPLETE`, and authorize the new GPT A to issue the first formal
+Section Task Card. This applies to every chapter transition.
