@@ -48,9 +48,32 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `A3 = SUCCESSOR_READY / ACTIVE_SUPERVISOR`
 - `B3 = SUCCESSOR_READY / ACTIVE_WRITER`
 
-Chapter 3 remains `IN_PROGRESS`. Next Action: A3 may independently issue the
-next authorized Chapter 3 Section Task Card. Codex must not create or select
-that Task Card.
+Chapter 3 remains `IN_PROGRESS`. Next Action: continue the authorized Chapter 3
+section pipeline. Codex must not create or select Task Cards, but it may
+mechanically integrate an A3-authorized, Gate-A-passed GPT B packet under the
+default direct-repository-review workflow.
+
+## Chapter 3 Review Pipeline
+
+- `CHAPTER_3_DEFAULT_AUTHORING_REVIEW_MODE = DIRECT_REPO_REVIEW`.
+- For Chapter 3, the normal route is `A3 Task Card -> B3 packet / Gate A ->
+  Codex mechanical integration + GitHub push -> PENDING_SUPERVISOR_REPO_REVIEW
+  -> A3 actual-GitHub final review`.
+- This default applies to Full cards, core methods, experiments, ablations,
+  high-risk evidence, and source-conflict sections. Those labels do not by
+  themselves create a preapproval gate.
+- `SUPERVISOR_PREAPPROVAL` is used only when the user explicitly requests that
+  exception for a specific section.
+- `S3-02 AUTHORING_REVIEW_MODE_OVERRIDE = DIRECT_REPO_REVIEW`.
+- `S3-02 PACKET_STATUS_OVERRIDE = READY_FOR_REPO_INTEGRATION`.
+- The earlier local `gptBmd/S3-02.md` markers
+  `SUPERVISOR_PREAPPROVAL / WAIT_FOR_SUPERVISOR_APPROVAL` are superseded by this
+  later A3 workflow amendment. They are not a current blocking condition and do
+  not require a redundant `CONTENT_APPROVED`.
+- Codex may integrate the existing Gate-A-passed S3-02 Formal Body mechanically,
+  perform citation/BibTeX/LaTeX/figure/diff checks, push GitHub/Overleaf as
+  applicable, and record only `PENDING_SUPERVISOR_REPO_REVIEW`. Codex may not
+  grant `SECTION_ACCEPTED`.
 
 ## Frozen Decisions
 
