@@ -67,7 +67,7 @@ Resolved in P-003B-R1:
 | S3-05 | 3.5 解码与特征融合 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 11733093cd3785ab27301c3b16dfbaa7bf0dc301. |
 | S3-06A / S3-06A-R1 | 3.6 实验与结果分析（实验设置与评价体系） | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted R1 commit 9ec5fb87db0b122bcb917752d556c52111b360f5. |
 | S3-06B | 3.6 实验与结果分析（Synapse与ACDC结果） | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit dc25a2ae75ce08ef1d09e8b07f6f17270201676a. |
-| S3-06C | 3.6 实验与结果分析（ViL深度消融与复杂度） | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING | PENDING_SUPERVISOR_REPO_REVIEW | Mechanical integration complete; awaiting GPT A3 final GitHub repository review. |
+| S3-06C | 3.6 实验与结果分析（ViL深度消融与复杂度） | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 0f5113e839fab5dfa6aa0c3736b172db8ff0f137. |
 
 ## Chapter 1 Gate
 
