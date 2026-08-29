@@ -122,13 +122,15 @@ scope and evidence boundaries before issuing any formal task.
 
 - CURRENT_GPT_A_WINDOW: `A2`
 - CURRENT_GPT_B_WINDOW: `B2`
-- WINDOW_STATUS: `SUCCESSOR_QUALIFICATION_PENDING`
+- WINDOW_STATUS: `COMPLETE`
 - NEXT_GPT_A_WINDOW: `A3`
 - NEXT_GPT_B_WINDOW: `B3`
 - NEXT_CHAPTER: `Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法`
-- SUCCESSOR_QUALITY_GATE: `PENDING`
+- A3_STATUS: `SUCCESSOR_READY`
+- B3_STATUS: `SUCCESSOR_READY`
+- SUCCESSOR_QUALITY_GATE: `PASSED`
 
-Creation of this handoff does not set A2 or B2 to `WINDOW_COMPLETE`. A3 and B3
-must each return their required recovery report; A2 then reviews only those
-reports. Formal Chapter 3 work begins only after both successors are
-`SUCCESSOR_READY` and the gate is `PASSED`.
+A3 and B3 recovery reports passed A2 qualification review; no retry was
+required. A2 and B2 are now `WINDOW_COMPLETE`. Chapter 3 formal work is
+authorized only under A3 supervision and the normal Section Task Card
+lifecycle; this handoff does not itself issue or select that Task Card.

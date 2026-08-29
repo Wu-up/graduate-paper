@@ -6,11 +6,11 @@
 
 ## Current Chapter
 
-Chapter 2 — 三维医学图像分割相关理论与关键技术
+Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法
 
 ## Last Completed Chapter
 
-Chapter 1 — 绪论
+Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Chapter 1 Gate
 
@@ -30,16 +30,19 @@ Chapter 1 — 绪论
 
 ## Chapter 2 Closure State
 
-`CHAPTER_2_FINAL_CLOSURE = SUCCESSOR_QUALIFICATION_PENDING`
+`CHAPTER_2_FINAL_CLOSURE = COMPLETE`
 
 - `CHAPTER_2_ACADEMIC_GATE = PASSED`
 - `CHAPTER_2_FORMAT_QA = PASSED`
-- `SUCCESSOR_QUALITY_GATE = PENDING`
+- `SUCCESSOR_QUALITY_GATE = PASSED`
+- `A2 = WINDOW_COMPLETE`
+- `B2 = WINDOW_COMPLETE`
+- `A3 = SUCCESSOR_READY / ACTIVE_SUPERVISOR`
+- `B3 = SUCCESSOR_READY / ACTIVE_WRITER`
 
-`CH02_HANDOFF.md` may be created, but A2/B2 must not be marked
-`WINDOW_COMPLETE`; no formal Chapter 3 body, S3 Task Card, or A3/B3 formal
-authoring is authorized until the successor recovery reports pass the
-`SUCCESSOR_WINDOW_QUALITY_GATE`.
+Next Action: A3 re-reads this updated checkpoint and may issue the first
+authorized Chapter 3 Section Task Card. Codex must not create or select that
+Task Card, and no Chapter 3 body is authorized by this checkpoint update.
 
 ## Frozen Decisions
 
