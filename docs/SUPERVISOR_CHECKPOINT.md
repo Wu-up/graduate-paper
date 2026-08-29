@@ -27,11 +27,11 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `S2-03` accepted commit: `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup: `d070c0e1ef81051b1b92ab56f49756971fe407c0`.
 - `S2-04` integration commit: `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing cleanup: `69400271b782399ee53cbf125469c6ac81e5f4f4`.
 - `S2-05-R1` integration commit: `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup: `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`.
-- `S2-05-R2` late quality correction: `CONTENT_APPROVED / LATEX_INTEGRATED / PENDING GPT A2 FINAL REPOSITORY REVIEW`; no `SECTION_ACCEPTED` decision is granted by Codex.
+- `S2-05-R2` late quality correction: `CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / SECTION_ACCEPTED`; integration commit `195be005afbf4604db4db6937c45c2efd11709cd` removed the obsolete Params/FLOPs/Peak VRAM/inference-time inequality equation without reopening Chapter 2.
 
 ## Chapter 2 Closure State
 
-`CHAPTER_2_FINAL_CLOSURE = SUCCESSOR_QUALIFICATION_PENDING`
+`CHAPTER_2_FINAL_CLOSURE = COMPLETE / CHAPTER_ACCEPTED`
 
 - `CHAPTER_2_ACADEMIC_GATE = PASSED`
 - `CHAPTER_2_FORMAT_QA = PASSED`
@@ -39,13 +39,17 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `B3_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `A3_OPERATIONAL_QUALIFICATION = PASSED`
 - `B3_OPERATIONAL_QUALIFICATION = PASSED`
-- `SUCCESSOR_QUALITY_GATE = CLOSURE_REPOSITORY_CHECK_PENDING`
-- `A2 = SUCCESSOR_QUALIFICATION_PENDING`
-- `B2 = SUCCESSOR_QUALIFICATION_PENDING`
+- `FINAL_CLOSURE_REPOSITORY_CHECK = PASSED`
+- `FINAL_WINDOW_CLOSURE_APPROVAL = APPROVED`
+- `SUCCESSOR_QUALITY_GATE = PASSED`
+- `A2 = WINDOW_COMPLETE`
+- `B2 = WINDOW_COMPLETE`
+- `A3 = SUCCESSOR_READY / ACTIVE_SUPERVISOR`
+- `B3 = SUCCESSOR_READY / ACTIVE_WRITER`
 
-Chapter 3 remains `PLANNED`. Next Action: GPT A2 performs the final
-closure-candidate repository check. No S3 Task Card or Chapter 3 body is
-authorized, and Codex must not create or select a Task Card.
+Chapter 3 remains `PLANNED`. Next Action: A3 must reread this final checkpoint
+and `CH02_HANDOFF`, then independently issue the first authorized Chapter 3
+Section Task Card. Codex must not create or select that Task Card.
 
 ## Frozen Decisions
 

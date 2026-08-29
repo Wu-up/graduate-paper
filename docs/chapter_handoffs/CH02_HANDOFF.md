@@ -122,19 +122,24 @@ scope and evidence boundaries before issuing any formal task.
 
 - CURRENT_GPT_A_WINDOW: `A2`
 - CURRENT_GPT_B_WINDOW: `B2`
-- WINDOW_STATUS: `SUCCESSOR_QUALIFICATION_PENDING`
-- A2_STATUS: `SUCCESSOR_QUALIFICATION_PENDING`
-- B2_STATUS: `SUCCESSOR_QUALIFICATION_PENDING`
+- WINDOW_STATUS: `COMPLETE`
+- A2_STATUS: `WINDOW_COMPLETE`
+- B2_STATUS: `WINDOW_COMPLETE`
 - NEXT_GPT_A_WINDOW: `A3`
 - NEXT_GPT_B_WINDOW: `B3`
 - NEXT_CHAPTER: `Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法`
+- A3_STATUS: `SUCCESSOR_READY`
+- B3_STATUS: `SUCCESSOR_READY`
 - A3_RECOVERY_KNOWLEDGE_CHECK: `PASSED`
 - B3_RECOVERY_KNOWLEDGE_CHECK: `PASSED`
 - A3_OPERATIONAL_QUALIFICATION: `PASSED`
 - B3_OPERATIONAL_QUALIFICATION: `PASSED`
-- SUCCESSOR_QUALITY_GATE: `CLOSURE_REPOSITORY_CHECK_PENDING`
+- FINAL_CLOSURE_REPOSITORY_CHECK: `PASSED`
+- FINAL_WINDOW_CLOSURE_APPROVAL: `APPROVED`
+- SUCCESSOR_QUALITY_GATE: `PASSED`
 
-A3 and B3 operational qualifications have passed; this is not
-`SUCCESSOR_READY`. The closure-candidate repository check remains pending
-before A2/B2 can be marked `WINDOW_COMPLETE`. No S3 Task Card or Chapter 3
-formal work is authorized at this stage.
+A2 and B2 are `WINDOW_COMPLETE`; their Chapter 3 transition responsibility is
+complete. A3 is the sole GPT A supervisor for Chapter 3, and B3 is the
+authorized GPT B writer/research window subject to A3 Section Task Cards.
+Chapter 3 formal authoring is now authorized only under A3's normal Section
+Task Card lifecycle. This handoff itself does not issue S3-01.
