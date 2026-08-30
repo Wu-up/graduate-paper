@@ -7,6 +7,7 @@
 - Status: `COMPLETE / CHAPTER_ACCEPTED`
 - Chapter Academic Gate: `PASSED`
 - Final Closure Audit: `PASSED`
+- `CH03_HANDOFF_REPOSITORY_REVIEW = R1_PENDING`
 
 ## Chapter Function in Whole Thesis
 
@@ -22,11 +23,16 @@ Work2.
 2. 3.2 ViL-UNet总体架构
 3. 3.3 三维局部特征编码
 4. 3.4 Vision-xLSTM全局上下文建模
+   - 3.4.1 三维特征序列化与多方向建模
+   - 3.4.2 ViL模块及长距离信息交互
 5. 3.5 解码与特征融合
 6. 3.6 实验与结果分析
-   - 3.6.1 实验设置与评价体系
-   - 3.6.2 Synapse与ACDC结果
-   - 3.6.3 ViL深度消融与复杂度分析
+   - 3.6.1 数据集与实验设置
+   - 3.6.2 评价指标与对比方法
+   - 3.6.3 Synapse实验结果与分析
+   - 3.6.4 ACDC实验结果与分析
+   - 3.6.5 ViL模块数量消融实验
+   - 3.6.6 模型复杂度与效率分析
    - 3.6.7 可视化分析
 7. 3.7 本章小结
 
