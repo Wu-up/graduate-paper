@@ -90,9 +90,11 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `REFRESHED_CH03_HANDOFF_A3_REPOSITORY_REVIEW = PASSED`
 - `REFRESHED_CH03_HANDOFF_REVIEWED_COMMIT = 05b1aca198726ea4fa482f1e560aa4e956fa6cda`
 - `A4_B4_SUCCESSOR_TRANSITION = SUCCESSOR_QUALIFICATION_PENDING`
-- `CURRENT_PHASE = SUCCESSOR_WINDOW_QUALITY_GATE / PHASE_1_RECOVERY_KNOWLEDGE_CHECK`
-- `A4_RECOVERY_KNOWLEDGE_CHECK = PENDING`
-- `B4_RECOVERY_KNOWLEDGE_CHECK = PENDING`
+- `CURRENT_PHASE = SUCCESSOR_WINDOW_QUALITY_GATE / PHASE_2_OPERATIONAL_QUALIFICATION_CHECK`
+- `A4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
+- `B4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
+- `A4_OPERATIONAL_QUALIFICATION = PENDING`
+- `B4_OPERATIONAL_QUALIFICATION = PENDING`
 - `CH03_HANDOFF_REPOSITORY_REVIEW = PASSED`
 - CH03 handoff R1 reviewed commit: `2e3c097d582dcb19ce1724156d132173a0c0e314`
 - `S3-CL-01 FINAL_REPOSITORY_REVIEW = PASSED`
@@ -101,9 +103,9 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `NEXT_CHAPTER = Chapter 4`
 
 The historical Chapter 3 acceptance and its quality-revision acceptance remain
-recorded. The refreshed CH03 handoff awaits A3 repository review; Chapter 4 is
-not in a formal writable state and no successor qualification, Chapter 4 Task
-Card, or Chapter 4 body work may begin.
+recorded. The refreshed CH03 handoff has passed A3 repository review. A4/B4 are
+now in successor operational qualification; Chapter 4 is not yet in a formal
+writable state and no Chapter 4 Task Card or body work may begin.
 
 ## Chapter 3 Review Pipeline
 
