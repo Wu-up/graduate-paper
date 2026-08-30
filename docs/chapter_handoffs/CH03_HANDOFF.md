@@ -4,12 +4,30 @@
 
 - Chapter: Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法
 - Source: `chapters/ch03_vil_unet.tex`
-- Status: `COMPLETE / CHAPTER_ACCEPTED`
+- Status: `COMPLETE / CHAPTER_ACCEPTED / QUALITY_REVISION_ACCEPTED`
 - Chapter Academic Gate: `PASSED`
+- Chapter Prose Quality Gate: `PASSED`
+- Post-Acceptance Quality Revision: `COMPLETE`
+- Final Chapter 3 Baseline: `00720be4423562153dcc511a87399368c71d2bf9`
 - Final Closure Audit: `PASSED`
 - `CH03_HANDOFF_REPOSITORY_REVIEW = PASSED`
 - CH03 handoff R1 reviewed commit: `2e3c097d582dcb19ce1724156d132173a0c0e314`
-- `CH03_HANDOFF = SUPERSEDED_PENDING_CHAPTER_3_QUALITY_REFRESH`
+- `CH03_HANDOFF = REFRESHED_AFTER_CHAPTER_3_QUALITY_REVISION / PENDING_A3_REPOSITORY_REVIEW`
+
+## Post-Acceptance Quality Revision Record
+
+- Group A (3.1--3.3) accepted baseline: `b5667921848196ceb1ec3775af29daeb9452df4a`.
+- Group B (3.4--3.5) accepted baseline: `09b9347f77fd51a1ffaaaa32b1d5b8630e5294f2`.
+- Group C (3.6--3.7) integration baseline: `64ee5267b26a43a31c0ed1d8a9be4298d6426300`.
+- Whole-chapter final prose polish: `d46c22af080cce685d6f4e8a1c0e4a2b4399340e`.
+- Final corrective baseline: `00720be4423562153dcc511a87399368c71d2bf9`.
+- `CHAPTER_3_PROSE_QUALITY_GATE = PASSED`.
+
+Chapter 3 visible formal body policy: `Work1 = 0`, `Work2 = 0`, recovered-code
+and source/governance narration = `0`, and paragraph-level
+`wu2026vilunet = 0`. Reused-publication provenance is localized once each in
+Fig.1, Fig.3, and Fig.4. Work1/Work2 remain internal handoff labels only and
+must not be copied into A4/B4 formal thesis prose.
 
 ## Chapter Function in Whole Thesis
 

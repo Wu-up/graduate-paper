@@ -8,7 +8,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 |---|---|---|---|---|
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
-| 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | QUALITY_REVISION_IN_PROGRESS | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = OPEN`; current formal-body voice revision is in progress. |
+| 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE / QUALITY_REVISION_ACCEPTED | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; post-acceptance quality revision is closed and accepted. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
 
@@ -99,23 +99,25 @@ Resolved in P-003B-R1:
 
 ## Chapter 3 Post-Acceptance Quality Revision State
 
-- `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = OPEN`
-- `CHAPTER_3_CURRENT_STATUS = QUALITY_REVISION_IN_PROGRESS`
+- `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = COMPLETE / CLOSED`
+- `CHAPTER_3_CURRENT_STATUS = COMPLETE / CHAPTER_ACCEPTED / QUALITY_REVISION_ACCEPTED`
 - Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED` and section
   acceptance records remain valid.
-- `A3 = ACTIVE_SUPERVISOR_FOR_CH3_QUALITY_REVISION`
-- `B3 = ACTIVE_WRITER_FOR_CH3_QUALITY_REVISION`
+- `CH3-QA-C-R1 = CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / QUALITY_REVISION_ACCEPTED`
+- `CH3-QA-C-R1 FINAL_REVIEW_BASELINE = 00720be4423562153dcc511a87399368c71d2bf9`
+- `CH3-QA-FINAL = CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / QUALITY_REVISION_ACCEPTED`
+- `CH3-QA-FINAL FINAL_REVIEW_BASELINE = 00720be4423562153dcc511a87399368c71d2bf9`
+- `CHAPTER_3_PROSE_QUALITY_GATE = PASSED`
+- `FINAL_CHAPTER_3_BASELINE_COMMIT = 00720be4423562153dcc511a87399368c71d2bf9`
 - `CH3-QA-A-R1 = CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / QUALITY_REVISION_ACCEPTED`
 - `CH3-QA-A-R1 REVIEWED_COMMIT = b5667921848196ceb1ec3775af29daeb9452df4a`
 - `CH3-QA-B-R1 = CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / QUALITY_REVISION_ACCEPTED`
 - `CH3-QA-B-R1 REVIEWED_COMMIT = 09b9347f77fd51a1ffaaaa32b1d5b8630e5294f2`
-- `CH3-QA-C-R1 = CONTENT_APPROVED / LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`
-- `CH3-QA-FINAL = CONTENT_APPROVED / LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`
 - `SELF_PUBLICATION_DISCLOSURE_OPTION = B` (Fig.1 caption contains the sole Group-A `\cite{wu2026vilunet}` provenance citation.)
-- `A4_B4_SUCCESSOR_TRANSITION = SUSPENDED_BY_CHAPTER_3_QUALITY_REVISION`
-- `CH03_HANDOFF = SUPERSEDED_PENDING_CHAPTER_3_QUALITY_REFRESH`
-- No A4/B4 qualification, Chapter 4 Task Card, or Chapter 4 body change is
-  authorized while this revision is open.
+- `A4_B4_SUCCESSOR_TRANSITION = PENDING_REFRESHED_CH03_HANDOFF_A3_REVIEW`
+- `CH03_HANDOFF = REFRESHED_AFTER_CHAPTER_3_QUALITY_REVISION / PENDING_A3_REPOSITORY_REVIEW`
+- No Chapter 4 Task Card, Chapter 4 body change, or A4/B4 successor-ready state
+  is authorized pending A3 review of the refreshed handoff.
 
 ## Chapter 1 Gate
 
