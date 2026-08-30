@@ -63,6 +63,7 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 - `CHAPTER_3_FINAL_CLOSURE_AUDIT = REVISION_REQUIRED`
 - `CHAPTER_3_STATUS = IN_PROGRESS`
 - `CHAPTER_3_CLOSURE_REPAIR_REQUIRED = WORK1_FIG1_BACKFILL + TODO_CLEANUP`
+- `CHAPTER_3_CLOSURE_REPAIR_STATUS = S3-CL-01_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`
 
 Chapter 3 remains `IN_PROGRESS` pending the controlled closure repair. Codex
 must not create a Chapter 3 handoff, mark the chapter `COMPLETE`, or grant
@@ -92,17 +93,17 @@ must not create a Chapter 3 handoff, mark the chapter `COMPLETE`, or grant
 
 ## Controlled Figure Backfill
 
-- `S3-02` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 has not been
-  materialized as a local reusable asset; any later provenance-preserving figure
-  backfill must not reopen the accepted formal body or alter its evidence scope.
-- `S3-04` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 / Fig. 2
-  thesis-local asset materialization remains pending; any later
-  provenance-preserving controlled backfill must not reopen the accepted formal
-  body or alter its evidence scope.
-- `S3-05` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 thesis-local
-  asset materialization remains pending; any later provenance-preserving
-  controlled backfill must not reopen the accepted formal body or alter its
+- `S3-02` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 is
+  `BACKFILLED / S3-CL-01`; this provenance-preserving figure repair did not
+  reopen the accepted formal body or alter its evidence scope.
+- `S3-04` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 is
+  `BACKFILLED / S3-CL-01`. `WORK1_FIG2_THESIS_BACKFILL_STATUS =
+  INTENTIONALLY_OMITTED_DUE_EVIDENCE_CONFLICT / RESOLVED_BY_OMISSION`; this
+  controlled decision did not reopen the accepted formal body or alter its
   evidence scope.
+- `S3-05` remains `SECTION_ACCEPTED`. Authentic Work1 Fig. 1 is
+  `BACKFILLED / S3-CL-01`; this provenance-preserving figure repair did not
+  reopen the accepted formal body or alter its evidence scope.
 
 ## Frozen Decisions
 
