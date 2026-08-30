@@ -27,6 +27,44 @@ Codex manages files, LaTeX format, Git operations, compilation support, and auto
 - Strong conclusions must have matching evidence in `docs/FACTS_AND_NUMBERS.md`.
 - Do not imitate or copy specific sentences from reference theses.
 
+## Formal Thesis Voice Firewall
+
+- The formal thesis body treats the thesis itself as the primary academic
+  narrator. Method and experiment chapters normally use `本文`, `本章`,
+  `本文方法`, `所提出方法`, or the formal model name; they must not use internal
+  project-management names such as `Work1`, `Work2`, `R2`, `previous work
+  packet`, `recovered code`, `evidence identity`, `source packet`, or
+  `placeholder governance`, unless a term is part of an officially public model
+  name.
+- `Work1` and `Work2` are permitted only in governance documents, Source
+  Packets, Author Notes, and internal review records. In final visible PDF
+  prose, use `第一项研究`, `第二项研究`, or the formal method name when a
+  distinction is necessary.
+- Source provenance and thesis narrative are separate. Formal body text must
+  not contain source-audit explanations such as “根据Work1论文”, “原论文没有给出”,
+  “根据权威来源”, “recovered code显示”, “证据身份”, “来源边界”, “治理文件”,
+  “当前证据允许”, “本节只固定”, or explanations of why a fact was not written.
+- When a fact lacks reliable support, omit it from the formal body. An
+  author-facing reminder may be retained only as a non-rendering LaTeX comment:
+  `%（作者核验备注：……）`; never explain the omission to the thesis reader.
+- Each section or subsection normally uses at most one necessary navigation
+  sentence. Do not form a repeated pattern of “后续将”, “本节不”, “不在本节”,
+  “将在下一节”, “这里只”, or “以避免重复”. Structure should be carried by the
+  argument itself.
+- Method prose should positively define what the method is, how it works, why
+  it is designed that way, and how information flows. Avoid defensive bodies
+  built from repeated “不是”, “不等同于”, “不进一步”, “不推断”, or “不补充”.
+  Necessary boundaries belong in one limited, relevant location.
+- A self-authored published paper may be used for internal fact verification,
+  but a thesis method or experiment chapter must not cite it paragraph by
+  paragraph to establish its own method facts. Any disclosure of prior
+  publication belongs once in an appropriate unified location or in the
+  institutionally required research-output section.
+- Genuine scientific limitations, such as absent statistical testing, limited
+  benchmarks, or a limited visualization sample, may appear at the most
+  relevant location. State each limitation once as a scientific limitation, not
+  as a source-audit explanation or repeated disclaimer.
+
 Detailed chapter writing methods: `docs/ACADEMIC_WRITING_PLAYBOOK.md`.
 
 Reference thesis positioning: `docs/REFERENCE_THESIS_INDEX.md`.

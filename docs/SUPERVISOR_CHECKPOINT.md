@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-`FORMAL_DRAFTING`
+`CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION`
 
 ## Current Chapter
 
@@ -65,6 +65,11 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `CHAPTER_3_STATUS = COMPLETE`
 - `CHAPTER_3_ACADEMIC_GATE = PASSED`
 - `CHAPTER_3_CLOSURE_REPAIR = PASSED`
+- `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = OPEN`
+- `CHAPTER_3_CURRENT_STATUS = QUALITY_REVISION_IN_PROGRESS`
+- `A3 = ACTIVE_SUPERVISOR_FOR_CH3_QUALITY_REVISION`
+- `B3 = ACTIVE_WRITER_FOR_CH3_QUALITY_REVISION`
+- `A4_B4_SUCCESSOR_TRANSITION = SUSPENDED_BY_CHAPTER_3_QUALITY_REVISION`
 - `CH03_HANDOFF_REPOSITORY_REVIEW = PASSED`
 - CH03 handoff R1 reviewed commit: `2e3c097d582dcb19ce1724156d132173a0c0e314`
 - `S3-CL-01 FINAL_REPOSITORY_REVIEW = PASSED`
@@ -72,9 +77,10 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - Final closure-repair commit: `9b4652fa919b6abcc7637efdd70b31d24116a520`
 - `NEXT_CHAPTER = Chapter 4`
 
-Chapter 3 is complete and accepted. The Current Chapter remains Chapter 3 for
-governance until the A3/B3 → A4/B4 successor quality gate is closed; Chapter 4
-is not yet in a formal writable state.
+The historical Chapter 3 acceptance remains recorded, while its current body
+quality revision is in progress. The A3/B3 → A4/B4 successor transition is
+suspended; Chapter 4 is not in a formal writable state and no successor
+qualification, Chapter 4 Task Card, or Chapter 4 body work may begin.
 
 ## Chapter 3 Review Pipeline
 

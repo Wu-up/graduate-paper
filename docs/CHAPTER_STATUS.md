@@ -8,7 +8,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 |---|---|---|---|---|
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
-| 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE | `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; `CHAPTER_3_FINAL_CLOSURE_AUDIT = PASSED`; `CHAPTER_3_ACADEMIC_GATE = PASSED`; S3-01 through S3-07 are accepted; Work1 complete loop: problem, method, experiment, analysis, conclusion. |
+| 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | QUALITY_REVISION_IN_PROGRESS | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = OPEN`; current formal-body voice revision is in progress. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
 
@@ -96,6 +96,19 @@ Resolved in P-003B-R1:
 - `S3-01 through S3-07 = SECTION_ACCEPTED`
 - `SECTION_3_6 = COMPLETE`
 - `CHAPTER_3 = COMPLETE / CHAPTER_ACCEPTED`
+
+## Chapter 3 Post-Acceptance Quality Revision State
+
+- `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = OPEN`
+- `CHAPTER_3_CURRENT_STATUS = QUALITY_REVISION_IN_PROGRESS`
+- Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED` and section
+  acceptance records remain valid.
+- `A3 = ACTIVE_SUPERVISOR_FOR_CH3_QUALITY_REVISION`
+- `B3 = ACTIVE_WRITER_FOR_CH3_QUALITY_REVISION`
+- `A4_B4_SUCCESSOR_TRANSITION = SUSPENDED_BY_CHAPTER_3_QUALITY_REVISION`
+- `CH03_HANDOFF = SUPERSEDED_PENDING_CHAPTER_3_QUALITY_REFRESH`
+- No A4/B4 qualification, Chapter 4 Task Card, or Chapter 4 body change is
+  authorized while this revision is open.
 
 ## Chapter 1 Gate
 

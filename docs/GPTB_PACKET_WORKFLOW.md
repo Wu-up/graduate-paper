@@ -39,6 +39,21 @@ require manual copying of the formal body into a recreated Markdown file. Only
 when file generation is unavailable may it report `FILE_CREATION_BLOCKED` and
 fall back to chat body.
 
+### A/B/C/D Content Boundary
+
+- **A. Source Packet** may use internal evidence-governance language, including
+  `Work1`/`Work2`, source provenance, conflicts, `SOURCE_NOT_REPORTED`, and
+  `recovered code`.
+- **B. 可入库正式正文** must pass the Formal Thesis Voice Firewall in
+  `docs/WRITING_STYLE_GUIDE.md`. GPT B must not copy provenance, governance, or
+  source-audit wording from A into B.
+- **C. Author Notes** contains author-facing explanations of why information is
+  omitted, where evidence is insufficient, and what requires later
+  verification. If the user asks to retain such a reminder in `.tex`, Codex may
+  convert it only to `%（作者核验备注：……）`; it must not render in the PDF.
+- **D. `CODEX_HANDOFF_PROMPT`** identifies the permitted mechanical integration
+  scope and must preserve the separation between the three preceding parts.
+
 ## Codex Input Contract
 
 Codex reads the Task Card's declared `GPTB_PACKET_PATH`, for example

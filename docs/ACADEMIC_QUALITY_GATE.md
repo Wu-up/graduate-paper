@@ -16,6 +16,16 @@ displayed equations and must not invent hard-coded equation numbers. For
 citations, multi-reference citation points must be prepared so they can render
 as ascending numerical clusters under the project citation style.
 
+#### FORMAL_BODY_VOICE_CHECK
+
+Gate A must confirm that visible formal-body `Work1` and `Work2` counts are
+zero, except where an explicit public model-name exception applies; visible
+`recovered code` and governance/evidence-audit terminology counts are zero;
+Source Packet language has not leaked into the Formal Body; repeated “本节不”,
+“不在本节”, “后续将”, or “为了避免” meta-writing does not form a pattern; and a
+self-publication citation is not repeated paragraph by paragraph. A violation
+means Gate A does not pass.
+
 ### Gate B — Codex Mechanical Integration
 
 Codex mechanically integrates the Gate-A-passed GPT B handoff package and
@@ -37,6 +47,17 @@ prose, continuity, equation-numbering compliance, multi-reference citation
 ordering, and unexpected integration changes. Only this passing gate grants
 `SECTION_ACCEPTED`; otherwise it returns `REVISION_REQUIRED` or authorizes only
 strictly mechanical correction when the academic body is already acceptable.
+
+#### FORMAL_BODY_VOICE_CHECK
+
+Gate C repeats the Formal Thesis Voice Firewall review on the GitHub-integrated
+visible body: `Work1 = 0`, `Work2 = 0`, `recovered code = 0`, and visible
+governance/evidence-audit terminology = 0, subject only to an explicit public
+model-name exception. It also checks that Source Packet wording has not leaked,
+that “本节不”/“不在本节”/“后续将”/“为了避免” do not form a repeated meta-writing
+pattern, and that self-publication citations are not used paragraph by
+paragraph to prove the thesis's own method. Any violation returns
+`REVISION_REQUIRED`; Gate C must not pass.
 
 ## SUPERVISOR_PREAPPROVAL
 
