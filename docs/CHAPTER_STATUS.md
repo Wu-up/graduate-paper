@@ -8,7 +8,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 |---|---|---|---|---|
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
-| 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | IN_PROGRESS | `A2-B2_WINDOW_COMPLETE / A3-B3_SUCCESSOR_READY / SUCCESSOR_QUALITY_GATE_PASSED`; S3-01 is accepted; Work1 complete loop: problem, method, experiment, analysis, conclusion. |
+| 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE | `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; `CHAPTER_3_FINAL_CLOSURE_AUDIT = PASSED`; `CHAPTER_3_ACADEMIC_GATE = PASSED`; S3-01 through S3-07 are accepted; Work1 complete loop: problem, method, experiment, analysis, conclusion. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
 
@@ -81,9 +81,21 @@ Resolved in P-003B-R1:
 
 ## Chapter 3 Closure Repair State
 
-- `S3-CL-01 = PENDING_SUPERVISOR_REPO_REVIEW`
+- `S3-CL-01 FINAL_REPOSITORY_REVIEW = PASSED`
+- `S3-CL-01 FINAL_STATUS = CLOSURE_REPAIR_ACCEPTED`
+- `S3-CL-01 closure-repair commit = 9b4652fa919b6abcc7637efdd70b31d24116a520`
 - `WORK1_FIG1_THESIS_BACKFILL_STATUS = BACKFILLED / S3-CL-01`
 - `WORK1_FIG2_THESIS_BACKFILL_STATUS = INTENTIONALLY_OMITTED_DUE_EVIDENCE_CONFLICT / RESOLVED_BY_OMISSION`
+
+## Chapter 3 Gate
+
+- Writing Status: `COMPLETE`
+- `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`
+- `CHAPTER_3_FINAL_CLOSURE_AUDIT = PASSED`
+- `CHAPTER_3_ACADEMIC_GATE = PASSED`
+- `S3-01 through S3-07 = SECTION_ACCEPTED`
+- `SECTION_3_6 = COMPLETE`
+- `CHAPTER_3 = COMPLETE / CHAPTER_ACCEPTED`
 
 ## Chapter 1 Gate
 

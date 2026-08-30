@@ -10,7 +10,7 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 
 ## Last Completed Chapter
 
-Chapter 2 — 三维医学图像分割相关理论与关键技术
+Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法
 
 ## Chapter 1 Gate
 
@@ -60,14 +60,19 @@ Chapter 2 — 三维医学图像分割相关理论与关键技术
 
 ## Chapter 3 Closure State
 
-- `CHAPTER_3_FINAL_CLOSURE_AUDIT = REVISION_REQUIRED`
-- `CHAPTER_3_STATUS = IN_PROGRESS`
-- `CHAPTER_3_CLOSURE_REPAIR_REQUIRED = WORK1_FIG1_BACKFILL + TODO_CLEANUP`
-- `CHAPTER_3_CLOSURE_REPAIR_STATUS = S3-CL-01_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`
+- `CHAPTER_3_FINAL_CLOSURE = COMPLETE / CHAPTER_ACCEPTED`
+- `CHAPTER_3_FINAL_CLOSURE_AUDIT = PASSED`
+- `CHAPTER_3_STATUS = COMPLETE`
+- `CHAPTER_3_ACADEMIC_GATE = PASSED`
+- `CHAPTER_3_CLOSURE_REPAIR = PASSED`
+- `S3-CL-01 FINAL_REPOSITORY_REVIEW = PASSED`
+- `S3-CL-01 FINAL_STATUS = CLOSURE_REPAIR_ACCEPTED`
+- Final closure-repair commit: `9b4652fa919b6abcc7637efdd70b31d24116a520`
+- `NEXT_CHAPTER = Chapter 4`
 
-Chapter 3 remains `IN_PROGRESS` pending the controlled closure repair. Codex
-must not create a Chapter 3 handoff, mark the chapter `COMPLETE`, or grant
-`CHAPTER_ACCEPTED` unless A3 explicitly authorizes a later closure outcome.
+Chapter 3 is complete and accepted. The Current Chapter remains Chapter 3 for
+governance until the A3/B3 → A4/B4 successor quality gate is closed; Chapter 4
+is not yet in a formal writable state.
 
 ## Chapter 3 Review Pipeline
 
