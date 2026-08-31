@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-`FIVE_CHAPTER_BODY_SOURCE_GATE_CLOSED / FRONTMATTER_FORMALIZATION_AUTHORIZED`
+`FRONTMATTER_FORMALIZATION_IN_PROGRESS / FM-02_ENGLISH_ABSTRACT_AUTHORIZED`
 
 ## Current Chapter
 
@@ -74,7 +74,10 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
   outlook.
 - `FINAL_THESIS_GATE = PENDING`
 - `FRONTMATTER_FORMALIZATION = AUTHORIZED_TO_BEGIN`
-- `FM-01_CHINESE_ABSTRACT = AUTHORIZED_TO_BEGIN`
+- `FM-01 FINAL_REPOSITORY_REVIEW = PASSED`
+- `FM-01_CHINESE_ABSTRACT = ACCEPTED`
+- `FM-01 ACCEPTED_COMMIT = d1f6f8f55a2a9dd2bb5050dab1d022a2c0f3a00c`
+- `FM-02_ENGLISH_ABSTRACT = AUTHORIZED_TO_BEGIN`
 - `FINAL_PDF_RENDER_QA = PENDING`
 - Remaining final-thesis work includes Chinese and English abstract
   formalization, template metadata/frontmatter, applicable backmatter review,
