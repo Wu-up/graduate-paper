@@ -81,6 +81,7 @@ Resolved in P-003B-R1:
 | S4-06 | 4.6 结构证据引导的解码增强 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `1cbbf46bf392ba27638290092851c0670823d6e7`. |
 | S4-07-EXP-R1 | 4.7 实验与结果分析 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | EXPECTED_RESULT_DRAFT_ACCEPTED | A4 final repository review passed; accepted integration commit `ba91943de854425d8e21539f6a35df9d4d295e97`. S4-07 expected-result draft acceptance does not promote `THESIS_PLACEHOLDER` values to verified experimental evidence; `FINAL_WORK2_EFFICACY_VERIFIED = NO`. `S4-07_SOURCE_LEVEL_REVIEW = PASSED`; `S4-07_FINAL_PDF_RENDER_QA = PENDING_CHAPTER_4_FINAL_COMPILE` because local `xelatex`/`latexmk` was unavailable during integration and static LaTeX checks passed. |
 | S4-08 | 4.8 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review passed; accepted integration commit `5c63ce1a790962a2dd9fc53d7017124af5e712f8`. |
+| S5-01 | 5.1 全文工作总结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | Integrated exactly from the authorized formal body; no Chapter 4 expected numerical value is rendered. |
 
 ## Chapter 3 Section 3.6 Completion
 
