@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-`CHAPTER_4_SOURCE_GATE_CLOSED / CHAPTER_5_AUTHORING_AUTHORIZED`
+`CHAPTER_5_AUTHORING_IN_PROGRESS / S5-02_AUTHORIZED`
 
 ## Current Chapter
 
-Chapter 4 — 基于尺度特异结构证据调制的三维医学图像分割方法
+Chapter 5 — 总结与展望
 
 ## Last Completed Chapter
 
@@ -18,9 +18,9 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, `S4-02 / S4-02-R1`, `S4-03`, `S4-04`, `S4-05`, `S4-06`, and `S4-08` are `SECTION_ACCEPTED`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, `S4-02 / S4-02-R1`, `S4-03`, `S4-04`, `S4-05`, `S4-06`, `S4-08`, and `S5-01` are `SECTION_ACCEPTED`.
 - Chapter 3 current method sections: `S3-01 through S3-05 = SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S4-08 / 4.8 本章小结`.
+- LAST_ACCEPTED_SECTION: `S5-01 / 5.1 全文工作总结`.
 - LAST_ACCEPTED_EXPECTED_RESULT_SECTION: `S4-07-EXP-R1 / 4.7 实验与结果分析`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
@@ -48,6 +48,10 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `S4-06` accepted commit: `1cbbf46bf392ba27638290092851c0670823d6e7`.
 - `S4-07-EXP-R1` accepted integration commit: `ba91943de854425d8e21539f6a35df9d4d295e97`.
 - `S4-08` accepted integration commit: `5c63ce1a790962a2dd9fc53d7017124af5e712f8`.
+- `S5-01 FINAL_REPOSITORY_REVIEW = PASSED`.
+- `S5-01 = SECTION_ACCEPTED`.
+- `S5-01` accepted integration commit: `a50e1b142b26377acc645d61cd98918d1d99218c`.
+- `S5-02 = AUTHORIZED_TO_BEGIN`.
 
 ## Chapter 2 Closure State
 

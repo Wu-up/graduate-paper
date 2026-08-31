@@ -10,7 +10,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE / QUALITY_REVISION_ACCEPTED | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; post-acceptance quality revision is closed and accepted. |
 | 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | COMPLETE / EXPECTED_RESULT_DRAFT | `CHAPTER_4_SOURCE_ACADEMIC_GATE = PASSED`; `CHAPTER_4_GATE = PASSED_WITH_EXPECTED_RESULT_SCOPE`; final Work2 efficacy remains unverified and requires controlled Section 4.7 backfill. |
-| 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
+| 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | IN_PROGRESS | `S5-01 = SECTION_ACCEPTED`; mirrors Section 1.4 and does not introduce an independent unified experiment chapter. |
 
 ## Evidence Guardrail
 
@@ -81,7 +81,7 @@ Resolved in P-003B-R1:
 | S4-06 | 4.6 结构证据引导的解码增强 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `1cbbf46bf392ba27638290092851c0670823d6e7`. |
 | S4-07-EXP-R1 | 4.7 实验与结果分析 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | EXPECTED_RESULT_DRAFT_ACCEPTED | A4 final repository review passed; accepted integration commit `ba91943de854425d8e21539f6a35df9d4d295e97`. S4-07 expected-result draft acceptance does not promote `THESIS_PLACEHOLDER` values to verified experimental evidence; `FINAL_WORK2_EFFICACY_VERIFIED = NO`. `S4-07_SOURCE_LEVEL_REVIEW = PASSED`; `S4-07_FINAL_PDF_RENDER_QA = PENDING_CHAPTER_4_FINAL_COMPILE` because local `xelatex`/`latexmk` was unavailable during integration and static LaTeX checks passed. |
 | S4-08 | 4.8 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review passed; accepted integration commit `5c63ce1a790962a2dd9fc53d7017124af5e712f8`. |
-| S5-01 | 5.1 全文工作总结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | Integrated exactly from the authorized formal body; no Chapter 4 expected numerical value is rendered. |
+| S5-01 | 5.1 全文工作总结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review passed; accepted integration commit `a50e1b142b26377acc645d61cd98918d1d99218c`. |
 
 ## Chapter 3 Section 3.6 Completion
 
@@ -156,7 +156,9 @@ Resolved in P-003B-R1:
 - `S4-07 = EXPECTED_RESULT_DRAFT_AUTHORIZED`.
 - `S4-07-EXP-R1 = EXPECTED_RESULT_DRAFT_ACCEPTED`.
 - `S4-08 = PASSED / SECTION_ACCEPTED`.
-- `CHAPTER_5_AUTHORING = AUTHORIZED_TO_BEGIN`.
+- `S5-01 = PASSED / SECTION_ACCEPTED`.
+- `S5-02 = AUTHORIZED_TO_BEGIN`.
+- `CHAPTER_5_WRITING_STATUS = IN_PROGRESS`.
 
 ## Chapter 1 Gate
 
