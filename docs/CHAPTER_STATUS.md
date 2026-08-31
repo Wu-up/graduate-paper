@@ -79,6 +79,7 @@ Resolved in P-003B-R1:
 | S4-04 | 4.4 尺度特异结构证据建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `d0d68c4f23c645acc6d206fceaa0bc322dc72608`. |
 | S4-05 | 4.5 独立尺度自适应调制 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `7589ea5a75d660485f3cd03eb134957bf2a2cca5`. |
 | S4-06 | 4.6 结构证据引导的解码增强 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `1cbbf46bf392ba27638290092851c0670823d6e7`. |
+| S4-07-EXP-R1 | 4.7 实验与结果分析 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | User-authorized expected-result draft; expected numerical table captions retain `（预期）`; placeholder evidence identity is unchanged. |
 
 ## Chapter 3 Section 3.6 Completion
 
