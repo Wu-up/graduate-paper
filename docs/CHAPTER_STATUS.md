@@ -9,7 +9,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE / QUALITY_REVISION_ACCEPTED | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; post-acceptance quality revision is closed and accepted. |
-| 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | IN_PROGRESS | S4-01 and S4-02-R1 are accepted; S4-03 awaits A4 final repository review; Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
+| 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | IN_PROGRESS | S4-01, S4-02 / S4-02-R1, and S4-03 are accepted; Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
 
 ## Evidence Guardrail
@@ -57,7 +57,7 @@ Resolved in P-003B-R1:
 | S2-03 | 2.3 长距离上下文建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `320d276b4b946a32a029e21b978871939932d556`; final spacing cleanup commit `d070c0e1ef81051b1b92ab56f49756971fe407c0`. |
 | S2-04 | 2.4 多尺度特征与尺度结构信息 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final GitHub repository review passed; integration commit `1955a1b4cca01102a7a5221c196e6cead2174da8`; final spacing/status cleanup commit `69400271b782399ee53cbf125469c6ac81e5f4f4`. |
 | S2-05 / S2-05-R1 | 2.5 损失函数与评价指标 | DIRECT_REPO_REVIEW / GATE_A_PASSED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | `FORMAL_WORK1_PAPER_RETRIEVED / LOSS_NOT_REPORTED / THEORY_ONLY_FALLBACK_AUTHORIZED_BY_GPT_A`; GPT A final GitHub repository review passed; integration commit `6c52a3afc0d7b786af6efef7d553462174b16f76`; final LaTeX/status cleanup commit `20397a685c1e06cc94e5ee6b04d1e7307ec5cb8b`; concrete Work1/Work2 loss protocol remains subject to controlled backfill if authoritative evidence later becomes available. |
-| S2-05-R2 | 2.5.3 模型效率指标 late quality correction | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A2 final repository review passed for integration commit `195be005afbf4604db4db6937c45c2efd11709cd`; the scoped late quality correction removed the obsolete metric-inequality equation and did not reopen Chapter 2. |
+| S2-05-R2 | 2.5.3 模型效率指标 late quality correction | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A2 final repository review passed for integration commit `195be005afbf4604db4db6937c45c2efd11709cd`; the scoped late quality correction removed the obsolete Params/FLOPs/Peak VRAM/inference-time inequality equation without reopening Chapter 2. |
 | S2-06 | 2.6 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A final repository review passed; integration commit `4ae6acb3a30feebaf86cc3913b0eb83fb4775ed8`. |
 
 | S3-01 | 3.1 引言 | CONTENT_APPROVED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 600142d353b632bb8cb8c01f12e91a5f83e89756. |
@@ -73,7 +73,7 @@ Resolved in P-003B-R1:
 
 | S4-01 | 4.1 引言 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `4741f81876dc73f3d88d010f8d950bd0e837b4b6`. |
 | S4-02 / S4-02-R1 | 4.2 跨尺度结构建模的前置分析 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `92e0fed6f40fca13c8536305c2fbedff4149ab2d`. |
-| S4-03 | 4.3 尺度特异结构证据调制方法总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | A4-authorized mechanical integration of `gptBmd/S4-03.md` formal body; awaiting A4 final repository review. |
+| S4-03 | 4.3 尺度特异结构证据调制方法总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `5e0e0747cd5c017d380b51140c73605e1e03d03d`. |
 
 ## Chapter 3 Section 3.6 Completion
 
@@ -135,7 +135,7 @@ Resolved in P-003B-R1:
 - `CHAPTER_4_AUTHORING_STATE = IN_PROGRESS`
 - `S4-01 = SECTION_ACCEPTED`.
 - `S4-02 / S4-02-R1 = PASSED / SECTION_ACCEPTED`.
-- `S4-03 = LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`.
+- `S4-03 = PASSED / SECTION_ACCEPTED`.
 
 ## Chapter 1 Gate
 

@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-`CHAPTER_4_AUTHORING_READY`
+`CHAPTER_4_AUTHORING_IN_PROGRESS`
 
 ## Current Chapter
 
@@ -18,9 +18,9 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, and `S4-02 / S4-02-R1` are `SECTION_ACCEPTED`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, `S4-02 / S4-02-R1`, and `S4-03` are `SECTION_ACCEPTED`.
 - Chapter 3 current method sections: `S3-01 through S3-05 = SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S4-02 / S4-02-R1 / 4.2 跨尺度结构建模的前置分析`.
+- LAST_ACCEPTED_SECTION: `S4-03 / 4.3 尺度特异结构证据调制方法总体架构`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
@@ -41,6 +41,7 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `S3-07` accepted commit: `905e3c77bdae8441d61287b2fc95a99ec6279aa4`.
 - `S4-01` accepted commit: `4741f81876dc73f3d88d010f8d950bd0e837b4b6`.
 - `S4-02 / S4-02-R1` accepted commit: `92e0fed6f40fca13c8536305c2fbedff4149ab2d`.
+- `S4-03` accepted commit: `5e0e0747cd5c017d380b51140c73605e1e03d03d`.
 
 ## Chapter 2 Closure State
 
@@ -92,7 +93,7 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `REFRESHED_CH03_HANDOFF_A3_REPOSITORY_REVIEW = PASSED`
 - `REFRESHED_CH03_HANDOFF_REVIEWED_COMMIT = 05b1aca198726ea4fa482f1e560aa4e956fa6cda`
 - `A4_B4_SUCCESSOR_TRANSITION = COMPLETE`
-- `CURRENT_PHASE = CHAPTER_4_AUTHORING_READY`
+- `CURRENT_PHASE = CHAPTER_4_AUTHORING_IN_PROGRESS`
 - `A4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `B4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `A4_OPERATIONAL_QUALIFICATION = PASSED`
@@ -113,9 +114,8 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 The historical Chapter 3 acceptance and its quality-revision acceptance remain
 recorded. The final closure repository review has been approved. A4/B4 are
 successor-ready, with A4 now the active supervisor and B4 the active writer.
-Chapter 4 remains planned with formal authoring not yet started; A4 may
-independently issue the first formal Chapter 4 Task Card after this closure
-commit, but this record does not create or select that Task Card.
+Chapter 4 formal authoring is in progress; S4-01, S4-02 / S4-02-R1, and S4-03
+are accepted. This record does not create or select a subsequent Task Card.
 
 ## Chapter 3 Review Pipeline
 
