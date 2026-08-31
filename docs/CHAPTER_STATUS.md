@@ -9,7 +9,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE / QUALITY_REVISION_ACCEPTED | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; post-acceptance quality revision is closed and accepted. |
-| 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | IN_PROGRESS | S4-01, S4-02 / S4-02-R1, and S4-03 are accepted; S4-04 awaits A4 final repository review; Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
+| 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | IN_PROGRESS | S4-01, S4-02 / S4-02-R1, S4-03, and S4-04 are accepted; Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
 
 ## Evidence Guardrail
@@ -74,7 +74,7 @@ Resolved in P-003B-R1:
 | S4-01 | 4.1 引言 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `4741f81876dc73f3d88d010f8d950bd0e837b4b6`. |
 | S4-02 / S4-02-R1 | 4.2 跨尺度结构建模的前置分析 | DIRECT_REPO_REVIEW / GATE_A_PASSED (R1) | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `92e0fed6f40fca13c8536305c2fbedff4149ab2d`. |
 | S4-03 | 4.3 尺度特异结构证据调制方法总体架构 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `5e0e0747cd5c017d380b51140c73605e1e03d03d`. |
-| S4-04 | 4.4 尺度特异结构证据建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | A4-authorized mechanical integration of `gptBmd/S4-04.md` formal body; awaiting A4 final repository review. |
+| S4-04 | 4.4 尺度特异结构证据建模 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | A4 final repository review accepted integration commit `d0d68c4f23c645acc6d206fceaa0bc322dc72608`. |
 
 ## Chapter 3 Section 3.6 Completion
 
@@ -137,7 +137,7 @@ Resolved in P-003B-R1:
 - `S4-01 = SECTION_ACCEPTED`.
 - `S4-02 / S4-02-R1 = PASSED / SECTION_ACCEPTED`.
 - `S4-03 = PASSED / SECTION_ACCEPTED`.
-- `S4-04 = LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`.
+- `S4-04 = PASSED / SECTION_ACCEPTED`.
 
 ## Chapter 1 Gate
 
