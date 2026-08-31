@@ -67,8 +67,8 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `CHAPTER_3_CLOSURE_REPAIR = PASSED`
 - `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = COMPLETE / CLOSED`
 - `CHAPTER_3_CURRENT_STATUS = COMPLETE / CHAPTER_ACCEPTED / QUALITY_REVISION_ACCEPTED`
-- `A3 = CHAPTER_3_QUALITY_REVISION_COMPLETE / PENDING_HANDOFF_REFRESH_REVIEW`
-- `B3 = CHAPTER_3_QUALITY_REVISION_COMPLETE / NO_FURTHER_CHAPTER_3_AUTHORING_AUTHORIZED`
+- `A3 = SUCCESSOR_QUALIFICATION_PENDING / PHASE_3_CLOSURE_REVIEW`
+- `B3 = SUCCESSOR_QUALIFICATION_PENDING / PHASE_3_CLOSURE_REVIEW`
 - `CH3-QA-A-R1 = CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / QUALITY_REVISION_ACCEPTED`
 - `CH3_QUALITY_REVISION_GROUP_A = ACCEPTED`
 - `CH3_QUALITY_REVISION_GROUP_A_SCOPE = 3.1--3.3`
@@ -106,9 +106,11 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `NEXT_CHAPTER = Chapter 4`
 
 The historical Chapter 3 acceptance and its quality-revision acceptance remain
-recorded. The refreshed CH03 handoff has passed A3 repository review. A4/B4 are
-now in successor operational qualification; Chapter 4 is not yet in a formal
-writable state and no Chapter 4 Task Card or body work may begin.
+recorded. The refreshed CH03 handoff has passed A3 repository review. A4/B4
+have passed recovery and operational qualification and are now in Phase 3
+final closure repository review. Chapter 4 is not yet formally writable, and
+no Chapter 4 Task Card or body work may begin until final window closure is
+approved and committed.
 
 ## Chapter 3 Review Pipeline
 
