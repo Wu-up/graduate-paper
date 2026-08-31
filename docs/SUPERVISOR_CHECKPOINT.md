@@ -121,6 +121,17 @@ Chapter 4 formal authoring is in progress; S4-01, S4-02 / S4-02-R1, S4-03,
 S4-04, S4-05, and S4-06 are accepted. This record does not create or select a
 subsequent Task Card.
 
+## S4-07 Expected-Result Draft Authorization
+
+- `S4-07_AUTHORING_MODE = USER_AUTHORIZED_EXPECTED_RESULT_DRAFT`
+- `S4-07_PLACEHOLDER_RENDERING_OVERRIDE = ACTIVE / S4-07_ONLY`
+- `PLACEHOLDER_EVIDENCE_IDENTITY = UNCHANGED / THESIS_PLACEHOLDER`
+- `S4-07 = EXPECTED_RESULT_DRAFT_AUTHORIZED`
+- Scope is limited to 4.7.1--4.7.7. Expected numerical tables require a
+  Chinese caption ending in `（预期）` and nearby non-rendered ledger-ID comments.
+- This authorization does not verify final evidence, alter the placeholder
+  ledger, change S4-01 through S4-06, or change Chapter 4's `IN_PROGRESS` state.
+
 ## Chapter 3 Review Pipeline
 
 - `CHAPTER_3_DEFAULT_AUTHORING_REVIEW_MODE = DIRECT_REPO_REVIEW`.

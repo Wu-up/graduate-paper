@@ -109,6 +109,34 @@ They may be used only for governed internal planning or layout purposes permitte
 
 A placeholder must never generate a rendered formal result claim.
 
+### 4.1 S4-07 expected-result drafting override
+
+`S4-07_AUTHORING_MODE = USER_AUTHORIZED_EXPECTED_RESULT_DRAFT`
+
+`S4-07_PLACEHOLDER_RENDERING_OVERRIDE = ACTIVE / S4-07_ONLY`
+
+`PLACEHOLDER_EVIDENCE_IDENTITY = UNCHANGED / THESIS_PLACEHOLDER`
+
+This narrow user authorization applies only to Section 4.7 `实验与结果分析`
+and subsections 4.7.1--4.7.7. It authorizes expected-result drafting, not
+evidence promotion, final-evidence verification, or any status beyond the
+authorization recorded in the Chapter 4 governance files.
+For this scope only, it is the controlled exception to the general rendered
+placeholder-claim prohibition below; the caption and traceability rules in this
+subsection are mandatory conditions of that exception.
+
+Within this narrow scope, expected numerical tables may render only when the
+Chinese table caption ends with `（预期）`. Each such table must retain nearby
+non-rendered `% PLACEHOLDER_RESULT: <ledger-ID>` comments for future replacement.
+These comments do not change any placeholder status or evidence identity.
+
+Expected-result prose may analyze a caption-marked table using explicit,
+arithmetically correct comparison language. It must not call a number
+experimentally verified, use unsupported statistical language, derive runtime
+or memory conclusions from Params/FLOPs, or generalize qualitative examples to
+the full dataset. Rendered prose must remain ordinary thesis prose and must not
+contain governance, provenance, source-audit, or defensive disclaimer language.
+
 Until a value is promoted by authoritative verified evidence, do not write claims such as:
 
 - 取得……

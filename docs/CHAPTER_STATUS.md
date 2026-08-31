@@ -15,6 +15,8 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 ## Evidence Guardrail
 
 - All Work2 final values remain `THESIS_PLACEHOLDER` until verified evidence changes their identity.
+- `S4-07_AUTHORING_MODE = USER_AUTHORIZED_EXPECTED_RESULT_DRAFT`; `S4-07_PLACEHOLDER_RENDERING_OVERRIDE = ACTIVE / S4-07_ONLY`; `PLACEHOLDER_EVIDENCE_IDENTITY = UNCHANGED / THESIS_PLACEHOLDER`.
+- This authorization applies only to 4.7.1--4.7.7. Expected numerical tables must have a Chinese caption ending in `（预期）` and nearby non-rendered ledger-ID comments; it is not final-evidence verification.
 - The separate `实验结果与讨论` chapter has been removed because Work1 and Work2 each own their experimental closure.
 - Formal drafting requires a completed Section Task Card.
 
@@ -142,6 +144,7 @@ Resolved in P-003B-R1:
 - `S4-04 = PASSED / SECTION_ACCEPTED`.
 - `S4-05 = PASSED / SECTION_ACCEPTED`.
 - `S4-06 = PASSED / SECTION_ACCEPTED`.
+- `S4-07 = EXPECTED_RESULT_DRAFT_AUTHORIZED`.
 
 ## Chapter 1 Gate
 
