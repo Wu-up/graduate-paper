@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-`CHAPTER_4_AUTHORING_IN_PROGRESS`
+`CHAPTER_4_SOURCE_GATE_CLOSED / CHAPTER_5_AUTHORING_AUTHORIZED`
 
 ## Current Chapter
 
@@ -18,9 +18,9 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 
 ## Last Accepted Sections
 
-- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, `S4-02 / S4-02-R1`, `S4-03`, `S4-04`, `S4-05`, and `S4-06` are `SECTION_ACCEPTED`.
+- `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, `S4-02 / S4-02-R1`, `S4-03`, `S4-04`, `S4-05`, `S4-06`, and `S4-08` are `SECTION_ACCEPTED`.
 - Chapter 3 current method sections: `S3-01 through S3-05 = SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S4-07-EXP-R1 / 4.7 实验与结果分析 / EXPECTED_RESULT_DRAFT_ACCEPTED`.
+- LAST_ACCEPTED_SECTION: `S4-08 / 4.8 本章小结`.
 - LAST_ACCEPTED_EXPECTED_RESULT_SECTION: `S4-07-EXP-R1 / 4.7 实验与结果分析`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
@@ -47,6 +47,7 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `S4-05` accepted commit: `7589ea5a75d660485f3cd03eb134957bf2a2cca5`.
 - `S4-06` accepted commit: `1cbbf46bf392ba27638290092851c0670823d6e7`.
 - `S4-07-EXP-R1` accepted integration commit: `ba91943de854425d8e21539f6a35df9d4d295e97`.
+- `S4-08` accepted integration commit: `5c63ce1a790962a2dd9fc53d7017124af5e712f8`.
 
 ## Chapter 2 Closure State
 
@@ -98,7 +99,7 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `REFRESHED_CH03_HANDOFF_A3_REPOSITORY_REVIEW = PASSED`
 - `REFRESHED_CH03_HANDOFF_REVIEWED_COMMIT = 05b1aca198726ea4fa482f1e560aa4e956fa6cda`
 - `A4_B4_SUCCESSOR_TRANSITION = COMPLETE`
-- `CURRENT_PHASE = CHAPTER_4_AUTHORING_IN_PROGRESS`
+- `CURRENT_PHASE = CHAPTER_4_SOURCE_GATE_CLOSED / CHAPTER_5_AUTHORING_AUTHORIZED`
 - `A4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `B4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `A4_OPERATIONAL_QUALIFICATION = PASSED`
@@ -119,9 +120,10 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 The historical Chapter 3 acceptance and its quality-revision acceptance remain
 recorded. The final closure repository review has been approved. A4/B4 are
 successor-ready, with A4 now the active supervisor and B4 the active writer.
-Chapter 4 formal authoring is in progress; S4-01, S4-02 / S4-02-R1, S4-03,
-S4-04, S4-05, and S4-06 are accepted. This record does not create or select a
-subsequent Task Card.
+Chapter 4 source-level academic writing is complete within its expected-result
+draft scope. S4-01 through S4-06 are accepted method/content sections,
+S4-07-EXP-R1 is accepted as a user-authorized expected-result draft, and S4-08
+is accepted. Chapter 5 authoring is authorized to begin.
 
 ## S4-07 Expected-Result Draft Authorization
 
@@ -146,10 +148,34 @@ subsequent Task Card.
 
 ## S4-08 Chapter Summary Integration
 
-- `S4-08 = LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`
-- The authorized Formal Body was integrated with the two A4-authorized micro
-  polishes only. This integration does not grant `SECTION_ACCEPTED`, complete
-  Chapter 4, or grant the Chapter 4 Gate.
+- `S4-08 FINAL_REPOSITORY_REVIEW = PASSED`
+- `S4-08 = PASSED / SECTION_ACCEPTED`
+- Accepted integration commit: `5c63ce1a790962a2dd9fc53d7017124af5e712f8`.
+
+## Chapter 4 Source Gate Closure
+
+- `CHAPTER_4_WRITING_STATUS = COMPLETE / EXPECTED_RESULT_DRAFT`
+- `CHAPTER_4_SOURCE_ACADEMIC_GATE = PASSED`
+- `CHAPTER_4_GATE = PASSED_WITH_EXPECTED_RESULT_SCOPE`
+- `CHAPTER_4_SOURCE_STATIC_QA = PASSED`
+- `CHAPTER_4_FINAL_PDF_RENDER_QA = PENDING`
+- `PLACEHOLDER_EVIDENCE_IDENTITY = UNCHANGED / THESIS_PLACEHOLDER`
+- `FINAL_WORK2_EFFICACY_VERIFIED = NO`
+- `CHAPTER_4_REAL_RESULT_BACKFILL_REQUIRED = YES`
+- `CHAPTER_5_AUTHORING = AUTHORIZED_TO_BEGIN`
+- Final PDF render QA remains pending because local `xelatex`/`latexmk` is
+  unavailable. Its eventual review must inspect the six expected-result tables
+  in Section 4.7, wide organ-level and efficiency tables, table/page overflow,
+  caption placement, equation numbering, citation rendering, page breaks, and
+  Chapter 4 heading/section layout. This pending render QA does not reopen
+  source-level academic acceptance.
+- Authentic final Work2 evidence requires controlled reopening of Section 4.7
+  only as necessary for the executed protocol, overall and organ-level results,
+  strategy comparison, ablation, Params/FLOPs/VRAM/latency, and qualitative
+  figures and analysis. Re-review Section 4.8 only if real-result backfill
+  materially changes its bounded conclusions. Do not reopen Sections 4.1--4.6
+  solely because result values change, unless actual implementation evidence
+  changes the frozen method.
 
 ## Chapter 3 Review Pipeline
 
