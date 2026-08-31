@@ -144,6 +144,13 @@ subsequent Task Card.
   pending Chapter 4 final compilation because local `xelatex`/`latexmk` was
   unavailable during integration, while static LaTeX checks passed.
 
+## S4-08 Chapter Summary Integration
+
+- `S4-08 = LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`
+- The authorized Formal Body was integrated with the two A4-authorized micro
+  polishes only. This integration does not grant `SECTION_ACCEPTED`, complete
+  Chapter 4, or grant the Chapter 4 Gate.
+
 ## Chapter 3 Review Pipeline
 
 - `CHAPTER_3_DEFAULT_AUTHORING_REVIEW_MODE = DIRECT_REPO_REVIEW`.
