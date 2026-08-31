@@ -9,7 +9,7 @@ The thesis directory was frozen as a five-chapter architecture in P-002. "Frozen
 | 1 绪论 | `chapters/ch01_introduction.tex` | FROZEN_V1.0 | COMPLETE | Chapter Gate: `PASSED`; Sections 1.1--1.6 are accepted under the frozen Work1/Work2 progression. |
 | 2 三维医学图像分割相关理论与关键技术 | `chapters/ch02_background.tex` | FROZEN_V1.0 | COMPLETE | Chapter Academic Gate: `PASSED`; Whole-thesis format QA: `PASSED`; Sections 2.1--2.6 accepted. |
 | 3 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法 | `chapters/ch03_vil_unet.tex` | FROZEN_V1.0 | COMPLETE / QUALITY_REVISION_ACCEPTED | Historical `CHAPTER_3_GATE = PASSED / CHAPTER_ACCEPTED`; post-acceptance quality revision is closed and accepted. |
-| 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | PLANNED | Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
+| 4 基于尺度特异结构证据调制的三维医学图像分割方法 | `chapters/ch04_scale_specific.tex` | FROZEN_V1.0 | IN_PROGRESS | S4-01 is pending A4 final repository review; Work2 complete loop; R2 is FORMAL PRE-STUDY EVIDENCE, not final efficacy. |
 | 5 总结与展望 | `chapters/ch05_conclusion.tex` | FROZEN_V1.0 | PLANNED | Mirrors Section 1.4; no independent unified experiment chapter. |
 
 ## Evidence Guardrail
@@ -71,6 +71,8 @@ Resolved in P-003B-R1:
 | S3-06D | 3.6.7 可视化分析 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 1dc871b7411d1ecebca1ba5a4e9eefe9319ef81e. |
 | S3-07 | 3.7 本章小结 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PASSED | SECTION_ACCEPTED | GPT A3 final GitHub repository review passed; accepted integration commit 905e3c77bdae8441d61287b2fc95a99ec6279aa4. |
 
+| S4-01 | 4.1 引言 | DIRECT_REPO_REVIEW / GATE_A_PASSED | LATEX_INTEGRATED | PENDING_SUPERVISOR_REPO_REVIEW | PENDING_SUPERVISOR_REPO_REVIEW | A4-authorized mechanical integration of `gptBmd/S4-01.md` formal body; awaiting A4 final repository review. |
+
 ## Chapter 3 Section 3.6 Completion
 
 - `S3-06A / S3-06A-R1 = SECTION_ACCEPTED`
@@ -129,8 +131,8 @@ Resolved in P-003B-R1:
 - `FINAL_CLOSURE_REPOSITORY_CHECK = PASSED`
 - `FINAL_WINDOW_CLOSURE_APPROVAL = APPROVED`
 - `CHAPTER_4_AUTHORING_STATE = READY_FOR_FIRST_TASK_CARD`
-- No Chapter 4 section has been started or accepted. This closure record does
-  not create or select the first Chapter 4 Task Card.
+- `S4-01 = LATEX_INTEGRATED / PENDING_SUPERVISOR_REPO_REVIEW`.
+- No Chapter 4 section has been accepted.
 
 ## Chapter 1 Gate
 
