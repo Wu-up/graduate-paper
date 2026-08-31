@@ -20,7 +20,8 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 
 - `S1-01`, `S1-02A`, `S1-02B-R1`, `S1-02C`, `S1-02D`, `S1-02E`, `S1-03`, `S1-04`, `S1-05-R1`, `S1-06`, `S2-01` through `S2-06`, `S3-01`, `S3-02`, `S3-03`, `S3-04`, `S3-05`, `S3-06A / S3-06A-R1`, `S3-06B`, `S3-06C`, `S3-06D`, `S3-07`, `S4-01`, `S4-02 / S4-02-R1`, `S4-03`, `S4-04`, `S4-05`, and `S4-06` are `SECTION_ACCEPTED`.
 - Chapter 3 current method sections: `S3-01 through S3-05 = SECTION_ACCEPTED`.
-- LAST_ACCEPTED_SECTION: `S4-06 / 4.6 结构证据引导的解码增强`.
+- LAST_ACCEPTED_SECTION: `S4-07-EXP-R1 / 4.7 实验与结果分析 / EXPECTED_RESULT_DRAFT_ACCEPTED`.
+- LAST_ACCEPTED_EXPECTED_RESULT_SECTION: `S4-07-EXP-R1 / 4.7 实验与结果分析`.
 - `S1-05-R1` accepted commit: `cfd0fb5e42d3458e6aff21c0c35f4fe9c6181b9a`.
 - `S1-06` accepted commit: `58ecc4ab8cd2b6960a7ade8fa356318cece86d80`.
 - `S2-01` accepted commit: `ae7857ed8a8ce88e601bf84f9cf0862ffd08217c`.
@@ -45,6 +46,7 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `S4-04` accepted commit: `d0d68c4f23c645acc6d206fceaa0bc322dc72608`.
 - `S4-05` accepted commit: `7589ea5a75d660485f3cd03eb134957bf2a2cca5`.
 - `S4-06` accepted commit: `1cbbf46bf392ba27638290092851c0670823d6e7`.
+- `S4-07-EXP-R1` accepted integration commit: `ba91943de854425d8e21539f6a35df9d4d295e97`.
 
 ## Chapter 2 Closure State
 
@@ -127,10 +129,20 @@ subsequent Task Card.
 - `S4-07_PLACEHOLDER_RENDERING_OVERRIDE = ACTIVE / S4-07_ONLY`
 - `PLACEHOLDER_EVIDENCE_IDENTITY = UNCHANGED / THESIS_PLACEHOLDER`
 - `S4-07 = EXPECTED_RESULT_DRAFT_AUTHORIZED`
+- `S4-07-EXP-R1 = PASSED / EXPECTED_RESULT_DRAFT_ACCEPTED`
+- `S4-07-EXP-R1 FINAL_REPOSITORY_REVIEW = PASSED`
+- `S4-07-EXP-R1 FINAL_STATUS = EXPECTED_RESULT_DRAFT_ACCEPTED`
+- `S4-07_SOURCE_LEVEL_REVIEW = PASSED`
+- `S4-07_FINAL_PDF_RENDER_QA = PENDING_CHAPTER_4_FINAL_COMPILE`
+- `FINAL_WORK2_EFFICACY_VERIFIED = NO`
 - Scope is limited to 4.7.1--4.7.7. Expected numerical tables require a
   Chinese caption ending in `（预期）` and nearby non-rendered ledger-ID comments.
-- This authorization does not verify final evidence, alter the placeholder
-  ledger, change S4-01 through S4-06, or change Chapter 4's `IN_PROGRESS` state.
+- This acceptance does not promote `THESIS_PLACEHOLDER` values to verified
+  experimental evidence, does not verify final Work2 efficacy, alter the
+  placeholder ledger, change S4-01 through S4-06, or change Chapter 4's
+  `IN_PROGRESS` state. Source-level review passed; final PDF render QA remains
+  pending Chapter 4 final compilation because local `xelatex`/`latexmk` was
+  unavailable during integration, while static LaTeX checks passed.
 
 ## Chapter 3 Review Pipeline
 
