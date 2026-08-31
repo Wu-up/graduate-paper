@@ -2,11 +2,11 @@
 
 ## Current Phase
 
-`SUCCESSOR_WINDOW_QUALITY_GATE / PHASE_3_FINAL_CLOSURE_REPOSITORY_CHECK`
+`CHAPTER_4_AUTHORING_READY`
 
 ## Current Chapter
 
-Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像分割方法
+Chapter 4 — 基于尺度特异结构证据调制的三维医学图像分割方法
 
 ## Last Completed Chapter
 
@@ -67,8 +67,8 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `CHAPTER_3_CLOSURE_REPAIR = PASSED`
 - `CHAPTER_3_POST_ACCEPTANCE_QUALITY_REVISION = COMPLETE / CLOSED`
 - `CHAPTER_3_CURRENT_STATUS = COMPLETE / CHAPTER_ACCEPTED / QUALITY_REVISION_ACCEPTED`
-- `A3 = SUCCESSOR_QUALIFICATION_PENDING / PHASE_3_CLOSURE_REVIEW`
-- `B3 = SUCCESSOR_QUALIFICATION_PENDING / PHASE_3_CLOSURE_REVIEW`
+- `A3 = WINDOW_COMPLETE`
+- `B3 = WINDOW_COMPLETE`
 - `CH3-QA-A-R1 = CONTENT_APPROVED / LATEX_INTEGRATED / FINAL_REPOSITORY_REVIEW_PASSED / QUALITY_REVISION_ACCEPTED`
 - `CH3_QUALITY_REVISION_GROUP_A = ACCEPTED`
 - `CH3_QUALITY_REVISION_GROUP_A_SCOPE = 3.1--3.3`
@@ -89,15 +89,18 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `SELF_PUBLICATION_DISCLOSURE_OPTION = B` (Fig.1 caption contains the sole Group-A `\cite{wu2026vilunet}` provenance citation.)
 - `REFRESHED_CH03_HANDOFF_A3_REPOSITORY_REVIEW = PASSED`
 - `REFRESHED_CH03_HANDOFF_REVIEWED_COMMIT = 05b1aca198726ea4fa482f1e560aa4e956fa6cda`
-- `A4_B4_SUCCESSOR_TRANSITION = SUCCESSOR_QUALIFICATION_PENDING`
-- `CURRENT_PHASE = SUCCESSOR_WINDOW_QUALITY_GATE / PHASE_3_FINAL_CLOSURE_REPOSITORY_CHECK`
+- `A4_B4_SUCCESSOR_TRANSITION = COMPLETE`
+- `CURRENT_PHASE = CHAPTER_4_AUTHORING_READY`
 - `A4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `B4_RECOVERY_KNOWLEDGE_CHECK = PASSED`
 - `A4_OPERATIONAL_QUALIFICATION = PASSED`
 - `B4_OPERATIONAL_QUALIFICATION = PASSED`
-- `SUCCESSOR_QUALITY_GATE = CLOSURE_REPOSITORY_CHECK_PENDING`
-- `FINAL_CLOSURE_REPOSITORY_CHECK = PENDING`
-- `FINAL_WINDOW_CLOSURE_APPROVAL = PENDING`
+- `SUCCESSOR_QUALITY_GATE = PASSED`
+- `FINAL_CLOSURE_REPOSITORY_CHECK = PASSED`
+- `FINAL_WINDOW_CLOSURE_APPROVAL = APPROVED`
+- `A4 = SUCCESSOR_READY / ACTIVE_SUPERVISOR`
+- `B4 = SUCCESSOR_READY / ACTIVE_WRITER`
+- `FINAL_CLOSURE_APPROVED_BASELINE = da6f7a07d691257cef6782cb0b216210158558e4`
 - `CH03_HANDOFF_REPOSITORY_REVIEW = PASSED`
 - CH03 handoff R1 reviewed commit: `2e3c097d582dcb19ce1724156d132173a0c0e314`
 - `S3-CL-01 FINAL_REPOSITORY_REVIEW = PASSED`
@@ -106,11 +109,11 @@ Chapter 3 — 基于Vision-xLSTM局部--全局协同建模的三维医学图像�
 - `NEXT_CHAPTER = Chapter 4`
 
 The historical Chapter 3 acceptance and its quality-revision acceptance remain
-recorded. The refreshed CH03 handoff has passed A3 repository review. A4/B4
-have passed recovery and operational qualification and are now in Phase 3
-final closure repository review. Chapter 4 is not yet formally writable, and
-no Chapter 4 Task Card or body work may begin until final window closure is
-approved and committed.
+recorded. The final closure repository review has been approved. A4/B4 are
+successor-ready, with A4 now the active supervisor and B4 the active writer.
+Chapter 4 remains planned with formal authoring not yet started; A4 may
+independently issue the first formal Chapter 4 Task Card after this closure
+commit, but this record does not create or select that Task Card.
 
 ## Chapter 3 Review Pipeline
 
