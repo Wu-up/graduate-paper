@@ -114,7 +114,7 @@ python scripts/export_overleaf.py _source_materials/overleaf_return_YYYYMMDD/fin
 - 临时 Overleaf 首次 fetch 成功；无共同历史但论文文件内容一致。桥接推送和 fetch 读回成功；测试文件经过新增、推送、读回、单文件移除及再次推送，最终树与 GitHub 一致。
 - 网页编译器已由 pdfLaTeX 改为 XeLaTeX。仅修复类文件 upcite 重复定义及成果占位文字下划线转义，未改章节、实验结论或图片。
 - 在线 PDF 87 页，错误 0，警告 8（字体族重定义及未使用全局选项），另有多处 Overfull/Underfull 提示。未完成逐页排版验收；不等同最终论文通过。
-- 编译日志截图保存在本地 `_source_materials/overleaf_migration_20261026/compile_logs.png`。浏览器下载 PDF 被取消/超时，尚未取得本地 PDF；可在页面 Download PDF 手动保存。
+- 编译日志截图保存在本地 `_source_materials/overleaf_migration_20261026/compile_logs.png`。下载最初返回取消/超时，随后 PDF 已出现在工作区并另存为该目录的 verified_thesis.pdf；本地解析确认 87 页、全部 A4、封面和三张正文图嵌入、参考文献可检索。抽查 PDF 第 1/46/55/56/77 页，截图为 pdf_spotcheck.png；未做全文逐页验收。
 - 源码导出实测包含 23 个编译文件，ZIP 完整性和各文件与 Git blob 相等性通过。原始未跟踪材料保留。当前所有显式 input/includegraphics/addbibresource 路径齐全。
 - 旧 Overleaf 在线返回 no git access，无法确认其中是否有后于历史跟踪 7f46607 的网页修改。回迁时仍应先在原账号下载源码并比较，不能推断其在线内容必然等于旧跟踪引用。
 - 网页修改导入命令已经设计；本次远端没有论文内容差异，未人为更改网页正文制造合并冲突，因此真实冲突解决未演练。
