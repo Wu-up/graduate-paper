@@ -25,6 +25,8 @@
 
 ## Overleaf
 
+- Current remote mapping, safe online-edit import, and account return procedure: [overleaf_sync_workflow.md](overleaf_sync_workflow.md). Use `overleaf-temp`; `overleaf-old` is retained with push disabled.
+
 - Compile and visual verification environment.
 - Receives the same source files through Git push.
 - Used to validate XeLaTeX output when local TeX is unavailable.

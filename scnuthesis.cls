@@ -67,7 +67,8 @@
 \newcommand{\hei}{\CJKfamily{zhhei}}
 \newcommand{\kai}{\CJKfamily{zhkai}}
 \newcommand{\fs}{\CJKfamily{zhfs}}
-\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\providecommand{\upcite}{}
+\renewcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
 \newcommand{\scnu@captionfont}{\hei\zihao{-4}}
 
 \geometry{
